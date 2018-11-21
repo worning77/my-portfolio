@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import {
   Container,
   BigTitle,
@@ -10,41 +10,41 @@ import {
   Names,
   Jieshis,
   Dates,
-  SmallsTitle,
-} from '../../layouts/Work-Styles'
-import Pic1 from './Nov/Pic'
-import Tree from './Nov/Tree'
+  SmallsTitle
+} from "../../layouts/Work-Styles";
+import Pic1 from "./Nov/Pic";
+import Tree from "./Nov/Tree";
 
-import Bad from './Nov/Bad'
+import Bad from "./Nov/Bad";
 
 const NovDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+`;
 const FucDiv = styled.div`
   max-width: 1200px;
   padding-left: 5%;
-`
+`;
 const AdDiv = styled.div`
   width: 65%;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05), 0 -1rem 2rem rgba(0, 0, 0, 0.02);
   padding: 1% 5%;
   margin: 0 auto 3rem auto;
-`
+`;
 const Ad = styled.p`
   text-align: center;
   font-size: 1.8rem;
   font-style: italic;
   color: rgba(0, 0, 0, 0.4);
   font-weight: 350;
-`
+`;
 const Small = styled.p`
   margin: 1rem 0 1rem 0;
   font-size: 1.3rem;
   padding: 0 0 0 2%;
   color: rgba(0, 0, 0, 0.5);
-`
+`;
 
 const Qcard = styled.div`
   max-width: 1000px;
@@ -54,7 +54,7 @@ const Qcard = styled.div`
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.2);
   margin: 0 auto 5rem auto;
-`
+`;
 
 const Question = styled.h3`
   margin: 0 3rem;
@@ -62,19 +62,19 @@ const Question = styled.h3`
   font-size: 1.7rem;
   font-weight: 700;
   color: rgba(239, 128, 65, 1);
-`
+`;
 const Thought = styled.p`
   margin: 2rem auto;
   font-size: 1.3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
-`
+`;
 const Answer = styled.p`
   margin: 0 auto 3rem auto;
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
-`
+`;
 const Concl = styled.p`
   margin: 0 0 3rem 0;
   text-align: center;
@@ -82,19 +82,19 @@ const Concl = styled.p`
   color: rgba(239, 128, 65, 1);
   font-weight: 500;
   padding: 0 10%;
-`
+`;
 
 const Nov = () => (
   <Container>
     <NovDiv>
       <Dates>November</Dates>
-      <BigTitle>Cancel video</BigTitle>
+      <BigTitle>Stand at the Crossroads</BigTitle>
       <Ctext>
         Since we were very close to Zhongguancun, the Silicon valley of Beijing,
         Guangxin and I went there, feeling the atmosphere of startup, auditing
         roadshows, downloading and experiencing tens of newly released apps
-        everyday. We found we need to think more. First, we made a{' '}
-        <High>Competitive Analysis</High> .{' '}
+        everyday. We found we need to think more. First, we made a{" "}
+        <High>Competitive Analysis</High> .{" "}
       </Ctext>
       <AdDiv>
         <Ad>
@@ -103,10 +103,10 @@ const Nov = () => (
         </Ad>
       </AdDiv>
       <SmallTitle>Competitive Analysis</SmallTitle>
-      <Pic1 pic1={require('../../images/jinpin.png')} />
+      <Pic1 pic1={require("../../images/jinpin.png")} />
       <SmallsTitle>In skill-sharing field, we found that:</SmallsTitle>
       <Ctext>
-        1. Most skills or views sharing platforms{' '}
+        1. Most skills or views sharing platforms{" "}
         <High>focus on some certain fields</High>.
         <Small>
           Zaihang: an one-on-one Consulting platform specific in the Internet
@@ -121,13 +121,13 @@ const Nov = () => (
         </Small>
         3. <High>None of those has the video fucntion.</High>
         <Small>Except Users in Zaihang will meet and talk in reallife.</Small>
-        4. The target users of every platform are{' '}
+        4. The target users of every platform are{" "}
         <High>
           highly related to the main toptics they made at the beginning stage
         </High>.
       </Ctext>
-      <Pic1 pic1={require('../../images/shipin.png')} />
-      <SmallsTitle>In short video field, We found that: </SmallsTitle>{' '}
+      <Pic1 pic1={require("../../images/shipin.png")} />
+      <SmallsTitle>In short video field, We found that: </SmallsTitle>{" "}
       <Ctext>
         <High>None of them use video to spread knowledge.</High>
       </Ctext>
@@ -139,10 +139,10 @@ const Nov = () => (
         which were some difficult subjects, like Advanced Mathematics.
         Meanwhile, we known that Economics and some relevant subjects were hot
         majors in my university. We tried to talk to some top students in every
-        school, hoping they could make videos of those subjects. Next, we made a{' '}
-        <High>Topic Tree</High>.{' '}
+        school, hoping they could make videos of those subjects. Next, we made a{" "}
+        <High>Topic Tree</High>.{" "}
       </Ctext>
-      <Tree pic1={require('../../images/Tree.png')} />
+      <Tree pic1={require("../../images/Tree.png")} />
       <SmallTitle>New plan</SmallTitle>
       <Ctext>
         Well, before our product released, where would the users be attracted?
@@ -154,15 +154,15 @@ const Nov = () => (
       </Ctext>
       <SmallTitle>Some issues in videoing progress</SmallTitle>
       <Bad
-        image={require('../../images/shi.png')}
+        image={require("../../images/shi.png")}
         title="From a professor"
         text1="A famous Chinese literature professor answered our 5 prepared questions, he couldn't make it clear in 5 min. Since he could extend a lot."
         text2="When we let other students watch this 30min-long video. At first they had interests, but they felt tired gradually."
-        photo={require('../../images/fankui.png')}
+        photo={require("../../images/fankui.png")}
       />
       <Concl>
         We underestimated the difficulty of making a knowledge-spread video in
-        most cases !{' '}
+        most cases !{" "}
       </Concl>
       <Ctext>
         We never foresaw such situiations before. And these difficulies made us
@@ -193,7 +193,7 @@ const Nov = () => (
         <Question>Video or Meaningful social network?</Question>
         <Thought>
           Before: We thought video+knowledge+existing social cycle would be
-          perfect, becasue video was the most effective spreading way.{' '}
+          perfect, becasue video was the most effective spreading way.{" "}
         </Thought>
         <Answer>
           Real: Chinese didn't have the habit of making videos at that time yet.
@@ -208,12 +208,12 @@ const Nov = () => (
         </Answer>
       </Qcard>
       <Ctext>
-        {' '}
+        {" "}
         It seemed that we overpursued the video function and forgot the original
-        wish of creating a valuable social network.{' '}
+        wish of creating a valuable social network.{" "}
         <High>We had no choice but quit video function.</High>
       </Ctext>
     </NovDiv>
   </Container>
-)
-export default Nov
+);
+export default Nov;

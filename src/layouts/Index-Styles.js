@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const HeroBack = styled.div`
-  background-image: url(${require('../images/welcome.png')});
+  background-image: url(${require("../images/welcome.png")});
   background-repeat: no-repeat;
   z-index: -99;
   background-position-x: center;
@@ -10,7 +10,7 @@ export const HeroBack = styled.div`
   @media (max-width: 1800px) {
     background-position-y: 10%;
   }
-`
+`;
 export const IntroDiv = styled.div`
   margin: 0 2rem;
   @media (max-width: 1350px) {
@@ -22,7 +22,7 @@ export const IntroDiv = styled.div`
   @media (max-width: 640px) {
     margin: 0 1rem;
   }
-`
+`;
 export const IntroGroup = styled.div`
   max-width: 1400px;
   padding: 400px 0 0 0;
@@ -44,7 +44,7 @@ export const IntroGroup = styled.div`
   @media (max-width: 640px) {
     padding: 100px 0 0 0;
   }
-`
+`;
 
 export const DrawContain = styled.div`
   margin: 2vw auto 0 auto;
@@ -82,14 +82,14 @@ export const DrawContain = styled.div`
   @media (max-width: 415px) {
     border-radius: 0rem;
   }
-`
+`;
 
 export const BackImg = styled.div`
   height: 100%;
   display: flex;
   background-blend-mode: screen;
   background-size: cover;
-`
+`;
 export const DrawBack = styled.img`
   z-index: -10;
   position: absolute;
@@ -104,12 +104,12 @@ export const DrawBack = styled.img`
     width: 100vw;
     max-height: none;
   }
-`
+`;
 export const DrawDes = styled.div`
   height: 20%;
   float: left;
   align-self: flex-end;
-`
+`;
 export const Title = styled.h2`
   margin: 0;
   font-size: 2rem;
@@ -124,7 +124,7 @@ export const Title = styled.h2`
   @media (max-width: 415px) {
     font-size: 1.5rem;
   }
-`
+`;
 export const Text = styled.h4`
   margin: 0;
   font-size: 1rem;
@@ -133,13 +133,13 @@ export const Text = styled.h4`
   @media (max-width: 415px) {
     font-size: 0.8rem;
   }
-`
+`;
 export const DescDiv = styled.div`
   margin: 5rem 2rem 0 2rem;
   @media (max-width: 640px) {
     margin: 3rem 1rem 0 1rem;
   }
-`
+`;
 export const Words = styled.div`
   max-width: 1400px;
   margin: auto;
@@ -147,7 +147,7 @@ export const Words = styled.div`
   @media (max-width: 1600px) {
     max-width: 1300px;
   }
-`
+`;
 export const Titles = styled.h2`
   margin: 0 auto 0 0;
   color: rgba(0, 0, 0, 0.7);
@@ -159,7 +159,7 @@ export const Titles = styled.h2`
   @media (max-width: 415px) {
     font-size: 1.5rem;
   }
-`
+`;
 
 export const AboutContain = styled.div`
   margin: 2rem 2rem 0 2rem;
@@ -167,7 +167,7 @@ export const AboutContain = styled.div`
   @media (max-width: 640px) {
     margin: 3rem 1rem 0 1rem;
   }
-`
+`;
 export const IntroContain = styled.div`
   max-width: 1400px;
   margin: 0 auto;
@@ -185,7 +185,7 @@ export const IntroContain = styled.div`
   @media (max-width: 415px) {
     grid-gap: 0.5rem;
   }
-`
+`;
 export const PhotoContain = styled.div`
   max-width: 1400px;
   margin: 2rem auto 0 auto;
@@ -204,4 +204,4 @@ export const PhotoContain = styled.div`
     margin: 1rem auto 0 auto;
     grid-gap: 0.5rem;
   }
-`
+`;
