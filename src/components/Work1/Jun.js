@@ -1,25 +1,32 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import {
   Container,
   BigTitle,
   Ctext,
   SmallTitle,
   High,
-  Dates,
-} from '../../layouts/Work-Styles'
+  Dates
+} from "../../layouts/Work-Styles";
 
-import Team from './June/Photo'
+import Team from "./June/Photo";
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
-const Ad = styled.h2`
-  margin: 0 0 3rem 0;
+`;
+const Ads = styled.h2`
+  margin: 0 0 10rem 0;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 700;
-`
+  @media (max-width: 800px) {
+    font-size: 1.2rem;
+    margin: 0 0 10rem 0;
+  }
+  @media (max-width: 415px) {
+    margin: 0 auto 3rem auto;
+  }
+`;
 
 const Jun = () => (
   <Container>
@@ -27,7 +34,7 @@ const Jun = () => (
       <Dates>June</Dates>
       <BigTitle>End</BigTitle>
       <Ctext>
-        没有精力完全去做内容的发现和主导，势必会让分享停滞不前，同时到了考试月，很少有人会来帮忙，就地解散。{' '}
+        没有精力完全去做内容的发现和主导，势必会让分享停滞不前，同时到了考试月，很少有人会来帮忙，就地解散。{" "}
       </Ctext>
       <SmallTitle>Review</SmallTitle>
 
@@ -35,7 +42,7 @@ const Jun = () => (
         Our idea has been proved right by the MVP, but we found some reasons why
         we failed to make such a platform we proposed:<br />
         <li>
-          {' '}
+          {" "}
           We were not a professional team. As for leaders, we put too many
           functions in a new App in the beignning stage, thus we changed the
           idea too many timese which led the programmers feel tired. And till
@@ -43,7 +50,7 @@ const Jun = () => (
           tried. ( We were not in the beginning of Facebook time )
         </li>
         <li>
-          {' '}
+          {" "}
           We knew that we made a real APP was hard, but before we verify our
           idea, we would not use money to buy a APP, since I saw too many
           (花重金写好的)APP died because of lack of users.
@@ -55,12 +62,12 @@ const Jun = () => (
           social net firmly.
         </li>
         <li>
-          {' '}
+          {" "}
           The delimma: the vertical fields made friends in real life lose its
           value; the all-round platform relied on friends connection extremely.
         </li>
         <li>
-          {' '}
+          {" "}
           We have not yet found a brilliant way as cold boot( like what SnapChat
           did at that time )to attract users.
         </li>
@@ -77,9 +84,10 @@ const Jun = () => (
         pushed me to want more and specificly do well in a certain part of the
         Internet field.
       </Ctext>
-      <Ad>Thanks my team </Ad>
-      <Team pic1={require('../../images/team.png')} />
+
+      <Team pic1={require("../../images/team.png")} />
+      <Ads>Thanks my team </Ads>
     </DecDiv>
   </Container>
-)
-export default Jun
+);
+export default Jun;

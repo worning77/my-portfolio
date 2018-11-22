@@ -1,49 +1,56 @@
 import React from "react";
 import styled from "styled-components";
 import Story from "./BackStory/Storys";
-import { Container, BigTitle, Ctext, Dates } from "../../layouts/Work-Styles";
+import {
+  Container,
+  BigTitle,
+  Ctext,
+  Dates,
+  Big
+} from "../../layouts/Work-Styles";
 
 const BackgroundDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
-const Tname = styled.div`
-  padding: 2rem 0;
-  display: block;
-`;
+
 const Name = styled.h2`
   font-size: 2rem;
   text-align: center;
   color: rgba(0, 0, 0, 1);
   margin: 0;
+  @media (max-width: 800px) {
+    font-size: 1.3rem;
+  }
 `;
 const Desc = styled.p`
   font-size: 1.3rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   margin: 0;
+  @media (max-width: 800px) {
+    font-size: 0.9rem;
+  }
 `;
-const Qtext = styled.p`
-  margin: 3rem 0;
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: 350;
-  line-height: 1.5;
+const Ctext1 = styled(Ctext)`
+  margin: 3rem 0 3rem 0;
 `;
 
 const Background = () => (
   <Container>
     <BackgroundDiv>
       <BigTitle>Background</BigTitle>
+
       <Ctext>
-        In 2015, WeChat was the most popular and seemed to be the only one
-        social network among students group. Moments of WeChat, a fuction for
-        users to share, however, was full of posts of what friends ate, where
-        friends went, and some complaints about somebody’s life, which were
-        meaningless for us to know about someone we cared about. There was no
-        place to explore, to find something beneficial for our expansion of
-        interests and fun facts of lives. I found that our daily life was
-        boring, which pushed me to think about what’s going on.
+        <Big>In 2015</Big>, WeChat was the most popular and seemed to be the
+        only one social network among students group. Moments of WeChat, a
+        fuction for users to share, however, was full of posts of what friends
+        ate, where friends went, and some complaints about somebody’s life,
+        which were meaningless for us to know about someone we cared about.
+        There was no place to explore, to find something beneficial for our
+        expansion of interests and fun facts of lives. I found that our daily
+        life was boring, which pushed me to think about what’s going on. Based
+        on something real experience, <Big>I got a crazy idea</Big>.
       </Ctext>
       <Dates>Chapter 0</Dates>
       <BigTitle>The Idea</BigTitle>
@@ -71,17 +78,18 @@ const Background = () => (
         back={require("../../images/QQQ.png")}
         question="Why Chinese young people do not make some cool and meaningful short videos?"
       />
-      <Qtext>
-        带着这三个问题，既然熟人之间更能促进分享；问答有会让本来有能力的人被动分享；视频对于学习者的好处在于能快速了解并学习，对于分享者好处在于能清楚表达其意思。
-        那么我想我们是不是能做一个：
-      </Qtext>
-      <Tname>
-        <Name>A skill-sharing platform based on relationship</Name>
-        <Desc>
-          we can simply regard it as a video version of zhihu specific for
-          college students{" "}
-        </Desc>
-      </Tname>
+      <Ctext1>
+        With these three questions: good relationship could promote sharing; Q&A
+        could encourage someone with ability to sharing knowledge; video
+        function could benefit both learners and sharers. Well, I think we can
+        make a :
+      </Ctext1>
+
+      <Name>A skill-sharing platform based on relationship</Name>
+      <Desc>
+        we can simply regard it as a video version of zhihu specific for college
+        students{" "}
+      </Desc>
     </BackgroundDiv>
   </Container>
 );

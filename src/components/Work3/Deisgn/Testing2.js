@@ -7,13 +7,10 @@ const PicDiv = styled.div`
   &:before {
     content: "";
     display: block;
-    padding-top: 50%;
+    padding-top: 61.13%;
   }
   overflow: hidden;
-  margin: 0 0 3rem 0;
-  @media (max-width: 800px) {
-    margin: 0 auto 1rem auto;
-  }
+  margin: 0 auto;
 `;
 const Pics = styled.img`
   position: absolute;
@@ -24,9 +21,9 @@ const Pics = styled.img`
   bottom: 0;
   align-self: center;
 `;
-const Messy = props => (
+const Usertesting2 = props => (
   <PicDiv>
     <Pics src={props.pic1} />
   </PicDiv>
 );
-export default Messy;
+export default Usertesting2;

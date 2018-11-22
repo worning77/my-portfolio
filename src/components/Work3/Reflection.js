@@ -1,34 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import {
   Container,
   BigTitle,
   SmallTitle,
-  Ctext,
-} from '../../layouts/Work-Styles'
+  Ctext
+} from "../../layouts/Work-Styles";
 
 const ReflDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+`;
+const Ctext1 = styled(Ctext)`
+  margin: 0 auto 10rem auto;
 
+  @media (max-width: 800px) {
+    margin: 0 auto 5rem auto;
+  }
+  @media (max-width: 415px) {
+    margin: 0 auto 3rem auto;
+  }
+`;
 const Reflection = () => (
   <Container>
     <ReflDiv>
-      <BigTitle>Reflection</BigTitle>
-      <Ctext>
-        As for this project, the hardest part is how to set the price, rather
-        than design the App. Since the ideal, lowest price and advanced
-        decoraction are two biggest buying points for college students, I need
-        to figure out and eventually calculate the number, in order to ensure
-        certain amount of profit. Due to the limited time and resources, I
-        didn't make it at that time, but I still want to have a try in the near
-        future.<br />
-        Also, before putting this project into real, I need to perpare at least
-        10 apartments in different communities. That will be a big deal.
-      </Ctext>
-      <SmallTitle>Experiment</SmallTitle>
-      <Ctext>
+      <BigTitle>Experiment</BigTitle>
+      <Ctext1>
         In September 2017, I did a little experiment to verify this idea in
         Beijing and Lanzhou (an underdeveloped city located in the northwest of
         China), specificly for students in Renmin University and Lanzhou
@@ -47,6 +44,7 @@ const Reflection = () => (
           interested in this. In the end I didn't let them live in my room
           because it's illegal. In a word, this idea is practical!
         </li>
+        素材图
         <br />
         <li>
           On the other hand, the thing was different in Lanzhou. My home is near
@@ -58,12 +56,26 @@ const Reflection = () => (
           University, they told me they'd rather to rent it for a long-term, and
           they didn't care the THREE DAYS rule...
         </li>
+        素材图
         <br />
         Thus, I briefly concluded that due to the differnet level of consumption
         and the diversity of the entertainment, this idea only fit for students
         in developed arears, bnecause couples might value the time more they
         spend together in their busy lifestyle.
+      </Ctext1>
+      <BigTitle>Reflection</BigTitle>
+      <Ctext>
+        As for this project, the hardest part is how to set the price, rather
+        than design the App. Since the ideal, lowest price and advanced
+        decoraction are two biggest buying points for college students, I need
+        to figure out and eventually calculate the number, in order to ensure
+        certain amount of profit. Due to the limited time and resources, I
+        didn't make it at that time, but I still want to have a try in the near
+        future.<br />
+        Also, before putting this project into real, I need to perpare at least
+        10 apartments in different communities. That will be a big deal.
       </Ctext>
+
       <SmallTitle>Takeaways</SmallTitle>
       <Ctext>
         <li>
@@ -76,7 +88,8 @@ const Reflection = () => (
           In the beginning of 2018, I suddenly found several Ads about the
           similar idea in Guangzhou and Shenzhen. They cared about the
           decoration most, and the price was reasonable. It told me that more
-          and more young Chinese prefer such living style.{' '}
+          and more young Chinese prefer such living style. What's more,
+          我虽然不是有新想法的第一个人，但我总是那其中的第一批人。这也坚定了让我在互联网行业闯下去的原因之一。
         </li>
         <br />
         <li>
@@ -91,5 +104,5 @@ const Reflection = () => (
       </Ctext>
     </ReflDiv>
   </Container>
-)
-export default Reflection
+);
+export default Reflection;

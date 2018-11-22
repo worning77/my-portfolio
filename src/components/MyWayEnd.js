@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Mask = styled.div`
   position: absolute;
@@ -30,7 +30,7 @@ const Mask = styled.div`
       rgba(233, 175, 74, 0.3) 100%
     );
   }
-`
+`;
 
 const Title = styled.h1`
   margin: 1rem 1rem 0 0;
@@ -43,7 +43,7 @@ const Title = styled.h1`
   @media (max-width: 415px) {
     font-size: 1.5rem;
   }
-`
+`;
 const Sum = styled.p`
   color: white;
   display: grid;
@@ -52,13 +52,17 @@ const Sum = styled.p`
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.5;
+  @media (max-width: 690px) {
+    grid-template-columns: 1fr 9fr;
+  }
   @media (max-width: 640px) {
+    grid-template-columns: 1fr 5fr;
     font-size: 1rem;
   }
   @media (max-width: 445px) {
     margin: 0.5rem 1rem 0 1rem;
   }
-`
+`;
 
 const MyWayEnd = props => (
   <Mask>
@@ -68,6 +72,6 @@ const MyWayEnd = props => (
       {props.text}
     </Sum>
   </Mask>
-)
+);
 
-export default MyWayEnd
+export default MyWayEnd;

@@ -29,7 +29,7 @@ export const IntroGroup = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  @media (max-width: 1350px) {
+  @media (max-width: 1148px) {
     margin: 0 auto 0 0;
   }
   @media (max-width: 1600px) {

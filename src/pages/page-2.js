@@ -1,30 +1,30 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Cards from '../components/Cards'
-import Descs from '../components/Descs'
-import Desc1 from '../components/Descs/Desc1'
-import Desc2 from '../components/Descs/Desc2'
-import Desc3 from '../components/Descs/Desc3'
-import Desc4 from '../components/Descs/Desc4'
-import Intruduction from '../components/Intrud'
-import MyWay from '../components/MyWay'
-import MyWayEnd from '../components/MyWayEnd'
-import Next from '../components/Next'
-import Footer from '../components/Footer'
-import Header from '../components/header'
+import React from "react";
+import Link from "gatsby-link";
+import Cards from "../components/Cards";
+import Descs from "../components/Descs";
+import Desc1 from "../components/Descs/Desc1";
+import Desc2 from "../components/Descs/Desc2";
+import Desc3 from "../components/Descs/Desc3";
+import Desc4 from "../components/Descs/Desc4";
+import Intruduction from "../components/Intrud";
+import MyWay from "../components/MyWay";
+import MyWayEnd from "../components/MyWayEnd";
+import Next from "../components/Next";
+import Footer from "../components/Footer";
+import Header from "../components/header";
 import {
   HeroBack,
   Container,
   CardGroup,
   Banner,
   BannerBack,
-  BannerBack2,
-} from '../layouts/Page2-Styles'
-import Fade from 'react-reveal/Fade'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+  BannerBack2
+} from "../layouts/Page2-Styles";
+import Fade from "react-reveal/Fade";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-AOS.init()
+AOS.init();
 
 const IndexPage = () => (
   <div>
@@ -32,13 +32,13 @@ const IndexPage = () => (
     <HeroBack>
       <Intruduction
         name="Chenfeng Gao"
-        image={require('../images/123.png')}
-        head={require('../images/head.jpg')}
+        image={require("../images/123.png")}
+        head={require("../images/head.jpg")}
       />
     </HeroBack>
 
     <Banner>
-      <BannerBack src={require('../images/1165.jpg')} />
+      <BannerBack src={require("../images/1165.jpg")} />
 
       <MyWay
         title="My Journey to HCI"
@@ -47,12 +47,12 @@ const IndexPage = () => (
     </Banner>
 
     <CardGroup>
-      <Container data-aos="fade-up">
+      <Container data-aos="fade-up" data-aos-offset="0" data-aos-duration="150">
         <Link className="Project1" to="/work1">
           <Cards
             name="The First one"
             newDate="2015-2016"
-            image={require('../images/wallpaper.png')}
+            image={require("../images/wallpaper.png")}
           />
         </Link>
         <Descs
@@ -65,12 +65,16 @@ const IndexPage = () => (
         </Descs>
       </Container>
 
-      <Container data-aos="fade-up">
+      <Container
+        data-aos="fade-up"
+        data-aos-offset="-100"
+        data-aos-duration="150"
+      >
         <Link className="Project2" to="/work2">
           <Cards
             name="Internship"
             newDate="Nov.2016-Jan.2017"
-            image={require('../images/cover2.png')}
+            image={require("../images/cover2.png")}
           />
         </Link>
         <Descs
@@ -83,12 +87,16 @@ const IndexPage = () => (
         </Descs>
       </Container>
 
-      <Container data-aos="fade-up">
+      <Container
+        data-aos="fade-up"
+        data-aos-offset="-200"
+        data-aos-duration="150"
+      >
         <Link className="Project3" to="/work3">
           <Cards
             name="Idea From Living"
             newDate="Jul.2017"
-            image={require('../images/cover3.png')}
+            image={require("../images/cover3.png")}
           />
         </Link>
         <Descs
@@ -101,13 +109,17 @@ const IndexPage = () => (
         </Descs>
       </Container>
 
-      <Container data-aos="fade-up">
+      <Container
+        data-aos="fade-up"
+        data-aos-offset="-300"
+        data-aos-duration="150"
+      >
         <Link className="Project4" to="/work4">
           <Cards
             name="Numbers"
             newDate="Sep.2017-May.2018"
             text="Work experience"
-            image={require('../images/wallpaper4.jpg')}
+            image={require("../images/wallpaper4.jpg")}
           />
         </Link>
         <Descs title="Numbers" role="Data" kind="User Research" way="Code">
@@ -115,19 +127,19 @@ const IndexPage = () => (
         </Descs>
       </Container>
     </CardGroup>
-    <Fade bottom>
-      <Banner>
-        <BannerBack2 src={require('../images/3499.jpg')} />
-        <MyWayEnd
-          title="... I wanna be better"
-          text="After years of experiences, I still wasn’t satisfied with myself. When I did user researches and design work, I always followed my intuition or methods on the Internet. These fragmented knowledge, however, stopped me from seeing the higher scope. For now, I’m ready to get some professional training.  "
-        />
-      </Banner>
 
-      <Next />
-    </Fade>
+    <Banner data-aos="fade-up" data-aos-offset="-350" data-aos-duration="150">
+      <BannerBack2 src={require("../images/3499.jpg")} />
+      <MyWayEnd
+        title="... I wanna be better"
+        text="After years of experiences, I still wasn’t satisfied with myself. When I did user researches and design work, I always followed my intuition or methods on the Internet. These fragmented knowledge, however, stopped me from seeing the higher scope. For now, I’m ready to get some professional training.  "
+      />
+    </Banner>
+
+    <Next />
+
     <Footer />
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

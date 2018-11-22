@@ -21,7 +21,7 @@ library.add(
 );
 
 const Layout = ({ children, data }) => (
-  <div style={{ margin: "auto", width: "80% " }}>
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -32,7 +32,7 @@ const Layout = ({ children, data }) => (
     {children()}
   </div>
 );
-
+document.getElementsByTagName("body")[0].style.zoom = 0.85;
 Layout.propTypes = {
   children: PropTypes.func
 };

@@ -1,31 +1,26 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import {
   Container,
   BigTitle,
   Ctext,
   SmallTitle,
   High,
-  Review,
   Dates,
   Names,
   Jieshis,
-} from '../../layouts/Work-Styles'
-import User from './Dec/User'
-import Market from './Dec/Market'
+  Big
+} from "../../layouts/Work-Styles";
+import User from "./Dec/User";
+import Market from "./Dec/Market";
+import Lables from "./Dec/Lables";
+import Taolun from "./Dec/Taolun";
+import Plan from "./Dec/Plan";
 
-import Lables from './Dec/Lables'
-import Taolun from './Dec/Taolun'
-import Plan from './Dec/Plan'
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
-
-const FucDiv = styled.div`
-  max-width: 1200px;
-  padding-left: 5%;
-`
+`;
 
 const Dec = () => (
   <Container>
@@ -37,14 +32,14 @@ const Dec = () => (
         discussed this project from the beginning.
       </Ctext>
       <SmallTitle>Classified user group</SmallTitle>
-      <Market pic1={require('../../images/fenxi.png')} />
+      <Market pic1={require("../../images/fenxi.png")} />
       <Ctext>
         Combined with our Relationship basd service(RBS), we can quickly match
         newbee and experienced. Meanwhile, this platform can satisify users'
         potential needs:
       </Ctext>
       <SmallTitle>Proposed target users</SmallTitle>
-      <User pic1={require('../../images/user.png')} />
+      <User pic1={require("../../images/user.png")} />
       <Ctext>
         We <High>must have a high-quality conent pool</High> in the first stage,
         because it will trigger users interests and let the user begin to ask
@@ -56,6 +51,7 @@ const Dec = () => (
         chance to check their history.<br /> Considering everyone can be the
         newbee or the informed person, We hope users can make well-done
         profiles, only in this way, this platform can run up.<br />
+        <br />
         We also changed our name from 不惑（which aimed for knowledge
         needers）to <Names>Skillabel</Names>
         <Jieshis>aimed for skill-sharing people</Jieshis>
@@ -66,21 +62,21 @@ const Dec = () => (
         UGC platform.
       </Ctext>
       <SmallTitle>Lables</SmallTitle>
-      <Lables pic1={require('../../images/Lables.png')} />
-      <Ctext>With lables, users can do:</Ctext>
-
+      <Lables pic1={require("../../images/Lables.png")} />
       <Ctext>
+        With lables, users can do:<br />
+        <br />
         <li>For Newbees: they can find the right person and get help.</li>
+        <br />
         <li>
           For Experienceds: they can classify their skills and share their
           contents partly by labling.
         </li>
       </Ctext>
-
       <SmallTitle>Proposal</SmallTitle>
       <Taolun
-        pic1={require('../../images/taolun.jpg')}
-        pic2={require('../../images/taolun2.jpg')}
+        pic1={require("../../images/taolun.jpg")}
+        pic2={require("../../images/taolun2.jpg")}
       />
       <Ctext>
         Although we cancled video function, we still thought the best way for
@@ -88,12 +84,16 @@ const Dec = () => (
         to attract users. After discussed in detail, we made a plan for
         <High> pre-product stage</High>.
       </Ctext>
-      <Plan pic1={require('../../images/next.png')} />
+      <Plan pic1={require("../../images/next.png")} />
       <Ctext>
-        Thus,
-        我们找好12各社团的同学和本院几个数学、计算机小能手，让他们在放假的时候进行创作。
+        Thus, 12 students from different clubs and our school who are good at
+        maths and computer promised us to create something valuable in the
+        winter vocation.
+      </Ctext>
+      <Ctext>
+        <Big>We need to accumulate our content pool.</Big>
       </Ctext>
     </DecDiv>
   </Container>
-)
-export default Dec
+);
+export default Dec;

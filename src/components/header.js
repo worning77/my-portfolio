@@ -1,41 +1,41 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import './Header.css'
+import React from "react";
+import Link from "gatsby-link";
+import "./Header.css";
 
 class Header extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      hasScrolled: false,
-    }
+      hasScrolled: false
+    };
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   handleScroll = event => {
-    const scrollTop = window.pageYOffset
+    const scrollTop = window.pageYOffset;
 
     if (scrollTop > 50) {
-      this.setState({ hasScrolled: true })
+      this.setState({ hasScrolled: true });
     } else {
-      this.setState({ hasScrolled: false })
+      this.setState({ hasScrolled: false });
     }
-  }
+  };
 
   render() {
     return (
       <div
-        className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}
+        className={this.state.hasScrolled ? "Header HeaderScrolled" : "Header"}
       >
         <div className="HeaderCont">
           <div className="HeaderGroup">
             <Link
-              className={this.state.hasScrolled ? 'logo LogoScrolled' : 'logo'}
+              className={this.state.hasScrolled ? "logo LogoScrolled" : "logo"}
               to="/"
             >
-              <img src={require('../images/LOGO.png')} />
+              <img src={require("../images/LOGO.png")} />
             </Link>
             <Link className="work" to="/page-2">
               <button>Work</button>
@@ -46,8 +46,8 @@ class Header extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

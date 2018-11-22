@@ -4,7 +4,7 @@ import Headroom from "react-headroom";
 import Link from "gatsby-link";
 
 import { BackIcon } from "./icons";
-const HeadDiv = styled.div`
+const HeadDivs = styled.div`
   margin: 0 2rem;
   height: 100%;
 
@@ -13,7 +13,7 @@ const HeadDiv = styled.div`
     padding: 15px 0;
   }
 `;
-const HeadGroup = styled.div`
+const HeadGroups = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -60,10 +60,13 @@ const HeaderIn = props => (
     style={{
       background: "rgb(255,255,255)",
       boxShadow: "0px 4px 20px -11px rgba(0, 0, 0, 0.8)",
-      transition: "none"
+      webkitTransition: "all .5s ease-in-out",
+      mozTransition: "all .5s ease-in-out",
+      oTransition: "all .5s ease-in-out",
+      transition: "all .5s ease-in-out"
     }}
   >
-    <HeadDiv>
+    <HeadDivs>
       <Link
         className="work"
         style={{
@@ -76,7 +79,7 @@ const HeaderIn = props => (
       >
         <BackIcon />
       </Link>
-      <HeadGroup>
+      <HeadGroups>
         <Title>{props.Name}</Title>
         <Link style={{ margin: "0 5% 0 auto" }} to="/page-2">
           <Work>Work</Work>
@@ -84,8 +87,8 @@ const HeaderIn = props => (
         <Link style={{ margin: "0" }} to="/">
           <Home>Home</Home>
         </Link>
-      </HeadGroup>
-    </HeadDiv>
+      </HeadGroups>
+    </HeadDivs>
   </Headroom>
 );
 export default HeaderIn;

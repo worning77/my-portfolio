@@ -6,10 +6,7 @@ import {
   Ctext,
   SmallTitle,
   High,
-  Review,
-  Dates,
-  Names,
-  Jieshis
+  Dates
 } from "../../layouts/Work-Styles";
 
 import App from "./May/App";
@@ -20,18 +17,6 @@ import Mvp from "./May/Final";
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`;
-const Ad = styled.p`
-  margin: 0 0 3rem 0;
-  text-align: center;
-  font-size: 1.8rem;
-  color: rgba(225, 117, 42, 1);
-  font-weight: 350;
-  padding: 0 10%;
-`;
-const Caotu1Div = styled.div`
-  max-width: 2000px;
-  margin: 0 auto 3rem auto;
 `;
 
 const May = () => (
@@ -62,18 +47,19 @@ const May = () => (
           First, we introduced today's host. Since students had no reputations,
           it might attract someone who knew him.
         </li>
+        <br />
         <li>
           Second, we also put some examples to illistrate his ppt-design
-          ability. It might attract more potential users.(<High>
-            It was a way to imitate those students who had questions only when
-            they saw something and then got inspired
-          </High>){" "}
+          ability. It might attract more potential users.<High>
+            ( It was a way to imitate those students who had questions only when
+            they saw something and then got inspired. )
+          </High>{" "}
         </li>
       </Ctext>
       <Ctext>
         The whole activity last for 1.5h. During that, only not more than 10
-        people asked related questions after the host finished his skill
-        sharing. 远远没有达到我们预期的活跃程度。
+        people asked related questions after the host finished his
+        skill-sharing. 远远没有达到我们预期的活跃程度。
       </Ctext>
       <SmallTitle>Results of the activity and user test</SmallTitle>
       <Test pic1={require("../../images/test2.png")} />

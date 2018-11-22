@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const HeroBack = styled.div`
-  background-image: url(${require('../images/hi.png')});
+  background-image: url(${require("../images/hi.png")});
   background-repeat: no-repeat;
   z-index: -99;
   background-position-x: center;
@@ -10,7 +10,7 @@ export const HeroBack = styled.div`
   @media (max-width: 1500px) {
     background-position-y: 10%;
   }
-`
+`;
 
 export const IntroGroup1 = styled.div`
   max-width: 1400px;
@@ -30,7 +30,7 @@ export const IntroGroup1 = styled.div`
     margin: 0 1rem;
     padding: 100px 0 0 0;
   }
-`
+`;
 
 export const CardGroup = styled.div`
   margin: 2rem;
@@ -44,7 +44,7 @@ export const CardGroup = styled.div`
   @media (max-width: 415px) {
     grid-gap: 1rem;
   }
-`
+`;
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -66,7 +66,7 @@ export const Container = styled.div`
     grid-gap: 1rem;
     justify-items: stretch;
   }
-`
+`;
 
 export const CardDiv = styled.div`
   width: 24rem;
@@ -101,7 +101,7 @@ export const CardDiv = styled.div`
       box-shadow: 0 0 0;
     }
   }
-`
+`;
 export const DescGroup = styled.div`
   align-self: end;
   max-width: 800px;
@@ -118,11 +118,11 @@ export const DescGroup = styled.div`
   @media (max-width: 500px) {
     padding: 0;
   }
-`
+`;
 
 export const Banner = styled.div`
   max-width: 1200px;
-  height: 20rem;
+  height: 16rem;
   margin: 5rem auto 0 auto;
   position: relative;
   overflow: hidden;
@@ -136,13 +136,13 @@ export const Banner = styled.div`
     margin: 2rem 0 0 0;
   }
   @media (max-width: 640px) {
-    height: 16rem;
+    height: 14rem;
   }
   @media (max-width: 415px) {
     margin: 1rem auto 0 auto;
     border-radius: 0rem;
   }
-`
+`;
 export const BannerBack = styled.img`
   position: absolute;
   top: -100%;
@@ -161,12 +161,12 @@ export const BannerBack = styled.img`
     height: 170%;
     top: -20%;
   }
-`
+`;
 export const BannerBack2 = styled(BannerBack)`
   position: absolute;
   top: -80%;
   left: 0;
-  height: 290%;
+  height: 300%;
   z-index: -1;
   @media (max-width: 930px) {
     height: 245%;
@@ -188,7 +188,7 @@ export const BannerBack2 = styled(BannerBack)`
     height: 165%;
     top: -33%;
   }
-`
+`;
 export const WaveBotton = styled.div`
   position: absolute;
   width: 100%;
@@ -196,7 +196,7 @@ export const WaveBotton = styled.div`
   left: -320px;
   transform: rotate(30deg);
   z-index: 100;
-`
+`;
 export const WaveTop = styled.div`
   position: absolute;
   width: 100%;
@@ -204,7 +204,7 @@ export const WaveTop = styled.div`
   right: -320px;
   transform: rotate(210deg);
   z-index: 100;
-`
+`;
 export const MoreAbout = styled.div`
   height: 500px;
-`
+`;

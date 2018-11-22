@@ -10,7 +10,11 @@ import {
   Names,
   Jieshis,
   Dates,
-  SmallsTitle
+  SmallsTitle,
+  AdDiv,
+  Ad,
+  Concl,
+  Big
 } from "../../layouts/Work-Styles";
 import Pic1 from "./Nov/Pic";
 import Tree from "./Nov/Tree";
@@ -21,39 +25,27 @@ const NovDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
-const FucDiv = styled.div`
-  max-width: 1200px;
-  padding-left: 5%;
-`;
-const AdDiv = styled.div`
-  width: 65%;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05), 0 -1rem 2rem rgba(0, 0, 0, 0.02);
-  padding: 1% 5%;
-  margin: 0 auto 3rem auto;
-`;
-const Ad = styled.p`
-  text-align: center;
-  font-size: 1.8rem;
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.4);
-  font-weight: 350;
-`;
+
 const Small = styled.p`
   margin: 1rem 0 1rem 0;
   font-size: 1.3rem;
   padding: 0 0 0 2%;
   color: rgba(0, 0, 0, 0.5);
+  @media (max-width: 800px) {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
 `;
 
 const Qcard = styled.div`
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 5%;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1), 0 -1rem 2rem rgba(0, 0, 0, 0.05);
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2);
   margin: 0 auto 5rem auto;
+  @media (max-width: 800px) {
+    margin: 0 auto 2rem auto;
+  }
 `;
 
 const Question = styled.h3`
@@ -62,26 +54,27 @@ const Question = styled.h3`
   font-size: 1.7rem;
   font-weight: 700;
   color: rgba(239, 128, 65, 1);
+  @media (max-width: 800px) {
+    font-size: 1.2rem;
+  }
 `;
 const Thought = styled.p`
   margin: 2rem auto;
   font-size: 1.3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 `;
 const Answer = styled.p`
   margin: 0 auto 3rem auto;
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
-`;
-const Concl = styled.p`
-  margin: 0 0 3rem 0;
-  text-align: center;
-  font-size: 2rem;
-  color: rgba(239, 128, 65, 1);
-  font-weight: 500;
-  padding: 0 10%;
+  @media (max-width: 800px) {
+    font-size: 1rem;
+  }
 `;
 
 const Nov = () => (
@@ -127,9 +120,9 @@ const Nov = () => (
         </High>.
       </Ctext>
       <Pic1 pic1={require("../../images/shipin.png")} />
-      <SmallsTitle>In short video field, We found that: </SmallsTitle>{" "}
+      <SmallsTitle>In short video field, we found that: </SmallsTitle>{" "}
       <Ctext>
-        <High>None of them use video to spread knowledge.</High>
+        <High>None of them uses video to spread knowledge.</High>
       </Ctext>
       <Ctext>
         At that time, we thought "Video + knowledge" was a Blue Sea, which
@@ -211,7 +204,9 @@ const Nov = () => (
         {" "}
         It seemed that we overpursued the video function and forgot the original
         wish of creating a valuable social network.{" "}
-        <High>We had no choice but quit video function.</High>
+      </Ctext>
+      <Ctext>
+        <Big>We had no choice but quit video function.</Big>
       </Ctext>
     </NovDiv>
   </Container>

@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const FootDiv = styled.div`
   height: 6rem;
@@ -7,13 +7,13 @@ const FootDiv = styled.div`
   @media (max-width: 640px) {
     margin: 1rem 1rem 0 1rem;
   }
-`
+`;
 const FootContain = styled.div`
   max-width: 1400px;
   margin: 2rem auto;
   position: relative;
   height: 60px;
-`
+`;
 const Text = styled.h4`
   position: absolute;
   border-top-style: dotted;
@@ -24,7 +24,7 @@ const Text = styled.h4`
   margin: auto;
   font-size: 0.6rem;
   font-weight: 300;
-`
+`;
 
 const Footer = () => (
   <FootDiv>
@@ -32,10 +32,10 @@ const Footer = () => (
       <Text>
         Design&Code by me! <br />
         This is my first site built by ReactJs <br />
-        Copyright Jesse Gao 2018
+        Jesse Gao © 2018 All Rights Reserved
       </Text>
     </FootContain>
   </FootDiv>
-)
+);
 
-export default Footer
+export default Footer;

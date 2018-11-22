@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import {
   Container,
   BigTitle,
@@ -8,13 +8,14 @@ import {
   Names,
   Jieshis,
   Dates,
-} from '../../layouts/Work-Styles'
-import Member from './Team/Members'
+  Big
+} from "../../layouts/Work-Styles";
+import Member from "./Team/Members";
 
 const TeamDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+`;
 const TeamContain = styled.div`
   width: 100%;
   height: auto;
@@ -22,7 +23,10 @@ const TeamContain = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   margin: 0 0 3rem 0;
-`
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
 const Team = () => (
   <Container>
     <TeamDiv>
@@ -59,21 +63,21 @@ const Team = () => (
         We did a brief survey of "how students think about this idea" by talking
         to about 30 students in my school. Basically all of them expressed the
         willing that such a friend based knowledge-spread platform was needed,
-        which gave us a lot of confidence.{' '}
+        which gave us a lot of confidence.{" "}
       </Ctext>
       <SmallTitle>Plan α</SmallTitle>
       <Ctext>
         1. We decided to imitate Zhihu's function, and change the way of
         answering questions from typing to videoing. <br />
         2. Add a Moment Page which could show what questions that users's
-        friends asked or followed.<br />{' '}
+        friends asked or followed.<br />{" "}
       </Ctext>
       <Ctext>
-        Yes, we directly started and named us product:
+        <Big>Yes, we directly started </Big>and named us product:
         <Names>懂浩(Dong Hao)</Names>
         <Jieshis>means you are knowledgable</Jieshis>
       </Ctext>
     </TeamDiv>
   </Container>
-)
-export default Team
+);
+export default Team;

@@ -1,17 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const PicDiv = styled.div`
   position: relative;
   width: 100%;
   &:before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 80%;
   }
   overflow: hidden;
   margin: 0 0 10rem 0;
-`
+  @media (max-width: 800px) {
+    margin: 0 auto 5rem auto;
+  }
+  @media (max-width: 415px) {
+    margin: 0 auto 3rem auto;
+  }
+`;
 const Pics = styled.img`
   position: absolute;
   height: 100%;
@@ -20,10 +26,10 @@ const Pics = styled.img`
   right: 0;
   bottom: 0;
   align-self: center;
-`
+`;
 const Flow = props => (
   <PicDiv>
     <Pics src={props.pic1} />
   </PicDiv>
-)
-export default Flow
+);
+export default Flow;

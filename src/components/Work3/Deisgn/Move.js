@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const MoveDiv = styled.div`
   width: 100%;
@@ -7,22 +7,30 @@ const MoveDiv = styled.div`
   grid-template-rows: repeat(4, auto);
   margin: 0 auto 10rem auto;
   grid-gap: 5rem;
-`
+  @media (max-width: 800px) {
+    grid-gap: 3rem;
+    margin: 0 auto 5rem auto;
+  }
+  @media (max-width: 415px) {
+    grid-gap: 1rem;
+    margin: 0 auto 1rem auto;
+  }
+`;
 const Section = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-gap: 3rem;
+    grid-gap: 1rem;
   }
-`
+`;
 const PicDiv1 = styled.div`
   position: relative;
   width: 80%;
   &:before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 178%;
   }
@@ -30,16 +38,18 @@ const PicDiv1 = styled.div`
   margin: 0;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1), 0 -1rem 2rem rgba(0, 0, 0, 0.1);
   justify-self: start;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     justify-self: center;
+    width: 375px;
   }
-`
+`;
 const PicDiv2 = styled(PicDiv1)`
   justify-self: end;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     justify-self: center;
+    width: 375px;
   }
-`
+`;
 const Pics = styled.img`
   position: absolute;
   height: 100%;
@@ -48,34 +58,42 @@ const Pics = styled.img`
   right: 0;
   bottom: 0;
   align-self: center;
-`
+`;
 const Words = styled.div`
   padding-top: 10rem;
   width: 100%;
   margin: 0 auto;
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     padding-top: 0;
     text-align: center;
   }
-`
+`;
 const Words2 = styled(Words)`
-  @media (max-width: 760px) {
+  @media (max-width: 800px) {
     padding-left: 0;
     text-align: center;
     margin: 0 auto;
   }
-`
+`;
 const Title = styled.h3`
   margin: 0 auto 3rem 0;
   font-size: 1.8rem;
-`
+  @media (max-width: 800px) {
+    margin: 0 auto 1rem 0;
+    font-size: 1.2rem;
+  }
+`;
 const Content = styled.p`
   font-size: 1.3rem;
   margin: 0 auto 3rem 0;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
   line-height: 1.5;
-`
+  @media (max-width: 800px) {
+    margin: 0 auto 1rem 0;
+    font-size: 0.9rem;
+  }
+`;
 const Move = props => (
   <MoveDiv>
     <Section>
@@ -87,7 +105,7 @@ const Move = props => (
         <Content>
           Most young Chinese like bathtub, so I set this option first. Also more
           and more college students like play vedio games and computer games,
-          thus I think young couples can have more fun their room.{' '}
+          thus I think young couples can have more fun their room.{" "}
         </Content>
       </Words2>
     </Section>
@@ -132,7 +150,7 @@ const Move = props => (
           right the room the booked. Meanwhile, they can learn how to make cake
           and their favorite dish from it! The most important thing is that if
           the boy wants to give his girl a surprise, he can make it by the help
-          of our certain steward.{' '}
+          of our certain steward.{" "}
         </Content>
       </Words>
       <PicDiv2>
@@ -140,5 +158,5 @@ const Move = props => (
       </PicDiv2>
     </Section>
   </MoveDiv>
-)
-export default Move
+);
+export default Move;

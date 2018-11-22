@@ -1,17 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const PicDiv = styled.div`
   position: relative;
   width: 100%;
   &:before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 75%;
   }
   overflow: hidden;
   margin: 3rem auto 3rem auto;
-`
+  @media (max-width: 800px) {
+    margin: 1rem auto 1rem auto;
+  }
+`;
 const Pics = styled.img`
   position: absolute;
   height: 100%;
@@ -20,10 +23,10 @@ const Pics = styled.img`
   right: 0;
   bottom: 0;
   align-self: center;
-`
+`;
 const Sketch = props => (
   <PicDiv>
     <Pics src={props.pic1} />
   </PicDiv>
-)
-export default Sketch
+);
+export default Sketch;

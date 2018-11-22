@@ -1,17 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const PicDiv = styled.div`
   position: relative;
   width: 100%;
   &:before {
-    content: '';
+    content: "";
     display: block;
-    padding-top: 333%;
+    padding-top: 69.47%;
   }
   overflow: hidden;
-  margin: 0 auto 3rem auto;
-`
+  margin: 0 auto;
+`;
 const Pics = styled.img`
   position: absolute;
   height: 100%;
@@ -20,10 +20,10 @@ const Pics = styled.img`
   right: 0;
   bottom: 0;
   align-self: center;
-`
+`;
 const Usertesting = props => (
   <PicDiv>
     <Pics src={props.pic1} />
   </PicDiv>
-)
-export default Usertesting
+);
+export default Usertesting;
