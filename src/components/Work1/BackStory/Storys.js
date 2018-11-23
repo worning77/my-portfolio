@@ -75,7 +75,7 @@ const Content = styled.p`
   }
 `;
 
-const BigStart = styled.div`
+const BigStart = styled.span`
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.5);
   line-height: 0;
@@ -83,7 +83,7 @@ const BigStart = styled.div`
     font-size: 2rem;
   }
 `;
-const BigEnd = styled.div`
+const BigEnd = styled.span`
   font-size: 3rem;
   align-self: flex-end;
   color: rgba(0, 0, 0, 0.5);

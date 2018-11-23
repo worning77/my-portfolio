@@ -43,6 +43,7 @@ const Work = styled.button`
 const Home = styled(Work)``;
 const Title = styled.h2`
   margin: 0 0 0 7%;
+
   font-size: 30px;
   font-weight: 600;
   @media (max-width: 640px) {
@@ -60,10 +61,8 @@ const HeaderIn = props => (
     style={{
       background: "rgb(255,255,255)",
       boxShadow: "0px 4px 20px -11px rgba(0, 0, 0, 0.8)",
-      webkitTransition: "all .5s ease-in-out",
-      mozTransition: "all .5s ease-in-out",
-      oTransition: "all .5s ease-in-out",
-      transition: "all .5s ease-in-out"
+      transition: "all .5s ease-in-out",
+      height: "79px"
     }}
   >
     <HeadDivs>
@@ -79,6 +78,7 @@ const HeaderIn = props => (
       >
         <BackIcon />
       </Link>
+
       <HeadGroups>
         <Title>{props.Name}</Title>
         <Link style={{ margin: "0 5% 0 auto" }} to="/page-2">

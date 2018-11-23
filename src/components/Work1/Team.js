@@ -73,8 +73,10 @@ const Team = () => (
         friends asked or followed.<br />{" "}
       </Ctext>
       <Ctext>
-        <Big>Yes, we directly started </Big>and named us product:
+        <Big>Yes, we directly started </Big>and named us product:<br />
+        <br />
         <Names>懂浩(Dong Hao)</Names>
+        <br />
         <Jieshis>means you are knowledgable</Jieshis>
       </Ctext>
     </TeamDiv>

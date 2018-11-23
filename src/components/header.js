@@ -8,12 +8,8 @@ class Header extends React.Component {
     this.state = {
       hasScrolled: false
     };
+    this.handleScroll = this.handleScroll.bind(this);
   }
-
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
   handleScroll = event => {
     const scrollTop = window.pageYOffset;
 
@@ -23,6 +19,12 @@ class Header extends React.Component {
       this.setState({ hasScrolled: false });
     }
   };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
 
   render() {
     return (

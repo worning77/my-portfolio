@@ -50,7 +50,7 @@ export const Text = styled.p`
   }
 `;
 
-export const Names = styled.h4`
+export const Names = styled.span`
   text-align: center;
   margin: 3rem auto 0 auto;
   font-size: 1.6rem;
@@ -60,7 +60,7 @@ export const Names = styled.h4`
     margin: 1rem auto 0 auto;
   }
 `;
-export const Jieshis = styled.p`
+export const Jieshis = styled.span`
   text-align: center;
   margin: 1rem auto 0 auto;
   font-size: 1.3rem;

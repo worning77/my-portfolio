@@ -29,6 +29,7 @@ const Layout = ({ children, data }) => (
         { name: "keywords", content: data.site.siteMetadata.keywords }
       ]}
     />
+
     {children()}
   </div>
 );

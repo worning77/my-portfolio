@@ -44,7 +44,7 @@ const Title = styled.h1`
     font-size: 1.5rem;
   }
 `;
-const Sum = styled.p`
+const Contain = styled.div`
   color: white;
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -63,14 +63,17 @@ const Sum = styled.p`
     margin: 0.5rem 1rem 0 1rem;
   }
 `;
+const Ps = styled.p`
+  margin: 0;
+`;
 
 const MyWayEnd = props => (
   <Mask>
     <Title>{props.title}</Title>
-    <Sum>
+    <Contain>
       <div />
-      {props.text}
-    </Sum>
+      <Ps>{props.text}</Ps>
+    </Contain>
   </Mask>
 );
 

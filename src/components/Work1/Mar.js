@@ -63,8 +63,9 @@ const Mar = () => (
         <br />
         3. Labeled: It seems Chinese do not like "Label" themselves. So, we
         changes our name:
-        <Differ pic1={require("../../images/Differ.png")} />
       </Ctext>
+      <Differ pic1={require("../../images/Differ.png")} />
+
       <Ctext>
         {" "}
         为了让用户能快速添加好友链，我们将首页设为卡片系统推荐。并在之后会鼓励已经认识的用户添加好友。我快速将原型图做了出来,

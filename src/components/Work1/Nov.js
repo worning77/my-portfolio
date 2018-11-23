@@ -26,10 +26,10 @@ const NovDiv = styled.div`
   margin: 0 auto;
 `;
 
-const Small = styled.p`
+const Small = styled.span`
   margin: 1rem 0 1rem 0;
   font-size: 1.3rem;
-  padding: 0 0 0 2%;
+
   color: rgba(0, 0, 0, 0.5);
   @media (max-width: 800px) {
     font-size: 1rem;
@@ -100,20 +100,24 @@ const Nov = () => (
       <SmallsTitle>In skill-sharing field, we found that:</SmallsTitle>
       <Ctext>
         1. Most skills or views sharing platforms{" "}
-        <High>focus on some certain fields</High>.
+        <High>focus on some certain fields</High>.<br />
         <Small>
           Zaihang: an one-on-one Consulting platform specific in the Internet
           industry.<br />
           Xuejiebang: a platform which helps future college students acknowledge
           how to choose dream school and what college-time like.
         </Small>
-        2. Basically everyone has a method to <High>motivate users</High>.
+        <br />
+        2. Basically everyone has a method to <High>motivate users</High>.<br />
         <Small>
           Baidu Zhidao and Xuejiebang pay for those people who answer questions.<br />
           Skillbank encourages users to exchange their mastered skills.
         </Small>
+        <br />
         3. <High>None of those has the video fucntion.</High>
+        <br />
         <Small>Except Users in Zaihang will meet and talk in reallife.</Small>
+        <br />
         4. The target users of every platform are{" "}
         <High>
           highly related to the main toptics they made at the beginning stage
@@ -142,7 +146,10 @@ const Nov = () => (
         We decided to create a <High>WeChat Official Account</High>, by posting
         the interviews of professors and some studying-tricks videos made top
         students, we thought we could attract students in my university to keep
-        following us. We also changed our name: <Names>不惑(Bu Huo)</Names>
+        following us. We also changed our name: <br />
+        <br />
+        <Names>不惑(Bu Huo)</Names>
+        <br />
         <Jieshis>means not confused anymore </Jieshis>
       </Ctext>
       <SmallTitle>Some issues in videoing progress</SmallTitle>

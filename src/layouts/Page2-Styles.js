@@ -169,7 +169,7 @@ export const BannerBack2 = styled(BannerBack)`
   height: 300%;
   z-index: -1;
   @media (max-width: 930px) {
-    height: 245%;
+    height: 280%;
     top: -80%;
   }
   @media (max-width: 640px) {
