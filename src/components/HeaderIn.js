@@ -10,6 +10,7 @@ const HeadDivs = styled.div`
 
   padding: 20px 0;
   @media (max-width: 640px) {
+    height: 50%;
     padding: 15px 0;
   }
 `;
@@ -33,62 +34,116 @@ const Work = styled.button`
   color: rgba(0, 0, 0, 0.7);
   font-weight: 600;
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  &:hover {
+    background: rgb(0, 206, 172);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
   @media (max-width: 640px) {
     font-size: 18px;
+    &:hover {
+      transform: translateY(-1px);
+    }
   }
   @media (max-width: 415px) {
     font-size: 16px;
   }
 `;
-const Home = styled(Work)``;
-const Title = styled.h2`
-  margin: 0 0 0 7%;
+const Home = styled(Work)`
+  &:hover {
+    background: rgb(236, 89, 81);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+`;
 
+const ButtonTop = styled.button`
+  margin: 0 0 0 7%;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(92, 227, 210, 1) 20%,
+      rgba(227, 58, 119, 1) 80%,
+      rgba(251, 144, 17, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 500px) {
+    margin: 0 0 0 2%;
+  }
+`;
+
+const Title = styled.h2`
+  margin: 0;
   font-size: 30px;
   font-weight: 600;
+
   @media (max-width: 640px) {
-    font-size: 18px;
+    font-size: 22px;
   }
   @media (max-width: 500px) {
     margin: 0;
   }
   @media (max-width: 415px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
-const HeaderIn = props => (
-  <Headroom
-    style={{
-      background: "rgb(255,255,255)",
-      boxShadow: "0px 4px 20px -11px rgba(0, 0, 0, 0.8)",
-      transition: "all .5s ease-in-out",
-      height: "79px"
-    }}
-  >
-    <HeadDivs>
-      <Link
-        className="work"
-        style={{
-          position: "absolute",
-          left: "5%",
-          top: "35%"
-        }}
-        to="/page-2"
-        replace
-      >
-        <BackIcon />
-      </Link>
 
-      <HeadGroups>
-        <Title>{props.Name}</Title>
-        <Link style={{ margin: "0 5% 0 auto" }} to="/page-2">
-          <Work>Work</Work>
-        </Link>
-        <Link style={{ margin: "0" }} to="/">
-          <Home>Home</Home>
-        </Link>
-      </HeadGroups>
-    </HeadDivs>
-  </Headroom>
-);
+class HeaderIn extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  backToTop() {
+    document.documentElement.scrollTop = 0;
+  }
+
+  render() {
+    return (
+      <Headroom
+        style={{
+          background: "rgb(255,255,255)",
+          boxShadow: "0px 4px 20px -11px rgba(0, 0, 0, 0.8)",
+          transition: "all .5s ease-in-out"
+        }}
+      >
+        <HeadDivs>
+          <Link
+            className="work"
+            style={{
+              position: "absolute",
+              left: "5%",
+              top: "30%"
+            }}
+            to="/page-2"
+            replace
+          >
+            <BackIcon />
+          </Link>
+
+          <HeadGroups>
+            <ButtonTop onClick={e => this.backToTop(e)}>
+              <Title>{this.props.Name}</Title>
+            </ButtonTop>
+
+            <Link style={{ margin: "0 5% 0 auto" }} to="/page-2">
+              <Work>Work</Work>
+            </Link>
+            <Link style={{ margin: "0" }} to="/">
+              <Home>Home</Home>
+            </Link>
+          </HeadGroups>
+        </HeadDivs>
+      </Headroom>
+    );
+  }
+}
+
 export default HeaderIn;

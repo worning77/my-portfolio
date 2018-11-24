@@ -63,8 +63,14 @@
   transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.Header button:hover {
+.work button:hover {
   background: rgb(0, 206, 172);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+.home button:hover {
+  background: rgb(236, 89, 81);
   color: white;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transform: translateY(-3px);

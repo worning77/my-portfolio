@@ -22,6 +22,7 @@
     "npm": "^6.4.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-atv-img": "^0.1.1",
+    "react-back-to-top-button": "0.0.14",
     "react-emotion": "^9.2.10",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
