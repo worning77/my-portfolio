@@ -14,7 +14,7 @@ const OverviewDiv = styled.div`
   padding-top: 120px;
   text-align: center;
   @media (max-width: 1600px) {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 `;
 

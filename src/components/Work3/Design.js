@@ -19,6 +19,9 @@ import Usertesting5 from "./Deisgn/Testing5";
 const DesignDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const FunDiv = styled.div`
@@ -26,9 +29,12 @@ const FunDiv = styled.div`
   margin: 0 auto;
 `;
 const SmallTil = styled(SmallTitle)`
-  margin: 0 0 10rem auto;
-  @media (max-width: 800px) {
+  margin: 0 0 8rem auto;
+  @media (max-width: 1300px) {
     margin: 0 auto 5rem auto;
+  }
+  @media (max-width: 800px) {
+    margin: 0 auto 3rem auto;
   }
   @media (max-width: 415px) {
     margin: 0 auto 1rem auto;

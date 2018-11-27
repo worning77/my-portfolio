@@ -13,6 +13,9 @@ import Team from "./June/Photo";
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 const Ads = styled.h2`
   margin: 0 0 10rem 0;

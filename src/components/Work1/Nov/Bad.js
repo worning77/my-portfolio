@@ -8,6 +8,8 @@ const BadDiv = styled.div`
   margin: 2rem 0 3rem 0;
   @media (max-width: 800px) {
     margin: 0 auto 1rem auto;
+  }
+  @media (max-width: 760px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
@@ -24,7 +26,10 @@ const PDiv = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 -2px 4px rgba(0, 0, 0, 0.08);
   margin: 2rem auto 2rem 0;
   overflow: hidden;
-  @media (max-width: 800px) {
+  @media (max-width: 1300px) {
+    margin: 1rem auto 1rem 0;
+  }
+  @media (max-width: 760px) {
     width: 60%;
     margin: 1rem auto;
   }
@@ -57,6 +62,9 @@ const Title = styled.h2`
   font-size: 1.6rem;
   margin: 2rem auto;
   text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 1.3rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.1rem;
     margin: 1rem auto;
@@ -65,6 +73,9 @@ const Title = styled.h2`
 const Text1 = styled.p`
   font-size: 1.2rem;
   margin: 0 5% 2rem 5%;
+  @media (max-width: 1300px) {
+    font-size: 1rem;
+  }
   @media (max-width: 800px) {
     font-size: 0.9rem;
     margin: 0 5% 1rem 5%;

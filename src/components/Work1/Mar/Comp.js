@@ -10,9 +10,9 @@ const PicDiv = styled.div`
     padding-top: 125%;
   }
   overflow: hidden;
-  margin: 3rem 0;
+  margin: 0 0 3rem 0;
   @media (max-width: 800px) {
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
   }
 `;
 const Pics = styled.img`

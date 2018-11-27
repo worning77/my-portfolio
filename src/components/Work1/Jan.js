@@ -12,10 +12,14 @@ import {
 } from "../../layouts/Work-Styles";
 import Shuju from "./Jan/shuju";
 import Wenzhang from "./Jan/Wenzhang";
+import Conclusion from "./Conclusion";
 
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Jan = () => (
@@ -53,18 +57,17 @@ const Jan = () => (
         However, the whole process of creating this artical was time consuming.
         Even for me, a man who likes sharing my experience, I wanted to quit.
       </Ctext>
-      <Concl>
-        We overestimated students' ability of sharing high-quality stuff！
-      </Concl>
+      <Conclusion
+        back={require("../../images/gantan.png")}
+        question=" We overestimated students' ability of sharing high-quality stuff！"
+      />
       <Ctext>
         Since we were senior students, some of my teammates decided to prepare
         their future: seeking jobs, and preparing for futher study. There was
         only one developer left in our team.<br /> What's worse, those students
         who we connected before failed to keep their promise. Thus, our
-        preparation work 1 became impossible.
-      </Ctext>
-      <Ctext>
-        <Big>What if we delate the contents pool?</Big>
+        preparation work 1 became impossible.<br />
+        <br /> <Big>What if we delate the contents pool?</Big>
       </Ctext>
     </DecDiv>
   </Container>

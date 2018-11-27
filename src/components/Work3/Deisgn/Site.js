@@ -11,6 +11,9 @@ const PicDiv = styled.div`
   }
   overflow: hidden;
   margin: 3rem auto 3rem auto;
+  @media (max-width: 1300px) {
+    width: 60%;
+  }
   @media (max-width: 800px) {
     margin: 1rem auto 1rem auto;
   }

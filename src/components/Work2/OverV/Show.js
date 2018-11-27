@@ -9,6 +9,9 @@ const ShowDiv = styled.div`
   grid-template-columns: 2fr 1fr;
   grid-gap: 5rem;
   margin: 0 auto 10rem auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
   @media (max-width: 1100px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -34,6 +37,9 @@ const Title = styled.h2`
   color: rgba(0, 0, 0, 0.8);
   margin: 0 auto 3rem 0;
   text-align: left;
+  @media (max-width: 1300px) {
+    font-size: 2.5rem;
+  }
   @media (max-width: 800px) {
     font-size: 2rem;
     margin: 0 auto 1rem 0;
@@ -44,6 +50,9 @@ const Subtitle = styled.h2`
   color: rgba(0, 0, 0, 0.8);
   margin: 0;
   text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 1.8rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.5rem;
   }

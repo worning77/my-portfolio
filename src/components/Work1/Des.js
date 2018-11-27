@@ -20,6 +20,9 @@ import Plan from "./Dec/Plan";
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Dec = () => (
@@ -52,8 +55,10 @@ const Dec = () => (
         newbee or the informed person, We hope users can make well-done
         profiles, only in this way, this platform can run up.<br />
         <br />
-        We also changed our name from 不惑（which aimed for knowledge
-        needers）to <Names>Skillabel</Names>
+        We also changed our name from <Names>不惑</Names>（which aimed for
+        knowledge needers）to<br />
+        <br /> <Names>Skillabel</Names>
+        <br />
         <Jieshis>aimed for skill-sharing people</Jieshis>
       </Ctext>
       <Ctext>
@@ -88,10 +93,8 @@ const Dec = () => (
       <Ctext>
         Thus, 12 students from different clubs and our school who are good at
         maths and computer promised us to create something valuable in the
-        winter vocation.
-      </Ctext>
-      <Ctext>
-        <Big>We need to accumulate our content pool.</Big>
+        winter vocation.<br />
+        <br /> <Big>We need to accumulate our content pool.</Big>
       </Ctext>
     </DecDiv>
   </Container>

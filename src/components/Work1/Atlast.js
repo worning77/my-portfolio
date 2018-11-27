@@ -5,6 +5,9 @@ import { Container, BigTitle, Ctext } from "../../layouts/Work-Styles";
 const DecDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Last = () => (

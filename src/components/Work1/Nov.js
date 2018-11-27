@@ -13,24 +13,30 @@ import {
   SmallsTitle,
   AdDiv,
   Ad,
-  Concl,
   Big
 } from "../../layouts/Work-Styles";
+
 import Pic1 from "./Nov/Pic";
 import Tree from "./Nov/Tree";
 
 import Bad from "./Nov/Bad";
+import Conclusion from "./Conclusion";
 
 const NovDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Small = styled.span`
   margin: 1rem 0 1rem 0;
   font-size: 1.3rem;
-
   color: rgba(0, 0, 0, 0.5);
+  @media (max-width: 1300px) {
+    font-size: 1.1rem;
+  }
   @media (max-width: 800px) {
     font-size: 1rem;
     margin: 0.5rem 0 0.5rem 0;
@@ -43,6 +49,9 @@ const Qcard = styled.div`
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1), 0 -1rem 2rem rgba(0, 0, 0, 0.05);
   margin: 0 auto 5rem auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
   @media (max-width: 800px) {
     margin: 0 auto 2rem auto;
   }
@@ -54,6 +63,9 @@ const Question = styled.h3`
   font-size: 1.7rem;
   font-weight: 700;
   color: rgba(239, 128, 65, 1);
+  @media (max-width: 1300px) {
+    font-size: 1.5rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.2rem;
   }
@@ -63,8 +75,9 @@ const Thought = styled.p`
   font-size: 1.3rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
-  @media (max-width: 800px) {
+  @media (max-width: 1300px) {
     font-size: 1rem;
+    margin: 1rem auto;
   }
 `;
 const Answer = styled.p`
@@ -72,8 +85,12 @@ const Answer = styled.p`
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
+  @media (max-width: 1300px) {
+    font-size: 1.2rem;
+  }
   @media (max-width: 800px) {
     font-size: 1rem;
+    margin: 0 auto 1rem auto;
   }
 `;
 
@@ -136,8 +153,8 @@ const Nov = () => (
         which were some difficult subjects, like Advanced Mathematics.
         Meanwhile, we known that Economics and some relevant subjects were hot
         majors in my university. We tried to talk to some top students in every
-        school, hoping they could make videos of those subjects. Next, we made a{" "}
-        <High>Topic Tree</High>.{" "}
+        school, hoping they could make videos of those subjects.{" "}
+        <Big>Next, we made a Topic Tree.</Big>{" "}
       </Ctext>
       <Tree pic1={require("../../images/Tree.png")} />
       <SmallTitle>New plan</SmallTitle>
@@ -160,10 +177,11 @@ const Nov = () => (
         text2="When we let other students watch this 30min-long video. At first they had interests, but they felt tired gradually."
         photo={require("../../images/fankui.png")}
       />
-      <Concl>
-        We underestimated the difficulty of making a knowledge-spread video in
-        most cases !{" "}
-      </Concl>
+      <Conclusion
+        back={require("../../images/gantan.png")}
+        question="We underestimated the difficulty of making a knowledge-spread video in
+        most cases!"
+      />
       <Ctext>
         We never foresaw such situiations before. And these difficulies made us
         clam down. After discussed with several professional product managers in
@@ -210,9 +228,8 @@ const Nov = () => (
       <Ctext>
         {" "}
         It seemed that we overpursued the video function and forgot the original
-        wish of creating a valuable social network.{" "}
-      </Ctext>
-      <Ctext>
+        wish of creating a valuable social network.<br />
+        <br />
         <Big>We had no choice but quit video function.</Big>
       </Ctext>
     </NovDiv>

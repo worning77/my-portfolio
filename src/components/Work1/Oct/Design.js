@@ -32,11 +32,15 @@ const Title = styled.h1`
   margin: 1rem 0 2rem 0;
   color: rgba(239, 128, 65, 1);
   text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 0;
+  }
   @media (max-width: 800px) {
     font-size: 1rem;
   }
-  @media (max-width: 640px) {
-    margin: 1rem 0 1rem 0;
+  @media (max-width: 7000px) {
+    margin: 1rem 0 0.5rem 0;
   }
 `;
 const Content = styled.p`
@@ -45,7 +49,9 @@ const Content = styled.p`
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.5;
   text-align: center;
-
+  @media (max-width: 1300px) {
+    font-size: 1rem;
+  }
   @media (max-width: 800px) {
     font-size: 0.9rem;
   }

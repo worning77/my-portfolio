@@ -16,6 +16,9 @@ import App4 from "./BackG/App";
 const BackDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 const Caotu1Div = styled.div`
   max-width: 1500px;

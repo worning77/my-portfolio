@@ -7,7 +7,6 @@ import { BackIcon } from "./icons";
 const HeadDivs = styled.div`
   margin: 0 2rem;
   height: 100%;
-
   padding: 20px 0;
   @media (max-width: 640px) {
     height: 50%;
@@ -40,6 +39,7 @@ const Work = styled.button`
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     transform: translateY(-3px);
   }
+
   @media (max-width: 640px) {
     font-size: 18px;
     &:hover {
@@ -85,7 +85,9 @@ const Title = styled.h2`
   margin: 0;
   font-size: 30px;
   font-weight: 600;
-
+  @media (max-width: 1300px) {
+    font-size: 26px;
+  }
   @media (max-width: 640px) {
     font-size: 22px;
   }
@@ -119,8 +121,10 @@ class HeaderIn extends React.Component {
             className="work"
             style={{
               position: "absolute",
-              left: "5%",
-              top: "30%"
+              left: "3%",
+              top: "30%",
+              height: "30px",
+              width: "30px"
             }}
             to="/page-2"
             replace

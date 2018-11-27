@@ -10,6 +10,9 @@ import {
 const ReflDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 const Ctext1 = styled(Ctext)`
   margin: 0 auto 10rem auto;

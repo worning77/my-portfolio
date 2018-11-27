@@ -78,6 +78,10 @@ const Words2 = styled(Words)`
 const Title = styled.h3`
   margin: 0 auto 3rem 0;
   font-size: 1.8rem;
+  @media (max-width: 1300px) {
+    margin: 0 auto 2rem 0;
+    font-size: 1.5rem;
+  }
   @media (max-width: 800px) {
     margin: 0 auto 1rem 0;
     font-size: 1.2rem;
@@ -89,6 +93,10 @@ const Content = styled.p`
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
   line-height: 1.5;
+  @media (max-width: 1300px) {
+    margin: 0 auto 2rem 0;
+    font-size: 1.2rem;
+  }
   @media (max-width: 800px) {
     margin: 0 auto 1rem 0;
     font-size: 0.9rem;

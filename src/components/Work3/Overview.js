@@ -6,6 +6,9 @@ const OverviewDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 const PicDiv = styled.div`
   position: relative;

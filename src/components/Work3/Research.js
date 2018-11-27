@@ -14,11 +14,17 @@ import Scenario from "./Reaserch/Scenario";
 const ResearchDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Ad = styled.p`
   text-align: center;
   font-size: 1.8rem;
+  @media (max-width: 1300px) {
+    font-size: 1.5rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.1rem;
   }

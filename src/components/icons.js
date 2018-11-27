@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import { Link } from "gatsby-link";
 
 const IconButton = styled.button`
   display: block;
@@ -87,12 +88,13 @@ const Warp3 = styled(Warp1)`
 `;
 const Back = styled.div`
   color: black;
-  height: 40px;
-  width: 40px;
   font-size: 1rem;
+  width: 32px;
+  height: 32px;
+  @media (max-width: 1300px) {
+    font-size: 0.9rem;
+  }
   @media (max-width: 640px) {
-    height: 30px;
-    width: 30px;
     font-size: 0.8rem;
   }
   @media (max-width: 500px) {

@@ -5,6 +5,9 @@ const Title = styled.h3`
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
   margin: 1rem auto;
+  @media (max-width: 1300px) {
+    font-size: 1.3rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.1rem;
   }
@@ -16,7 +19,7 @@ const Name = styled.h4`
   margin: 0.5rem auto;
   font-weight: 300;
   text-align: center;
-  @media (max-width: 800px) {
+  @media (max-width: 1300px) {
     font-size: 0.9rem;
   }
 `;
@@ -26,6 +29,9 @@ const Did = styled.p`
   color: rgba(0, 0, 0, 0.6);
   margin: 0.5rem auto;
   text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 1.1rem;
+  }
   @media (max-width: 800px) {
     font-size: 1rem;
   }

@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-
+import {
+  QDiv,
+  QCard,
+  Qmask,
+  QuesDiv,
+  Quest
+} from "../../../layouts/Work-Styles";
 const SubT = styled.h4`
   font-size: 1.3rem;
   margin: 0;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 1rem;
+  }
   @media (max-width: 800px) {
     font-size: 0.9rem;
   }
@@ -15,6 +24,9 @@ const Title = styled.h1`
   margin: 0 0 2rem 0;
   color: rgba(0, 0, 0, 0.7);
   text-align: center;
+  @media (max-width: 1300px) {
+    font-size: 1.6rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.3rem;
     margin: 0 0 1rem 0;
@@ -26,6 +38,9 @@ const Title = styled.h1`
 const CardDiv = styled.div`
   max-width: 1000px;
   margin: 3rem auto;
+  @media (max-width: 1300px) {
+    max-width: 800px;
+  }
   @media (max-width: 640px) {
     margin: 1rem auto;
   }
@@ -67,8 +82,11 @@ const Content = styled.p`
   line-height: 1.5;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1300px) {
+    font-size: 1.2rem;
+  }
   @media (max-width: 800px) {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   @media (max-width: 640px) {
     font-size: 0.9rem;
@@ -79,6 +97,9 @@ const BigStart = styled.span`
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.5);
   line-height: 0;
+  @media (max-width: 1300px) {
+    font-size: 2.5rem;
+  }
   @media (max-width: 800px) {
     font-size: 2rem;
   }
@@ -88,58 +109,11 @@ const BigEnd = styled.span`
   align-self: flex-end;
   color: rgba(0, 0, 0, 0.5);
   line-height: 0;
+  @media (max-width: 1300px) {
+    font-size: 2.5rem;
+  }
   @media (max-width: 800px) {
     font-size: 2rem;
-  }
-`;
-const QDiv = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-`;
-const QCard = styled.div`
-  position: relative;
-  width: 15%;
-  &:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  }
-  border-radius: 1rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05), 0 -1rem 2rem rgba(0, 0, 0, 0.02);
-  margin: 0;
-  overflow: hidden;
-  @media (max-width: 800px) {
-    width: 10%;
-  }
-`;
-const Qmask = styled.div`
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(${props => props.image});
-  background-size: 100%;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  opacity: 0.8;
-`;
-const QuesDiv = styled.div`
-  width: 85%;
-  padding: 0 2% 0 5%;
-`;
-const Quest = styled.p`
-  font-size: 2rem;
-  font-weight: 500;
-  color: rgba(239, 128, 65, 1);
-  margin: 1%;
-  @media (max-width: 800px) {
-    font-size: 1.5rem;
-  }
-  @media (max-width: 640px) {
-    font-size: 1rem;
   }
 `;
 

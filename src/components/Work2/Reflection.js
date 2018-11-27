@@ -1,14 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, BigTitle, Ctext, High2 } from '../../layouts/Work-Styles'
+import React from "react";
+import styled from "styled-components";
+import { Container, BigTitle, Ctext, High2 } from "../../layouts/Work-Styles";
 
 const ReflectionDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
+`;
 const BigsTitle = styled(BigTitle)`
   margin: 10rem auto;
-`
+`;
 const Reflection = () => (
   <Container>
     <ReflectionDiv>
@@ -33,5 +36,5 @@ const Reflection = () => (
       </Ctext>
     </ReflectionDiv>
   </Container>
-)
-export default Reflection
+);
+export default Reflection;

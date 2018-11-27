@@ -12,6 +12,9 @@ import {
 const BackgroundDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Name = styled.h2`
@@ -19,6 +22,9 @@ const Name = styled.h2`
   text-align: center;
   color: rgba(0, 0, 0, 1);
   margin: 0;
+  @media (max-width: 1300px) {
+    font-size: 1.5rem;
+  }
   @media (max-width: 800px) {
     font-size: 1.3rem;
   }
@@ -28,6 +34,9 @@ const Desc = styled.p`
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   margin: 0;
+  @media (max-width: 1300px) {
+    font-size: 1rem;
+  }
   @media (max-width: 800px) {
     font-size: 0.9rem;
   }
@@ -50,7 +59,7 @@ const Background = () => (
         There was no place to explore, to find something beneficial for our
         expansion of interests and fun facts of lives. I found that our daily
         life was boring, which pushed me to think about what’s going on. Based
-        on something real experience, <Big>I got a crazy idea</Big>.
+        on some real experience, <Big>I got a crazy idea</Big>.
       </Ctext>
       <Dates>Chapter 0</Dates>
       <BigTitle>The Idea</BigTitle>

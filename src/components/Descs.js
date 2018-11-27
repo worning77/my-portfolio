@@ -1,21 +1,24 @@
-import React from 'react'
+import React from "react";
 
-import { DescGroup } from '../layouts/Page2-Styles'
-import styled from 'styled-components'
-import { Role, Kind, Way } from './icons'
+import { DescGroup } from "../layouts/Page2-Styles";
+import styled from "styled-components";
+import { Role, Kind, Way } from "./icons";
 
 const Title = styled.h3`
   font-size: 1.7rem;
   font-weight: 700;
   margin: 0;
   color: rgba(0, 0, 0, 0.7);
+  @media (max-width: 1300px) {
+    font-size: 1.5rem;
+  }
   @media (max-width: 1040px) {
     margin: 0;
   }
   @media (max-width: 1000px) {
     display: none;
   }
-`
+`;
 
 const Lables = styled.div`
   display: flex;
@@ -27,7 +30,7 @@ const Lables = styled.div`
   @media (max-width: 415px) {
     justify-content: flex-start;
   }
-`
+`;
 const LableGroupRole = styled.div`
   margin: 0 1rem 0 0;
   display: grid;
@@ -43,7 +46,7 @@ const LableGroupRole = styled.div`
       rgba(16, 103, 109, 0.5) 100%
     );
   }
-`
+`;
 const LableGroupKind = styled.div`
   margin: 0 1rem 0 0;
   display: grid;
@@ -59,7 +62,7 @@ const LableGroupKind = styled.div`
       rgba(233, 175, 74, 0.5) 100%
     );
   }
-`
+`;
 const LableGroupWay = styled.div`
   margin: 0 1rem 0 0;
   display: grid;
@@ -75,7 +78,7 @@ const LableGroupWay = styled.div`
       rgba(125, 57, 159, 0.5) 100%
     );
   }
-`
+`;
 const Lable = styled.h4`
   margin: 1rem 0 0 0;
   font-size: 1.2rem;
@@ -91,7 +94,7 @@ const Lable = styled.h4`
     font-size: 0.8rem;
     margin: 0;
   }
-`
+`;
 
 const Desc = props => (
   <DescGroup>
@@ -112,6 +115,6 @@ const Desc = props => (
       </LableGroupWay>
     </Lables>
   </DescGroup>
-)
+);
 
-export default Desc
+export default Desc;

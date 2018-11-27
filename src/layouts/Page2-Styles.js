@@ -7,8 +7,8 @@ export const HeroBack = styled.div`
   background-position-x: center;
   background-position-y: 20%;
   background-width: 600px;
-  @media (max-width: 1500px) {
-    background-position-y: 10%;
+  @media (max-width: 1300px) {
+    background-position-y: 8%;
   }
 `;
 
@@ -18,11 +18,9 @@ export const IntroGroup1 = styled.div`
   margin: 0 auto;
 
   @media (max-width: 1600px) {
-    padding: 300px 0 0 0;
+    padding: 260px 0 0 0;
   }
-  @media (max-width: 1160px) {
-    margin: 0 0 0 5rem;
-  }
+
   @media (max-width: 1040px) {
     margin: 0 5rem;
   }
@@ -53,6 +51,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(2, auto);
   grid-gap: 3rem;
   justify-items: stretch;
+
   @media (max-width: 1000px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);

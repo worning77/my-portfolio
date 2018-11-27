@@ -1,16 +1,19 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Container, Ctext, BigTitle, High2 } from '../../layouts/Work-Styles'
-import Rela from './Before/Rela'
-import Home1 from './Before/Home1'
+import React from "react";
+import styled from "styled-components";
+import { Container, Ctext, BigTitle, High2 } from "../../layouts/Work-Styles";
+import Rela from "./Before/Rela";
+import Home1 from "./Before/Home1";
 
 const BeforeDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
+`;
 const Relas = styled.span`
   color: rgba(75, 186, 188, 1);
-`
+`;
 const Before = () => (
   <Container>
     <BeforeDiv>
@@ -42,21 +45,21 @@ const Before = () => (
       </Ctext>
       <Ctext>
         Inorder to address those mentioned issues as well as to understand this
-        market better, I experienced our competitive product ——{' '}
+        market better, I experienced our competitive product ——{" "}
         <Relas>
           Rela, a lesbian social App made by a professional design group
         </Relas>.
       </Ctext>
-      <Rela pic1={require('../../images/Rela.png')} />
+      <Rela pic1={require("../../images/Rela.png")} />
       <Ctext>
         So, I changed all the toasts and hints on our App and marked default
         pages we acturally needed by referring to Rela.<br /> Among all those
-        issues, <High2>the strangest one</High2> was the{' '}
+        issues, <High2>the strangest one</High2> was the{" "}
         <High2>style and logic of Me page</High2>. It can't be changed
         successfully only by designer or marketing people.
       </Ctext>
-      <Home1 pic1={require('../../images/home1.png')} />
+      <Home1 pic1={require("../../images/home1.png")} />
     </BeforeDiv>
   </Container>
-)
-export default Before
+);
+export default Before;

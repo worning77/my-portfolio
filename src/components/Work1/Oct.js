@@ -6,7 +6,6 @@ import {
   Ctext,
   SmallTitle,
   High,
-  Review,
   Dates
 } from "../../layouts/Work-Styles";
 
@@ -14,9 +13,13 @@ import Pic1 from "./Oct/Pic";
 import JPic from "./Oct/JPic";
 import Design from "./Oct/Design";
 import Test from "./Oct/Test";
+
 const OctDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 const Caotu1Div = styled.div`
   max-width: 1500px;
@@ -29,7 +32,7 @@ const Caotu1Div = styled.div`
   }
 `;
 const Contain = styled.div`
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto 5rem auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
