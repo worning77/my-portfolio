@@ -1,17 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  Container,
-  BigTitle,
-  SmallTitle,
-  Ctext
-} from "../../layouts/Work-Styles";
+import { Container, BigTitle, Grey, Ctext } from "../../layouts/Work-Styles";
 import IntroP from "./Intro/IntroP";
 import Dissteps from "./Intro/Dissteps";
 
 const IntroDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
 `;
 
 const Introduction = () => (
@@ -31,9 +29,11 @@ const Introduction = () => (
       </Ctext>
       <Dissteps pic1={require("../../images/dissteps.png")} />
       <Ctext>
-        During the year of working, I've done two different projects. One is to
-        increase the efficiency in step 6, the other is redesign the existing
-        App we used in the step 1 and 2.
+        Since all the steps above are necessary for checking-accounts process, (
+        in case of any one of transport companies and construction sits
+        cheating, we might loss a lot ). During Oct.2017 to Mar.2018, I helped
+        increase the efficiency in <Grey>step 6,</Grey> which was highly related
+        to our intrests.
       </Ctext>
     </IntroDiv>
   </Container>

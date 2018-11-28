@@ -11,7 +11,12 @@ const OverviewDiv = styled.div`
   @media (max-width: 1600px) {
     padding-top: 100px;
   }
+  @media (max-width: 1300px) {
+    max-width: 900px;
+    padding-top: 50px;
+  }
 `;
+
 const BckDiv = styled.div`
   max-width: 1500px;
   margin: 3rem auto 10rem auto;
@@ -28,7 +33,7 @@ const BckDiv = styled.div`
 const OverView = () => (
   <Container>
     <OverviewDiv>
-      <Title>Programming</Title>
+      <Title>Numbers</Title>
       <SubTitle>
         My first time to complete a real system to help a company improve
         efficiency.
@@ -43,7 +48,7 @@ const OverView = () => (
     </OverviewDiv>
     <BckDiv>
       <BackLP pic1={require("../../images/par1.png")} />
-      <BackLP pic1={require("../../images/par2.png")} />
+      <BackLP pic1={require("../../images/code.png")} />
     </BckDiv>
   </Container>
 );

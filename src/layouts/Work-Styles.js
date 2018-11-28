@@ -12,6 +12,9 @@ export const Container = styled.div`
 export const Caotu1Div = styled.div`
   max-width: 1500px;
   margin: 0 auto 3rem auto;
+  @media (max-width: 1300px) {
+    max-width: 1100px;
+  }
   @media (max-width: 800px) {
     margin: 0 auto 1rem auto;
   }
@@ -96,13 +99,13 @@ export const Dates = styled.h4`
 export const BigTitle = styled.h2`
   margin: 0 auto 10rem auto;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   @media (max-width: 1300px) {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin: 0 auto 5rem auto;
   }
   @media (max-width: 800px) {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   @media (max-width: 415px) {
     margin: 0 auto 3rem auto;
@@ -123,25 +126,25 @@ export const Ctext = styled.p`
   }
 `;
 export const SmallsTitle = styled.h2`
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin: 0 0 2rem 0;
   @media (max-width: 1300px) {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   @media (max-width: 800px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 0 auto 1rem 0;
   }
 `;
 export const SmallTitle = styled.h2`
   margin: 0 auto 2rem 0;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   @media (max-width: 1300px) {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   @media (max-width: 800px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 0 auto 1rem 0;
   }
 `;
@@ -152,7 +155,6 @@ export const Big = styled.span`
   font-style: italic;
   @media (max-width: 1300px) {
     font-size: 1.5rem;
-    margin: 5rem auto 0 auto;
   }
   @media (max-width: 800px) {
     font-size: 1.2rem;
@@ -264,4 +266,13 @@ export const Quest = styled.p`
 
 export const High2 = styled.span`
   color: rgba(255, 51, 102, 1);
+`;
+
+export const Grey = styled.span`
+  background-color: #6d7a8b;
+  color: white;
+`;
+
+export const Big4 = styled(Big)`
+  color: rgba(117, 197, 244, 1);
 `;

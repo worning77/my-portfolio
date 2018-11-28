@@ -1,20 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import {
   Container,
   Dates,
   BigTitle,
   SmallTitle,
   Ctext,
-} from '../../layouts/Work-Styles'
-import Persona from './Prepare/Persona'
-import Tickets from './Prepare/Tickets'
-import Competitive from './Prepare/Competitive'
-
+  Grey,
+  Big4
+} from "../../layouts/Work-Styles";
+import Persona from "./Prepare/Persona";
+import Tickets from "./Prepare/Tickets";
+import Competitive from "./Prepare/Competitive";
+import Gongdi from "./Prepare/Gongdi";
 const PrepareDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
+  @media (max-width: 1300px) {
+    max-width: 900px;
+  }
+`;
 
 const Prepare = () => (
   <Container>
@@ -29,47 +34,54 @@ const Prepare = () => (
         I went to four construction sites, acknowledging how the workers made
         the tickets.
       </Ctext>
-      <Ctext>四张工地照片</Ctext>
+      <Gongdi pic1={require("../../images/gongdi.png")} />
       <Ctext>
         Well, I found that due to the different mother companies, the process of
         making tickets were totally different. Every site had its own standard,
         which led the following factors:<br />
         <br />
-        <li>Some sites used professional machine to print the tickets.</li>
-        <br />
         <li>
-          Some sites hired old farmer labourers to report the data by writing.
+          Some sites used <Grey>professional machine to print</Grey> the
+          tickets.
         </li>
         <br />
         <li>
-          Even in the same project, two different sites used different form of
-          ticket.
+          Some sites hired old farmer labourers to{" "}
+          <Grey>report the data by writing.</Grey>
         </li>
-      </Ctext>
-      <Ctext>
+        <br />
+        <li>
+          Even in the same project,{" "}
+          <Grey>two different sites used different form of ticket.</Grey>
+        </li>
+        <br />
         I knew that even if I made a standard form and an advanced way to make
         tickets, the giant knowledge gap of different operation workers would
-        make it impossiable. Futher more, considering we are only the service
-        provider, we had no right to do so, changing the habits they had before.
-        Therefore, I had no choice but give up this idea and switch to focus on
-        how to solve this problem standing on our staff's feet.{' '}
+        make it impossiable. <br />Futher more, considering we are only the
+        service provider, we had no right to do so, changing the habits they had
+        before. Therefore, I had no choice but give up this idea and switch to
+        focus on how to solve this problem standing on our staff's feet.{" "}
       </Ctext>
       <SmallTitle>Research in our company</SmallTitle>
       <Ctext>
-        What kind of method could help increase efficiency in checking process?
-        I investigated two staff who handle this work.{' '}
+        <Grey>
+          What kind of method could help increase efficiency in checking
+          process?
+        </Grey>{" "}
+        I investigated two staff who handle this work.{" "}
       </Ctext>
-      <Persona pic1={require('../../images/persona4.png')} />
+      <Persona pic1={require("../../images/persona4.png")} />
       <Ctext>
-        According to them, I found that this tool should be as simple as
-        possible, without fancy decoration. Meanwhile, it should be a mobile
-        App, which could be used at any time, and since the mobile camera has
-        well proformance, which make the scan function possible.<br />
+        According to them, I found that this tool should be{" "}
+        <Grey>as simple as possible, without fancy decoration.</Grey> Meanwhile,
+        it should be a mobile App, which <Grey>could be used at any time,</Grey>{" "}
+        and since the mobile camera has well proformance, which make the scan
+        function possible.<br />
         <br />
         Maybe in the future, I could create a system in photocopier, and
         automatically check accounts in computer, which save human labor. But
-        now, because the OCR couldn't ensure 100% accuracy, I cut this idea
-        temporarily.
+        now, because the OCR couldn't ensure 100% accuracy before I find a way
+        to scan clearly, I cut this idea temporarily.
       </Ctext>
       <SmallTitle>Analyse Traget</SmallTitle>
       <Ctext>
@@ -81,21 +93,21 @@ const Prepare = () => (
         usefull, and based on the examples of what should we export, I marked
         the most important data, which could help the program-design part.
       </Ctext>
-      <Tickets pic1={require('../../images/ticket.png')} />
+      <Tickets pic1={require("../../images/ticket.png")} />
       <SmallTitle>Competitive Analysis</SmallTitle>
       <Ctext>
         I thought based on the developed trade market, whether existing products
         can do what we want.
       </Ctext>
       <Competitive
-        pic1={require('../../images/competitive.png')}
-        pic2={require('../../images/explain.png')}
+        pic1={require("../../images/competitive.png")}
+        pic2={require("../../images/explain.png")}
       />
       <Ctext>
-        Then I can learn the algorithm behind these Apps, and create one for our
-        use.
+        <Big4>The simple OCR function couldn't satisfy our needs</Big4>, then I
+        learned the algorithm behind these Apps, and create one for our use.
       </Ctext>
     </PrepareDiv>
   </Container>
-)
-export default Prepare
+);
+export default Prepare;
