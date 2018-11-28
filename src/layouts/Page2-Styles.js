@@ -51,7 +51,6 @@ export const Container = styled.div`
   grid-template-columns: repeat(2, auto);
   grid-gap: 3rem;
   justify-items: stretch;
-
   @media (max-width: 1000px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);

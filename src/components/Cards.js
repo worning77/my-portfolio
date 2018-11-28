@@ -1,6 +1,6 @@
-import React from 'react'
-import { CardDiv } from '../layouts/Page2-Styles'
-import styled from 'styled-components'
+import React from "react";
+import { CardDiv } from "../layouts/Page2-Styles";
+import styled from "styled-components";
 
 const CardContain = styled.div`
   height: 18.6rem;
@@ -10,7 +10,7 @@ const CardContain = styled.div`
   @media (max-width: 415px) {
     height: 16rem;
   }
-`
+`;
 const Title = styled.div`
   display: flex;
   padding: 0 0 1.2rem 0;
@@ -22,7 +22,7 @@ const Title = styled.div`
   @media (max-width: 640px) {
     padding: 0 0 0.5rem 0;
   }
-`
+`;
 const Dates = styled.h3`
   font-style: italic;
   font-size: 1.8rem;
@@ -34,6 +34,7 @@ const Dates = styled.h3`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
   @media (max-width: 1000px) {
     justify-self: end;
     font-size: 1.5rem;
@@ -52,7 +53,7 @@ const Dates = styled.h3`
   @media (max-width: 415px) {
     font-size: 1rem;
   }
-`
+`;
 const Name = styled.h3`
   display: none;
   font-size: 2rem;
@@ -76,7 +77,7 @@ const Name = styled.h3`
     font-size: 1.3rem;
     font-weight: 650;
   }
-`
+`;
 const CardImg = styled.img`
   position: absolute;
   top: 0;
@@ -87,7 +88,7 @@ const CardImg = styled.img`
   &:hover {
     transform: translateY(-20px);
   }
-`
+`;
 
 const Cardp = styled.p`
   color: rgba(225, 225, 225, 0.8);
@@ -99,7 +100,7 @@ const Cardp = styled.p`
     font-size: 1rem;
     margin: 0 0 0.5rem 0.5rem;
   }
-`
+`;
 
 const Cards = props => (
   <CardContain>
@@ -112,6 +113,6 @@ const Cards = props => (
       <Cardp>{props.text}</Cardp>
     </CardDiv>
   </CardContain>
-)
+);
 
-export default Cards
+export default Cards;
