@@ -8,7 +8,7 @@ import { fab, faAutoprefixer } from "@fortawesome/free-brands-svg-icons";
 import { faFileUser, faChevronLeft } from "@fortawesome/pro-regular-svg-icons";
 import { faEnvelope, faPlayCircle } from "@fortawesome/free-regular-svg-icons";
 import { faPaw, faWrench, faCog } from "@fortawesome/free-solid-svg-icons";
-
+import LoadingScreen from "react-loading-screen";
 library.add(
   faFileUser,
   faEnvelope,

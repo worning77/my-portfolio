@@ -16,14 +16,37 @@ import Pic from "../components/Drawings/Draw";
 import Abouts from "../components/Abouts";
 import AtLast from "../components/Atlast";
 
-const SecondPage = () => (
-  <div>
-    <Header />
-    <HeroBack>
-      <IntroDiv>
-        <Intruduction
-          name="This is Chenfeng Gao"
-          text="Thank you for giving this wonderful opportunity to me to introduce
+import LoadingScreen from "react-loading-screen";
+class SecondPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 1000);
+  }
+
+  render() {
+    const { loading } = this.state;
+
+    return (
+      <LoadingScreen
+        loading={loading}
+        bgColor="white"
+        spinnerColor="black"
+        textColor="#343434"
+        text="About me"
+      >
+        <Header />
+        <HeroBack>
+          <IntroDiv>
+            <Intruduction
+              name="This is Chenfeng Gao"
+              text="Thank you for giving this wonderful opportunity to me to introduce
             myself to you. I am (Your Name). We are five members in my family
             including me. I am native to (City Name), and open to relocate to
             (city name as mentioned in the job description). Currently, I am
@@ -32,61 +55,63 @@ const SecondPage = () => (
             the next couple of months. Ever since, I started studying Marketing
             in my school days. I realized, I enjoy analyzing things connected to
             the society, the Mother Nature, and love to travel."
-          image={require("../images/123.png")}
-          head={require("../images/head.jpg")}
-        />
-      </IntroDiv>
-    </HeroBack>
-    <DescDiv>
-      <Words>
-        <Titles> My Funfacts </Titles>
-      </Words>
-    </DescDiv>
+              image={require("../images/123.png")}
+              head={require("../images/head.jpg")}
+            />
+          </IntroDiv>
+        </HeroBack>
+        <DescDiv>
+          <Words>
+            <Titles> My Funfacts </Titles>
+          </Words>
+        </DescDiv>
 
-    <Abouts />
+        <Abouts />
 
-    <DrawingDesc />
-    <DrawContain>
-      <Pic
-        real={require("../images/aisah.png")}
-        paint={require("../images/Elsa.png")}
-        name="Elsa"
-        date="Dec 2015"
-      />
-      <Pic
-        real={require("../images/xialuokebackground.png")}
-        paint={require("../images/Sherlock.png")}
-        name="Sherlock"
-        date="Feb 2016"
-      />
-      <Pic
-        real={require("../images/mygril.png")}
-        paint={require("../images/Zhangyu.png")}
-        name="My Girl"
-        date="Jun 2017"
-      />
-      <Pic
-        real={require("../images/testbackground.png")}
-        paint={require("../images/test.png")}
-        name="Jack"
-        date="Feb 2016"
-      />
-      <Pic
-        real={require("../images/malef.png")}
-        paint={require("../images/Malefecent.png")}
-        name="Maleficent"
-        date="Jun 2016"
-      />
-      <Pic
-        real={require("../images/green.png")}
-        paint={require("../images/Eva.png")}
-        name="Eva Green"
-        date="Dec 2016"
-      />
-    </DrawContain>
-    <AtLast />
-    <Footer />
-  </div>
-);
+        <DrawingDesc />
+        <DrawContain>
+          <Pic
+            real={require("../images/aisah.png")}
+            paint={require("../images/Elsa.png")}
+            name="Elsa"
+            date="Dec 2015"
+          />
+          <Pic
+            real={require("../images/xialuokebackground.png")}
+            paint={require("../images/Sherlock.png")}
+            name="Sherlock"
+            date="Feb 2016"
+          />
+          <Pic
+            real={require("../images/mygril.png")}
+            paint={require("../images/Zhangyu.png")}
+            name="My Girl"
+            date="Jun 2017"
+          />
+          <Pic
+            real={require("../images/testbackground.png")}
+            paint={require("../images/test.png")}
+            name="Jack"
+            date="Feb 2016"
+          />
+          <Pic
+            real={require("../images/malef.png")}
+            paint={require("../images/Malefecent.png")}
+            name="Maleficent"
+            date="Jun 2016"
+          />
+          <Pic
+            real={require("../images/green.png")}
+            paint={require("../images/Eva.png")}
+            name="Eva Green"
+            date="Dec 2016"
+          />
+        </DrawContain>
+        <AtLast />
+        <Footer />
+      </LoadingScreen>
+    );
+  }
+}
 
 export default SecondPage;

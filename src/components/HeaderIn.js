@@ -104,7 +104,9 @@ class HeaderIn extends React.Component {
     super(props);
   }
   backToTop() {
-    document.documentElement.scrollTop = 0;
+    if (typeof window !== `undefined`) {
+      window.scrollTo(0, 0);
+    }
   }
 
   render() {

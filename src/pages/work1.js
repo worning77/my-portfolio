@@ -13,23 +13,48 @@ import May from "../components/Work1/May";
 import Jun from "../components/Work1/Jun";
 import Last from "../components/Work1/Atlast";
 
-const Project1Page = () => (
-  <div>
-    <HeaderIn Name="Differ" />
-    <OverView />
-    <Background />
-    <Team />
-    <Oct />
-    <Nov />
-    <Dec />
-    <Jan />
-    <Mar />
-    <Apr />
-    <May />
-    <Jun />
-    <Last />
-    <div style={{ height: "600px" }} />
-  </div>
-);
+import LoadingScreen from "react-loading-screen";
+class Project1Page extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 2000);
+  }
+
+  render() {
+    const { loading } = this.state;
+
+    return (
+      <LoadingScreen
+        loading={loading}
+        bgColor="white"
+        spinnerColor="#01B4FF"
+        textColor="#343434"
+        text="Failed experience, at least I tried"
+      >
+        <HeaderIn Name="Differ" />
+        <OverView />
+        <Background />
+        <Team />
+        <Oct />
+        <Nov />
+        <Dec />
+        <Jan />
+        <Mar />
+        <Apr />
+        <May />
+        <Jun />
+        <Last />
+        <div style={{ height: "400px" }} />
+      </LoadingScreen>
+    );
+  }
+}
 
 export default Project1Page;

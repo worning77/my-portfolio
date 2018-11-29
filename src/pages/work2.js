@@ -1,23 +1,48 @@
-import React from 'react'
-import HeaderIn from '../components/HeaderIn'
-import OverView from '../components/Work2/Overview'
-import Background from '../components/Work2/Background'
-import Before from '../components/Work2/Before'
-import Design from '../components/Work2/Design'
-import Process from '../components/Work2/Process'
-import Reflection from '../components/Work2/Reflection'
+import React from "react";
+import HeaderIn from "../components/HeaderIn";
+import OverView from "../components/Work2/Overview";
+import Background from "../components/Work2/Background";
+import Before from "../components/Work2/Before";
+import Design from "../components/Work2/Design";
+import Process from "../components/Work2/Process";
+import Reflection from "../components/Work2/Reflection";
 
-const Project2Page = () => (
-  <div>
-    <HeaderIn Name="LesPark" />
-    <OverView />
-    <Background />
-    <Before />
-    <Design />
-    <Process />
-    <Reflection />
-    <div style={{ height: '600px' }} />
-  </div>
-)
+import LoadingScreen from "react-loading-screen";
+class Project2Page extends React.Component {
+  constructor(props) {
+    super(props);
 
-export default Project2Page
+    this.state = {
+      loading: true
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => this.setState({ loading: false }), 2000);
+  }
+
+  render() {
+    const { loading } = this.state;
+
+    return (
+      <LoadingScreen
+        loading={loading}
+        bgColor="white"
+        spinnerColor="#FF3366"
+        textColor="#343434"
+        text="Fun internship"
+      >
+        <HeaderIn Name="LesPark" />
+        <OverView />
+        <Background />
+        <Before />
+        <Design />
+        <Process />
+        <Reflection />
+        <div style={{ height: "400px" }} />
+      </LoadingScreen>
+    );
+  }
+}
+
+export default Project2Page;

@@ -128,7 +128,7 @@ class IndexPage extends React.Component {
               <Cards
                 name="Numbers"
                 newDate="Sep.2017-Mar.2018"
-                image={require("../images/wallpaper4.jpg")}
+                image={require("../images/wallpaper4.png")}
               />
             </Link>
             <Descs title="Numbers" role="Data" kind="Code" way="Python">
