@@ -9,7 +9,7 @@ import {
   Words,
   Titles
 } from "../layouts/Index-Styles";
-import Fade from "react-reveal/Fade";
+
 import Intruduction from "../components/Intrud2";
 import DrawingDesc from "../components/Drawings/DrawingDes";
 import Pic from "../components/Drawings/Draw";
@@ -17,12 +17,12 @@ import Abouts from "../components/Abouts";
 import AtLast from "../components/Atlast";
 
 const SecondPage = () => (
-  <div style={{ height: "100%" }}>
+  <div>
     <Header />
     <HeroBack>
       <IntroDiv>
         <Intruduction
-          name="Chenfeng Gao"
+          name="This is Chenfeng Gao"
           text="Thank you for giving this wonderful opportunity to me to introduce
             myself to you. I am (Your Name). We are five members in my family
             including me. I am native to (City Name), and open to relocate to
@@ -31,15 +31,7 @@ const SecondPage = () => (
             and I will be entering into final year of my graduation studies in
             the next couple of months. Ever since, I started studying Marketing
             in my school days. I realized, I enjoy analyzing things connected to
-            the society, the Mother Nature, and love to travel. I believe, this
-            somehow further boosted my interest towards Marketing as a career
-            option.pursuing (or completed) B.B.M in Marketing at the (University Name),
-            and I will be entering into final year of my graduation studies in
-            the next couple of months. Ever since, I started studying Marketing
-            in my school days. I realized, I enjoy analyzing things connected to
-            the society, the Mother Nature, and love to travel. I believe, this
-            somehow further boosted my interest towards Marketing as a career
-            option."
+            the society, the Mother Nature, and love to travel."
           image={require("../images/123.png")}
           head={require("../images/head.jpg")}
         />
@@ -50,9 +42,9 @@ const SecondPage = () => (
         <Titles> My Funfacts </Titles>
       </Words>
     </DescDiv>
-    <Fade bottom>
-      <Abouts />
-    </Fade>
+
+    <Abouts />
+
     <DrawingDesc />
     <DrawContain>
       <Pic

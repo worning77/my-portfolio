@@ -77,7 +77,7 @@ const ButtonTop = styled.button`
     -webkit-text-fill-color: transparent;
   }
   @media (max-width: 500px) {
-    margin: 0 0 0 2%;
+    margin: 0;
   }
 `;
 

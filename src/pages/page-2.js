@@ -40,11 +40,7 @@ class IndexPage extends React.Component {
       <div>
         <Header />
         <HeroBack>
-          <Intruduction
-            name="Chenfeng Gao"
-            image={require("../images/123.png")}
-            head={require("../images/head.jpg")}
-          />
+          <Intruduction name="Chenfeng Gao" />
         </HeroBack>
 
         <Banner>
@@ -131,12 +127,11 @@ class IndexPage extends React.Component {
             <Link className="Project4" to="/work4">
               <Cards
                 name="Numbers"
-                newDate="Sep.2017-May.2018"
-                text="Work experience"
+                newDate="Sep.2017-Mar.2018"
                 image={require("../images/wallpaper4.jpg")}
               />
             </Link>
-            <Descs title="Numbers" role="Data" kind="User Research" way="Code">
+            <Descs title="Numbers" role="Data" kind="Code" way="Python">
               <Desc4 />
             </Descs>
           </Container>

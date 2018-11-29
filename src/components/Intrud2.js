@@ -1,7 +1,7 @@
-import React from 'react'
-import { IntroGroup } from '../layouts/Index-Styles'
-import styled, { keyframes } from 'styled-components'
-import { Resume, Inst, Mail } from './icons'
+import React from "react";
+import { IntroGroup } from "../layouts/Index-Styles";
+import styled, { keyframes } from "styled-components";
+import { Resume, Inst, Mail } from "./icons";
 
 const FirstShow = keyframes`
   from {
@@ -12,7 +12,7 @@ const FirstShow = keyframes`
     opacity: 1;
     transform: translateY(0px);
   }
-`
+`;
 const FirstShowoff = keyframes`
   from {
     opacity: 0;
@@ -22,11 +22,11 @@ const FirstShowoff = keyframes`
     opacity: 1;
     transform: scale(1);
   }
-`
+`;
 const Background = keyframes`
  0%{background-position: 50%;}
   100%{background-position: -150%;}
-`
+`;
 
 const Content = styled.div`
   display: grid;
@@ -34,13 +34,14 @@ const Content = styled.div`
   height: auto;
   justify-content: stretch;
   position: relative;
-`
-const Word = styled.div``
+`;
+const Word = styled.div``;
+
 const Name = styled.h1`
   margin: 0;
   color: rgba(0, 0, 0, 0.7);
   font-size: 3rem;
-  font-weight: 500;
+
   line-height: 1.2;
   animation: ${FirstShow} 3s 0.5s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
@@ -48,24 +49,25 @@ const Name = styled.h1`
     font-size: 2rem;
   }
   @media (max-width: 415px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
-`
+`;
 const Info = styled.p`
   margin: 1rem 0 0.5rem 0;
   color: rgba(0, 0, 0, 0.7);
   font-size: 1.3rem;
-  line-height: 1.7;
-  font-weight: 500;
+  line-height: 1.8;
+
   animation: ${FirstShow} 3s 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
   opacity: 0;
   @media (max-width: 640px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   @media (max-width: 415px) {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
-`
+`;
 const Photo1 = styled.div`
   max-width: 450px;
   background: url(${props => props.image});
@@ -76,7 +78,7 @@ const Photo1 = styled.div`
   @media (max-width: 1040px) {
     display: none;
   }
-`
+`;
 const Photo2 = styled.img`
   display: none;
   @media (max-width: 1040px) {
@@ -93,7 +95,7 @@ const Photo2 = styled.img`
     margin: 1rem auto 0 auto;
     height: 9rem;
   }
-`
+`;
 const Contacts = styled.div`
   height: 35px;
   display: flex;
@@ -101,7 +103,7 @@ const Contacts = styled.div`
   opacity: 0;
   align-items: center;
   animation: ${FirstShow} 3s 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-`
+`;
 const Me = styled.h4`
   font-size: 1.5rem;
   margin: 0 1rem 0 0;
@@ -120,7 +122,7 @@ const Me = styled.h4`
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-`
+`;
 
 const Intruduction = props => {
   return (
@@ -128,22 +130,31 @@ const Intruduction = props => {
       <Content>
         <Word>
           <Name>
-            I am <br />
+            Hi there! <br />
             {props.name}
           </Name>
           <Info> {props.text}</Info>
         </Word>
         <Contacts>
-          <Mail />
-          <Inst />
+          <a className="Mail" href="mailto:cfenggao@outlook.com">
+            <Mail />
+          </a>
+          <a
+            className="Instram"
+            href="https://www.instagram.com/tiny_pinkpink/"
+            target="_blank"
+          >
+            <Inst />
+          </a>
           <Resume />
+
           <Me>Let's Connect!</Me>
         </Contacts>
       </Content>
       <Photo1 image={props.image} />
       <Photo2 src={props.head} />
     </IntroGroup>
-  )
-}
+  );
+};
 
-export default Intruduction
+export default Intruduction;

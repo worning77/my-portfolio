@@ -1,41 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
-
+import React from "react";
+import styled from "styled-components";
+import { Titles } from "../../layouts/Index-Styles";
 const DescDiv = styled.div`
   margin: 3rem 2rem 0 2rem;
   @media (max-width: 640px) {
-    margin: 3rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
   }
-`
+`;
 const Words = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   height: auto;
   display: grid;
   grid-template-rows: repeat(2, auto);
-  @media (max-width: 1600px) {
-    max-width: 1300px;
-  }
-`
-const Titles = styled.h2`
-  margin: 0 auto 0 0;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 3rem;
-  font-weight: 500;
+`;
 
-  @media (max-width: 640px) {
-    font-size: 2rem;
-  }
-  @media (max-width: 415px) {
-    font-size: 1.5rem;
-  }
-`
 const Text = styled.p`
-  margin: 1rem auto 0 0;
+  margin: 1rem auto 0 1rem 0;
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.4rem;
   line-height: 1.7;
-  font-weight: 500;
   @media (max-width: 640px) {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -44,7 +28,7 @@ const Text = styled.p`
     font-size: 0.9rem;
     line-height: 1.5;
   }
-`
+`;
 
 const DrawingDesc = () => (
   <DescDiv>
@@ -55,6 +39,6 @@ const DrawingDesc = () => (
       </Text>
     </Words>
   </DescDiv>
-)
+);
 
-export default DrawingDesc
+export default DrawingDesc;

@@ -1,21 +1,18 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import React from "react";
+import styled, { keyframes } from "styled-components";
 
-import Link from 'gatsby-link'
+import Link from "gatsby-link";
 
 const Background = keyframes`
  0%{background-position: 50%;}
   100%{background-position: -150%;}
-`
-const Move = keyframes`
-0%{transform:scale(1,1);}
-100%{transform:scale(1.03, 1.03);}
-`
+`;
+
 const Wrap = styled.div`
   margin: 2rem auto;
   height: 3rem;
   max-width: 80%;
-`
+`;
 const Text = styled.h1`
   font-size: 2rem;
   margin: 1rem auto;
@@ -30,9 +27,7 @@ const Text = styled.h1`
     rgba(233, 175, 74, 0.9) 90%,
     rgba(125, 57, 159, 0.9) 100%
   );
-  animation: ${Background} 8s infinite ease-in-out,
-    ${Move} 1s infinite alternate cubic-bezier(0.2, 0.8, 0.2, 1);
-
+  animation: ${Background} 8s infinite ease-in-out;
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -42,12 +37,12 @@ const Text = styled.h1`
   @media (max-width: 415px) {
     font-size: 1.3rem;
   }
-`
+`;
 const Next = () => (
-  <Link to="/page-2">
+  <Link to="/">
     <Wrap>
       <Text>Let's know more about me! => </Text>
     </Wrap>
   </Link>
-)
-export default Next
+);
+export default Next;

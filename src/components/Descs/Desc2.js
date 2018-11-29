@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const Content = styled.p`
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.3;
   margin: 0.5rem 0 0 0;
@@ -16,8 +16,6 @@ const Content = styled.p`
     font-size: 1rem;
   }
   @media (max-width: 415px) {
-    font-size: 0.9rem;
-    font-weight: 400;
     text-align: left;
   }
 `;

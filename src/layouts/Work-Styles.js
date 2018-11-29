@@ -105,7 +105,7 @@ export const BigTitle = styled.h2`
     margin: 0 auto 5rem auto;
   }
   @media (max-width: 800px) {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
   @media (max-width: 415px) {
     margin: 0 auto 3rem auto;
@@ -123,6 +123,10 @@ export const Ctext = styled.p`
   @media (max-width: 800px) {
     font-size: 1rem;
     margin: 0 0 1rem 0;
+  }
+  @media (max-width: 450px) {
+    font-weight: 0;
+    line-height: 1.3;
   }
 `;
 export const SmallsTitle = styled.h2`

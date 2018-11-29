@@ -1,42 +1,22 @@
 import styled from "styled-components";
 
-export const HeroBack = styled.div`
-  background-image: url(${require("../images/welcome.png")});
-  background-repeat: no-repeat;
-  z-index: -99;
-  background-position-x: center;
-  background-position-y: 20%;
-  background-width: 600px;
-  @media (max-width: 1800px) {
-    background-position-y: 10%;
-  }
-`;
+export const HeroBack = styled.div``;
+
 export const IntroDiv = styled.div`
   margin: 0 2rem;
-  @media (max-width: 1350px) {
-    margin: 0 0 0 2rem;
-  }
-  @media (max-width: 1040px) {
-    margin: 0 2rem;
-  }
   @media (max-width: 640px) {
     margin: 0 1rem;
   }
 `;
 export const IntroGroup = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 400px 0 0 0;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
   @media (max-width: 1600px) {
-    max-width: 1300px;
-    padding: 200px 0 0 0;
+    padding: 260px 0 0 0;
   }
-  @media (max-width: 1148px) {
-    margin: 0 auto 0 0;
-  }
-
   @media (max-width: 1040px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -143,50 +123,44 @@ export const Text = styled.h4`
   }
 `;
 export const DescDiv = styled.div`
-  margin: 5rem 2rem 0 2rem;
+  margin: 3rem 2rem 0 2rem;
   @media (max-width: 640px) {
-    margin: 3rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
   }
 `;
 export const Words = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   height: auto;
-  @media (max-width: 1600px) {
-    max-width: 1300px;
-  }
 `;
 export const Titles = styled.h2`
   margin: 0 auto 0 0;
   color: rgba(0, 0, 0, 0.7);
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2.6rem;
   @media (max-width: 640px) {
     font-size: 2rem;
   }
   @media (max-width: 415px) {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 `;
 
 export const AboutContain = styled.div`
-  margin: 2rem 2rem 0 2rem;
+  margin: 3rem 2rem 0 2rem;
   height: auto;
   @media (max-width: 640px) {
-    margin: 3rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
   }
 `;
 export const IntroContain = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-gap: 1rem;
-  @media (max-width: 1600px) {
-    max-width: 1300px;
-  }
-  @media (max-width: 700px) {
+
+  @media (max-width: 800px) {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(3, auto);
   }
@@ -195,16 +169,14 @@ export const IntroContain = styled.div`
   }
 `;
 export const PhotoContain = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 2rem auto 0 auto;
   height: auto;
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 1rem;
-  @media (max-width: 1600px) {
-    max-width: 1300px;
-  }
-  @media (max-width: 700px) {
+
+  @media (max-width: 800px) {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
   }

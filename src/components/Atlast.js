@@ -1,52 +1,37 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
-
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { Titles } from "../layouts/Index-Styles";
 const DescDiv = styled.div`
   margin: 3rem 2rem 0 2rem;
   @media (max-width: 640px) {
-    margin: 3rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
   }
-`
+`;
 const Words = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   height: auto;
   display: grid;
   grid-template-rows: repeat(2, auto);
-  @media (max-width: 1600px) {
-    max-width: 1300px;
-  }
-`
-const Titles = styled.h2`
-  margin: 0 auto 0 0;
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 3rem;
-  font-weight: 500;
-  @media (max-width: 640px) {
-    font-size: 2rem;
-  }
-  @media (max-width: 415px) {
-    font-size: 1.5rem;
-  }
-`
+`;
+
 const Text = styled.p`
   margin: 1rem auto 0 0;
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.4rem;
-  line-height: 1.6;
-  font-weight: 500;
+  line-height: 1.5;
   @media (max-width: 640px) {
     font-size: 1.2rem;
   }
   @media (max-width: 415px) {
     font-size: 0.9rem;
-    line-height: 1.5;
+    line-height: 1.3;
   }
-`
+`;
 const Background = keyframes`
  0%{background-position: 50%;}
   100%{background-position: -150%;}
-`
+`;
 const Links = styled.a`
   margin: 0;
   color: rgba(0, 0, 0, 0.7);
@@ -66,7 +51,7 @@ const Links = styled.a`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-`
+`;
 
 const AtLast = () => (
   <DescDiv>
@@ -78,21 +63,21 @@ const AtLast = () => (
         on.<br />
         <br />
         And for this site, this is my first web project. I learned the knowledge
-        of ReactJS online, such as the videos of{' '}
+        of ReactJS online, such as the videos of{" "}
         <Links
           href="https://www.youtube.com/channel/UCE7Y95L1btz6qQkfyFfYFQA"
           target="view_window"
         >
           FroDev's channel
-        </Links>{' '}
-        and courses from{' '}
+        </Links>{" "}
+        and courses from{" "}
         <Links href="https://codewithmosh.com/" target="view_window">
           codewithmosh.com
         </Links>
-        , and I got the design inspiration from{' '}
+        , and I got the design inspiration from{" "}
         <Links href="https://kaiwei.design/#/work" target="view_window">
           kaiwei.design.
-        </Links>{' '}
+        </Links>{" "}
         Of course, as a newbie developer, I got help from my old partner
         ChenDou. He gave me some useful tricks about how to build the website
         more efficiently.<br />
@@ -101,6 +86,6 @@ const AtLast = () => (
       </Text>
     </Words>
   </DescDiv>
-)
+);
 
-export default AtLast
+export default AtLast;

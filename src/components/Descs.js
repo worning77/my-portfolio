@@ -5,16 +5,10 @@ import styled from "styled-components";
 import { Role, Kind, Way } from "./icons";
 
 const Title = styled.h3`
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   color: rgba(0, 0, 0, 0.7);
-  @media (max-width: 1300px) {
-    font-size: 1.5rem;
-  }
-  @media (max-width: 1040px) {
-    margin: 0;
-  }
   @media (max-width: 1000px) {
     display: none;
   }

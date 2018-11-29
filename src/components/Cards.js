@@ -62,6 +62,7 @@ const Name = styled.h3`
 
   @media (max-width: 1000px) {
     display: block;
+    align-self: end;
     background: linear-gradient(
       104deg,
       rgba(125, 57, 159, 0.8) 0%,

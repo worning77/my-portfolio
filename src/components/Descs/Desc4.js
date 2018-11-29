@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Content = styled.p`
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.3;
   margin: 0.5rem 0 0 0;
@@ -17,16 +17,14 @@ const Content = styled.p`
     font-size: 1rem;
   }
   @media (max-width: 415px) {
-    font-size: 0.9rem;
-    font-weight: 400;
     text-align: left;
   }
-`
+`;
 const High = styled.span`
   font-weight: 700;
   color: rgba(0, 0, 0, 0.9);
   margin: 0;
-`
+`;
 const Desc4 = () => (
   <Content>
     After graduation, with my maths background, I hoped to help my father’s
@@ -35,5 +33,5 @@ const Desc4 = () => (
     account checking to the greatest extend; and also I redesigned the dealing
     process based on the Internet.
   </Content>
-)
-export default Desc4
+);
+export default Desc4;

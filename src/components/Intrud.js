@@ -1,7 +1,7 @@
-import React from 'react'
-import { IntroGroup1 } from '../layouts/Page2-Styles'
-import styled, { keyframes } from 'styled-components'
-import { Resume, Inst, Mail } from './icons'
+import React from "react";
+import { IntroGroup1 } from "../layouts/Page2-Styles";
+import styled, { keyframes } from "styled-components";
+import { Resume, Inst, Mail } from "./icons";
 
 const FirstShow = keyframes`
   from {
@@ -12,7 +12,7 @@ const FirstShow = keyframes`
     opacity: 1;
     transform: translateY(0px);
   }
-`
+`;
 const FirstShowoff = keyframes`
   from {
     opacity: 0;
@@ -22,7 +22,7 @@ const FirstShowoff = keyframes`
     opacity: 1;
     transform: scale(1);
   }
-`
+`;
 
 const Content = styled.div`
   display: grid;
@@ -30,10 +30,10 @@ const Content = styled.div`
   height: auto;
   justify-items: center;
   position: relative;
-`
+`;
 const Word = styled.div`
   text-align: center;
-`
+`;
 const Name = styled.h1`
   margin: 0;
   color: rgba(0, 0, 0, 0.7);
@@ -47,7 +47,7 @@ const Name = styled.h1`
   @media (max-width: 415px) {
     font-size: 1.5rem;
   }
-`
+`;
 const Info = styled.p`
   max-width: 1000px;
   margin: 1.5rem auto 1.5rem auto;
@@ -63,7 +63,7 @@ const Info = styled.p`
   @media (max-width: 415px) {
     font-size: 1rem;
   }
-`
+`;
 
 const Contacts = styled.div`
   align-self: center;
@@ -72,7 +72,7 @@ const Contacts = styled.div`
   flex-direction: row-reverse;
   opacity: 0;
   animation: ${FirstShow} 3s 1s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
-`
+`;
 
 const Intruduction = props => {
   return (
@@ -84,20 +84,28 @@ const Intruduction = props => {
             {props.name}
           </Name>
           <Info>
-            {' '}
+            {" "}
             A problem solver with strong passion for satisfying daily needs in
             life by using technical ways */+/* A rational thinker who focuses on
-            putting the logical thinking into the process of product design.{' '}
+            putting the logical thinking into the process of product design.{" "}
           </Info>
         </Word>
         <Contacts>
-          <Mail />
-          <Inst />
+          <a className="Mail" href="mailto:cfenggao@outlook.com">
+            <Mail />
+          </a>
+          <a
+            className="Instram"
+            href="https://www.instagram.com/tiny_pinkpink/"
+            target="_blank"
+          >
+            <Inst />
+          </a>
           <Resume />
         </Contacts>
       </Content>
     </IntroGroup1>
-  )
-}
+  );
+};
 
-export default Intruduction
+export default Intruduction;

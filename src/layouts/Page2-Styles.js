@@ -1,16 +1,6 @@
 import styled from "styled-components";
 
-export const HeroBack = styled.div`
-  background-image: url(${require("../images/hi.png")});
-  background-repeat: no-repeat;
-  z-index: -99;
-  background-position-x: center;
-  background-position-y: 20%;
-  background-width: 600px;
-  @media (max-width: 1300px) {
-    background-position-y: 8%;
-  }
-`;
+export const HeroBack = styled.div``;
 
 export const IntroGroup1 = styled.div`
   max-width: 1400px;

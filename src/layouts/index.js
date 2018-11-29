@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-
+import favicon from "../images/favicon.png";
 import "./index.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faAutoprefixer } from "@fortawesome/free-brands-svg-icons";
@@ -28,6 +28,7 @@ const Layout = ({ children, data }) => (
         { name: "description", content: data.site.siteMetadata.description },
         { name: "keywords", content: data.site.siteMetadata.keywords }
       ]}
+      link={[{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }]}
     />
 
     {children()}
