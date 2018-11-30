@@ -16,7 +16,6 @@ import Pic from "../components/Drawings/Draw";
 import Abouts from "../components/Abouts";
 import AtLast from "../components/Atlast";
 
-import LoadingScreen from "react-loading-screen";
 class SecondPage extends React.Component {
   constructor(props) {
     super(props);
@@ -27,20 +26,14 @@ class SecondPage extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 1000);
+    setTimeout(() => this.setState({ loading: false }), 3000);
   }
 
   render() {
     const { loading } = this.state;
 
     return (
-      <LoadingScreen
-        loading={loading}
-        bgColor="white"
-        spinnerColor="black"
-        textColor="#343434"
-        text="About me"
-      >
+      <div style={{ height: "100%" }}>
         <Header />
         <HeroBack>
           <IntroDiv>
@@ -69,6 +62,7 @@ class SecondPage extends React.Component {
         <Abouts />
 
         <DrawingDesc />
+
         <DrawContain>
           <Pic
             real={require("../images/aisah.png")}
@@ -109,7 +103,7 @@ class SecondPage extends React.Component {
         </DrawContain>
         <AtLast />
         <Footer />
-      </LoadingScreen>
+      </div>
     );
   }
 }
