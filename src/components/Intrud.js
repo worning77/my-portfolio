@@ -3,6 +3,7 @@ import { IntroGroup1 } from "../layouts/Index-Styles";
 import styled, { keyframes } from "styled-components";
 import { Resume, Inst, Mail } from "./icons";
 
+import Emoji from "./Emoji";
 const FirstShow = keyframes`
   from {
     opacity: 0;
@@ -86,8 +87,9 @@ const Intruduction = props => {
           <Info>
             {" "}
             A problem solver with strong passion for satisfying daily needs in
-            life by using technical ways */+/* A rational thinker who focuses on
-            putting the logical thinking into the process of product design.{" "}
+            life by using technical ways <Emoji symbol="🔧" />
+            <Emoji symbol="🖖" /> A rational thinker who focuses on putting the
+            logical thinking into the process of product design.{" "}
           </Info>
         </Word>
         <Contacts>

@@ -138,7 +138,7 @@ class HeaderIn extends React.Component {
               <Title>{this.props.Name}</Title>
             </ButtonTop>
 
-            <Link style={{ margin: "0 5% 0 auto" }} to="/">
+            <Link to="/#projects" style={{ margin: "0 5% 0 auto" }}>
               <Work>Work</Work>
             </Link>
             <Link style={{ margin: "0" }} to="/home">

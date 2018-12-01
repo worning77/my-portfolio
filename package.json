@@ -38,6 +38,7 @@
     "react-loading-screen": "0.0.17",
     "react-motion": "^0.5.2",
     "react-reveal": "^1.2.2",
+    "react-router-hash-link": "^1.2.1",
     "react-slider-light": "^4.2.0",
     "react-smooth-scroll": "^0.1.0",
     "react-spark-scroll": "^4.0.0",

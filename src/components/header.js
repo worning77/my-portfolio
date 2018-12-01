@@ -39,7 +39,7 @@ class Header extends React.Component {
             >
               <img src={require("../images/LOGO.png")} />
             </Link>
-            <Link className="work" to="/">
+            <Link className="work" to="/#projects">
               <button>Work</button>
             </Link>
             <Link className="home" to="/home">

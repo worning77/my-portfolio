@@ -38,11 +38,14 @@ const SecondPage = () => (
         />
       </IntroDiv>
     </HeroBack>
-    <DescDiv>
-      <Words>
-        <Titles> My Funfacts </Titles>
-      </Words>
-    </DescDiv>
+    <div id="2">
+      {" "}
+      <DescDiv>
+        <Words>
+          <Titles> My Funfacts </Titles>
+        </Words>
+      </DescDiv>
+    </div>
     <Abouts />
     <DrawingDesc />
     <DrawContain>
