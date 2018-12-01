@@ -34,7 +34,9 @@ const Layout = ({ children, data }) => (
     {children()}
   </div>
 );
-
+if (typeof document !== `undefined`) {
+  document.getElementsByTagName("body")[0].style.zoom = 0.85;
+}
 Layout.propTypes = {
   children: PropTypes.func
 };

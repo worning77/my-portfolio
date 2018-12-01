@@ -12,7 +12,11 @@ a {
   text-decoration: none;
   font-weight: 600;
 }
-html,
+
+#___gatsby > html {
+  font-size: 16px;
+}
+
 body,
 #___gatsby,
 #___gatsby > div {
