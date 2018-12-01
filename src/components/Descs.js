@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DescGroup } from "../layouts/Page2-Styles";
+import { DescGroup } from "../layouts/Index-Styles";
 import styled from "styled-components";
 import { Role, Kind, Way } from "./icons";
 

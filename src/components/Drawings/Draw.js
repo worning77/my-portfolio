@@ -6,7 +6,7 @@ import {
   Text,
   BackImg,
   DrawBack
-} from "../../layouts/Index-Styles";
+} from "../../layouts/Page2-Styles";
 
 class Pic extends React.Component {
   render() {

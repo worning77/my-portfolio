@@ -17,8 +17,19 @@ class Project4Page extends React.Component {
     };
   }
 
+  cantMove = e => {
+    e.preventDefault();
+  };
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 1500);
+    setTimeout(() => {
+      window.addEventListener("wheel", this.cantMove);
+    }, 0);
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1500);
+    setTimeout(() => {
+      window.removeEventListener("wheel", this.cantMove);
+    }, 1500);
   }
 
   render() {
@@ -32,9 +43,9 @@ class Project4Page extends React.Component {
           spinnerColor="#6D7A8B"
           textColor="#343434"
           text="Make things easier"
-        >
-          <HeaderIn Name="Scan&Check" />
-        </LoadingScreen>
+        />
+        <HeaderIn Name="Scan&Check" />
+
         <OverView />
         <LoadingScreen
           loading={loading}

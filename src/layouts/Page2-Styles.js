@@ -2,197 +2,186 @@ import styled from "styled-components";
 
 export const HeroBack = styled.div``;
 
-export const IntroGroup1 = styled.div`
-  max-width: 1400px;
+export const IntroDiv = styled.div`
+  margin: 0 2rem;
+  @media (max-width: 640px) {
+    margin: 0 1rem;
+  }
+`;
+export const IntroGroup = styled.div`
+  max-width: 1200px;
   padding: 400px 0 0 0;
   margin: 0 auto;
-
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   @media (max-width: 1600px) {
     padding: 260px 0 0 0;
   }
-
   @media (max-width: 1040px) {
-    margin: 0 5rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
   }
   @media (max-width: 640px) {
-    margin: 0 1rem;
     padding: 100px 0 0 0;
   }
 `;
 
-export const CardGroup = styled.div`
-  margin: 2rem;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 2.3rem;
-  @media (max-width: 640px) {
-    grid-gap: 1.3rem;
-    margin: 1rem 1rem;
-  }
-  @media (max-width: 415px) {
-    grid-gap: 1rem;
-  }
-`;
-
-export const Container = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 3rem;
-  justify-items: stretch;
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 2.5rem;
-    justify-items: center;
-  }
-  @media (max-width: 640px) {
-    grid-gap: 1.5rem;
-  }
-  @media (max-width: 415px) {
-    grid-gap: 1rem;
-    justify-items: stretch;
-  }
-`;
-
-export const CardDiv = styled.div`
-  width: 24rem;
-  height: 15rem;
-  position: relative;
+export const DrawContain = styled.div`
+  margin: 2vw auto 0 auto;
+  height: 144vw;
+  max-width: 1400px;
+  max-height: 2100px;
   overflow: hidden;
   border-radius: 1rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column-reverse;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  justify-items: stretch;
-  &:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 0 1.8rem 3.7rem rgba(0, 0, 0, 0.5);
-  }
-
-  @media (max-width: 640px) {
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.25);
-    &:hover {
-      transform: scale(1.05, 1.05);
-      box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.4);
-    }
-  }
-  @media (max-width: 415px) {
-    box-shadow: 0 0 0;
-    border-radius: 0.5rem;
-    width: 100%;
-    height: 14rem;
-    &:hover {
-      transform: scale(1, 1);
-      box-shadow: 0 0 0;
-    }
-  }
-`;
-export const DescGroup = styled.div`
-  align-self: end;
-  max-width: 800px;
-  height: 15rem;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  justify-items: start;
-  @media (max-width: 1000px) {
-    height: auto;
-    padding: 0 2rem;
-    grid-template-rows: repeat(2, auto);
-    justify-items: stretch;
-  }
-  @media (max-width: 500px) {
-    padding: 0;
-  }
-`;
-
-export const Banner = styled.div`
-  max-width: 1200px;
-  height: 16rem;
-  margin: 5rem auto 0 auto;
+  grid-template-columns: repeat(2, 50%);
+  justify-items: stretch;
   position: relative;
-  overflow: hidden;
-  border-radius: 0.5rem;
-
-  @media (max-width: 1040px) {
-    max-width: 1200px;
+  background: linear-gradient(
+    135deg,
+    rgba(125, 57, 159, 0.5) 17%,
+    rgba(16, 103, 109, 0.5) 34%,
+    rgba(233, 175, 74, 0.5) 51%,
+    rgba(125, 57, 159, 0.5) 68%,
+    rgba(16, 103, 109, 0.5) 85%
+  );
+  @media (max-width: 1600px) {
+    max-width: 1300px;
+    height: 1950px;
+  }
+  @media (max-width: 1200px) {
     border-radius: 0.2rem;
+    height: 171vw;
+    max-height: none;
   }
-  @media (max-width: 1000px) {
-    margin: 2rem 0 0 0;
+  @media (max-width: 1100px) {
+    height: 175vw;
+    max-height: none;
   }
-  @media (max-width: 640px) {
-    height: 14rem;
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, auto);
+    max-height: none;
+    height: 700vw;
   }
   @media (max-width: 415px) {
-    margin: 1rem auto 0 auto;
     border-radius: 0rem;
   }
 `;
-export const BannerBack = styled.img`
+
+export const BackImg = styled.div`
+  height: 100%;
+  display: flex;
+  background-blend-mode: screen;
+  background-size: cover;
+`;
+export const DrawBack = styled.img`
+  z-index: -10;
   position: absolute;
-  top: -100%;
-  right: 0;
-  height: 350%;
-  z-index: -1;
-  @media (max-width: 780px) {
-    height: 300%;
-    top: -80%;
+  @media (max-width: 1600px) {
+    max-height: 650px;
   }
-  @media (max-width: 640px) {
-    height: 250%;
-    top: -50%;
+  @media (max-width: 1200px) {
+    width: 53%;
+    max-height: none;
+  }
+  @media (max-width: 1100px) {
+    width: 52%;
+    max-height: none;
+  }
+  @media (max-width: 700px) {
+    width: 100%;
+    max-height: none;
+  }
+`;
+export const DrawDes = styled.div`
+  height: 20%;
+  float: left;
+  align-self: flex-end;
+`;
+export const Title = styled.h2`
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+
+  @media (max-width: 900px) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 700px) {
+    font-size: 2rem;
   }
   @media (max-width: 415px) {
-    height: 170%;
-    top: -20%;
+    font-size: 1.5rem;
   }
 `;
-export const BannerBack2 = styled(BannerBack)`
-  position: absolute;
-  top: -80%;
-  left: 0;
-  height: 300%;
-  z-index: -1;
-  @media (max-width: 930px) {
-    height: 280%;
-    top: -80%;
+export const Text = styled.h4`
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+
+  @media (max-width: 415px) {
+    font-size: 0.8rem;
   }
+`;
+export const DescDiv = styled.div`
+  margin: 3rem 2rem 0 2rem;
   @media (max-width: 640px) {
-    height: 230%;
-    top: -70%;
+    margin: 1rem 1rem 0 1rem;
   }
-  @media (max-width: 550px) {
-    height: 200%;
-    top: -60%;
-  }
-  @media (max-width: 460px) {
-    height: 170%;
-    top: -40%;
+`;
+export const Words = styled.div`
+  max-width: 1200px;
+  margin: auto;
+  height: auto;
+`;
+export const Titles = styled.h2`
+  margin: 0 auto 0 0;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 2.6rem;
+  @media (max-width: 640px) {
+    font-size: 2rem;
   }
   @media (max-width: 415px) {
-    height: 165%;
-    top: -33%;
+    font-size: 1.8rem;
   }
 `;
-export const WaveBotton = styled.div`
-  position: absolute;
-  width: 100%;
-  bottom: -120px;
-  left: -320px;
-  transform: rotate(30deg);
-  z-index: 100;
+
+export const AboutContain = styled.div`
+  margin: 3rem 2rem 0 2rem;
+  height: auto;
+  @media (max-width: 640px) {
+    margin: 1rem 1rem 0 1rem;
+  }
 `;
-export const WaveTop = styled.div`
-  position: absolute;
-  width: 100%;
-  top: -120px;
-  right: -320px;
-  transform: rotate(210deg);
-  z-index: 100;
+export const IntroContain = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  @media (max-width: 415px) {
+    grid-gap: 0.5rem;
+  }
 `;
-export const MoreAbout = styled.div`
-  height: 500px;
+export const PhotoContain = styled.div`
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1rem;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+  @media (max-width: 415px) {
+    margin: 1rem auto 0 auto;
+    grid-gap: 0.5rem;
+  }
 `;

@@ -120,7 +120,6 @@ class HeaderIn extends React.Component {
       >
         <HeadDivs>
           <Link
-            className="work"
             style={{
               position: "absolute",
               left: "3%",
@@ -128,7 +127,7 @@ class HeaderIn extends React.Component {
               height: "30px",
               width: "30px"
             }}
-            to="/page-2"
+            to="/"
             replace
           >
             <BackIcon />
@@ -139,10 +138,10 @@ class HeaderIn extends React.Component {
               <Title>{this.props.Name}</Title>
             </ButtonTop>
 
-            <Link style={{ margin: "0 5% 0 auto" }} to="/page-2">
+            <Link style={{ margin: "0 5% 0 auto" }} to="/">
               <Work>Work</Work>
             </Link>
-            <Link style={{ margin: "0" }} to="/">
+            <Link style={{ margin: "0" }} to="/home">
               <Home>Home</Home>
             </Link>
           </HeadGroups>

@@ -39,7 +39,7 @@ const Text = styled.h1`
   }
 `;
 const Next = () => (
-  <Link to="/">
+  <Link to="/home">
     <Wrap>
       <Text>Let's know more about me! => </Text>
     </Wrap>

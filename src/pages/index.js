@@ -1,111 +1,160 @@
 import React from "react";
-import Header from "../components/header";
+import Link from "gatsby-link";
+import Cards from "../components/Cards";
+import Descs from "../components/Descs";
+import Desc1 from "../components/Descs/Desc1";
+import Desc2 from "../components/Descs/Desc2";
+import Desc3 from "../components/Descs/Desc3";
+import Desc4 from "../components/Descs/Desc4";
+import Intruduction from "../components/Intrud";
+import MyWay from "../components/MyWay";
+import MyWayEnd from "../components/MyWayEnd";
+import Next from "../components/Next";
 import Footer from "../components/Footer";
+import Header from "../components/header";
 import {
   HeroBack,
-  IntroDiv,
-  DrawContain,
-  DescDiv,
-  Words,
-  Titles
+  Container,
+  CardGroup,
+  Banner,
+  BannerBack,
+  BannerBack2
 } from "../layouts/Index-Styles";
 
-import Intruduction from "../components/Intrud2";
-import DrawingDesc from "../components/Drawings/DrawingDes";
-import Pic from "../components/Drawings/Draw";
-import Abouts from "../components/Abouts";
-import AtLast from "../components/Atlast";
+import "aos/dist/aos.css";
 
-class SecondPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      loading: true
-    };
-  }
-
+class IndexPage extends React.Component {
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 3000);
+    const isBrowser = typeof window !== "imdefined";
+    const AOS = isBrowser ? require("aos") : undefined;
+
+    this.aos = AOS;
+    this.aos.init();
   }
 
+  componentDidUpdate() {
+    this.aos.refresh();
+  }
   render() {
-    const { loading } = this.state;
-
     return (
-      <div style={{ height: "100%" }}>
+      <div>
         <Header />
         <HeroBack>
-          <IntroDiv>
-            <Intruduction
-              name="This is Chenfeng Gao"
-              text="Thank you for giving this wonderful opportunity to me to introduce
-            myself to you. I am (Your Name). We are five members in my family
-            including me. I am native to (City Name), and open to relocate to
-            (city name as mentioned in the job description). Currently, I am
-            pursuing (or completed) B.B.M in Marketing at the (University Name),
-            and I will be entering into final year of my graduation studies in
-            the next couple of months. Ever since, I started studying Marketing
-            in my school days. I realized, I enjoy analyzing things connected to
-            the society, the Mother Nature, and love to travel."
-              image={require("../images/123.png")}
-              head={require("../images/head.jpg")}
-            />
-          </IntroDiv>
+          <Intruduction name="Chenfeng Gao" />
         </HeroBack>
-        <DescDiv>
-          <Words>
-            <Titles> My Funfacts </Titles>
-          </Words>
-        </DescDiv>
 
-        <Abouts />
+        <Banner>
+          <BannerBack src={require("../images/1165.jpg")} />
 
-        <DrawingDesc />
+          <MyWay
+            title="My Journey to HCI"
+            text="When I was a sophomore, my friends and I were trying to put the programming knowledge learned in class into practice and started our business from scratch. The process was tough and we didn’t make it, but I gradually found where my real passion was."
+          />
+        </Banner>
 
-        <DrawContain>
-          <Pic
-            real={require("../images/aisah.png")}
-            paint={require("../images/Elsa.png")}
-            name="Elsa"
-            date="Dec 2015"
+        <CardGroup>
+          <Container
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-duration="150"
+          >
+            <Link className="Project1" to="/work1">
+              <Cards
+                name="The First one"
+                newDate="2015-2016"
+                image={require("../images/wallpaper.png")}
+              />
+            </Link>
+            <Descs
+              title="The First One"
+              role="Leader"
+              kind="Startup"
+              way="Business Modle"
+            >
+              <Desc1 />
+            </Descs>
+          </Container>
+
+          <Container
+            data-aos="fade-up"
+            data-aos-offset="-100"
+            data-aos-duration="150"
+          >
+            <Link className="Project2" to="/work2">
+              <Cards
+                name="Internship"
+                newDate="Nov.2016-Jan.2017"
+                image={require("../images/cover2.png")}
+              />
+            </Link>
+            <Descs
+              title="Internship"
+              role="Designer"
+              kind="UI Design"
+              way="Standard"
+            >
+              <Desc2 />
+            </Descs>
+          </Container>
+
+          <Container
+            data-aos="fade-up"
+            data-aos-offset="-200"
+            data-aos-duration="150"
+          >
+            <Link className="Project3" to="/work3">
+              <Cards
+                name="Idea From Living"
+                newDate="Jul.2017"
+                image={require("../images/cover3.png")}
+              />
+            </Link>
+            <Descs
+              title="Idea From Living"
+              role="Product"
+              kind="UX Design"
+              way="Case Study"
+            >
+              <Desc3 />
+            </Descs>
+          </Container>
+
+          <Container
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-duration="150"
+          >
+            <Link className="Project4" to="/work4">
+              <Cards
+                name="Numbers"
+                newDate="Sep.2017-Mar.2018"
+                image={require("../images/wallpaper4.png")}
+              />
+            </Link>
+            <Descs title="Numbers" role="Data" kind="Code" way="Python">
+              <Desc4 />
+            </Descs>
+          </Container>
+        </CardGroup>
+
+        <Banner
+          data-aos="fade-up"
+          data-aos-offset="-350"
+          data-aos-duration="150"
+        >
+          <BannerBack2 src={require("../images/3499.jpg")} />
+          <MyWayEnd
+            title="... I wanna be better"
+            text="After years of experiences, I still wasn’t satisfied with myself. When I did user researches and design work, I always followed my intuition or methods on the Internet. These fragmented knowledge, however, stopped me from seeing the higher scope. For now, I’m ready to get some professional training.  "
           />
-          <Pic
-            real={require("../images/xialuokebackground.png")}
-            paint={require("../images/Sherlock.png")}
-            name="Sherlock"
-            date="Feb 2016"
-          />
-          <Pic
-            real={require("../images/mygril.png")}
-            paint={require("../images/Zhangyu.png")}
-            name="My Girl"
-            date="Jun 2017"
-          />
-          <Pic
-            real={require("../images/testbackground.png")}
-            paint={require("../images/test.png")}
-            name="Jack"
-            date="Feb 2016"
-          />
-          <Pic
-            real={require("../images/malef.png")}
-            paint={require("../images/Malefecent.png")}
-            name="Maleficent"
-            date="Jun 2016"
-          />
-          <Pic
-            real={require("../images/green.png")}
-            paint={require("../images/Eva.png")}
-            name="Eva Green"
-            date="Dec 2016"
-          />
-        </DrawContain>
-        <AtLast />
+        </Banner>
+
+        <Next />
+
         <Footer />
       </div>
     );
   }
 }
 
-export default SecondPage;
+export default IndexPage;

@@ -16,21 +16,33 @@ class Project3Page extends React.Component {
     };
   }
 
+  cantMove = e => {
+    e.preventDefault();
+  };
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 2000);
+    setTimeout(() => {
+      window.addEventListener("wheel", this.cantMove);
+    }, 0);
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1500);
+    setTimeout(() => {
+      window.removeEventListener("wheel", this.cantMove);
+    }, 1500);
   }
 
   render() {
     const { loading } = this.state;
 
     return (
-      <LoadingScreen
-        loading={loading}
-        bgColor="white"
-        spinnerColor="#FFA700"
-        textColor="#343434"
-        text="Fast experiment"
-      >
+      <div>
+        <LoadingScreen
+          loading={loading}
+          bgColor="white"
+          spinnerColor="#FFA700"
+          textColor="#343434"
+          text="Fast experiment"
+        />
         <HeaderIn Name="Cathome" />
         <Overview image={require("../images/background3.png")} />
         <BackGround />
@@ -38,7 +50,7 @@ class Project3Page extends React.Component {
         <Design />
         <Reflection />
         <div style={{ height: "400px" }} />
-      </LoadingScreen>
+      </div>
     );
   }
 }

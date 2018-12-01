@@ -1,5 +1,5 @@
 import React from "react";
-import { IntroGroup1 } from "../layouts/Page2-Styles";
+import { IntroGroup1 } from "../layouts/Index-Styles";
 import styled, { keyframes } from "styled-components";
 import { Resume, Inst, Mail } from "./icons";
 

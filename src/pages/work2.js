@@ -17,21 +17,33 @@ class Project2Page extends React.Component {
     };
   }
 
+  cantMove = e => {
+    e.preventDefault();
+  };
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 2000);
+    setTimeout(() => {
+      window.addEventListener("wheel", this.cantMove);
+    }, 0);
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1500);
+    setTimeout(() => {
+      window.removeEventListener("wheel", this.cantMove);
+    }, 1500);
   }
 
   render() {
     const { loading } = this.state;
 
     return (
-      <LoadingScreen
-        loading={loading}
-        bgColor="white"
-        spinnerColor="#FF3366"
-        textColor="#343434"
-        text="Fun internship"
-      >
+      <div>
+        <LoadingScreen
+          loading={loading}
+          bgColor="white"
+          spinnerColor="#FF3366"
+          textColor="#343434"
+          text="Fun internship"
+        />
         <HeaderIn Name="LesPark" />
         <OverView />
         <Background />
@@ -40,7 +52,7 @@ class Project2Page extends React.Component {
         <Process />
         <Reflection />
         <div style={{ height: "400px" }} />
-      </LoadingScreen>
+      </div>
     );
   }
 }

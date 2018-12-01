@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { Titles } from "../layouts/Index-Styles";
+import { Titles } from "../layouts/Page2-Styles";
 const DescDiv = styled.div`
   margin: 3rem 2rem 0 2rem;
   @media (max-width: 640px) {

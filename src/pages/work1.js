@@ -14,30 +14,41 @@ import Jun from "../components/Work1/Jun";
 import Last from "../components/Work1/Atlast";
 
 import LoadingScreen from "react-loading-screen";
+
 class Project1Page extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       loading: true
     };
   }
-
+  cantMove = e => {
+    e.preventDefault();
+  };
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 2000);
+    setTimeout(() => {
+      window.addEventListener("wheel", this.cantMove);
+    }, 0);
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1500);
+    setTimeout(() => {
+      window.removeEventListener("wheel", this.cantMove);
+    }, 1500);
   }
 
   render() {
     const { loading } = this.state;
 
     return (
-      <LoadingScreen
-        loading={loading}
-        bgColor="white"
-        spinnerColor="#01B4FF"
-        textColor="#343434"
-        text="Failed experience, at least I tried"
-      >
+      <div>
+        <LoadingScreen
+          loading={loading}
+          bgColor="white"
+          spinnerColor="#01B4FF"
+          textColor="#343434"
+          text="Failed experience, at least I tried"
+        />
         <HeaderIn Name="Differ" />
         <OverView />
         <Background />
@@ -52,7 +63,7 @@ class Project1Page extends React.Component {
         <Jun />
         <Last />
         <div style={{ height: "400px" }} />
-      </LoadingScreen>
+      </div>
     );
   }
 }

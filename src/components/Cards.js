@@ -1,5 +1,5 @@
 import React from "react";
-import { CardDiv } from "../layouts/Page2-Styles";
+import { CardDiv } from "../layouts/Index-Styles";
 import styled from "styled-components";
 
 const CardContain = styled.div`
