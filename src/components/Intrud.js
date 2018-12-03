@@ -86,7 +86,7 @@ const Intruduction = props => {
           </Name>
           <Info>
             {" "}
-            A problem solver with strong passion for satisfying daily needs in
+            A problem solver with a strong passion for satisfying daily needs in
             life by using technical ways <Emoji symbol="🔧" />
             <Emoji symbol="🖖" /> A rational thinker who focuses on putting the
             logical thinking into the process of product design.{" "}
@@ -103,7 +103,13 @@ const Intruduction = props => {
           >
             <Inst />
           </a>
-          <Resume />
+          <a
+            className="resume"
+            href="https://drive.google.com/open?id=1X3DOr7n3XVPxlazPoPQkfaSAQcGnlK58"
+            target="_blank"
+          >
+            <Resume />
+          </a>
         </Contacts>
       </Content>
     </IntroGroup1>

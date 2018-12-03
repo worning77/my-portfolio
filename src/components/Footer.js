@@ -32,7 +32,7 @@ const Footer = () => (
       <Text>
         Design&Code by me! <br />
         This is my first site built by ReactJs <br />
-        Jesse Gao © 2018 All Rights Reserved
+        Chenfeng Gao © 2018 All Rights Reserved
       </Text>
     </FootContain>
   </FootDiv>

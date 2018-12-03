@@ -146,7 +146,13 @@ const Intruduction = props => {
           >
             <Inst />
           </a>
-          <Resume />
+          <a
+            className="resume"
+            href="https://drive.google.com/open?id=1X3DOr7n3XVPxlazPoPQkfaSAQcGnlK58"
+            target="_blank"
+          >
+            <Resume />
+          </a>
 
           <Me>Let's Connect!</Me>
         </Contacts>

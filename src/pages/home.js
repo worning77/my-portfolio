@@ -24,15 +24,7 @@ const SecondPage = () => (
       <IntroDiv>
         <Intruduction
           name="This is Chenfeng Gao"
-          text="Thank you for giving this wonderful opportunity to me to introduce
-            myself to you. I am (Your Name). We are five members in my family
-            including me. I am native to (City Name), and open to relocate to
-            (city name as mentioned in the job description). Currently, I am
-            pursuing (or completed) B.B.M in Marketing at the (University Name),
-            and I will be entering into final year of my graduation studies in
-            the next couple of months. Ever since, I started studying Marketing
-            in my school days. I realized, I enjoy analyzing things connected to
-            the society, the Mother Nature, and love to travel."
+          text="I have always been aspiring to be both a visionary artist and a risk-taking entrepreneur. Majoring in mathematics in my undergraduate study laid a solid foundation for me to think logistically. The process of brainstorming ideas and visualizing them pushes me to learn and practice coding languages. My experiences of starting up a company and attempting to launch a product give me an entrepreneurial mindset. Knowing that graduate schools offering innovation education can further help me become a professional product designer with entrepreneurial spirit, I’m currently applying for programs such as Human Computer Interaction, in the graduate level."
           image={require("../images/123.png")}
           head={require("../images/head.jpg")}
         />
