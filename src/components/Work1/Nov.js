@@ -21,6 +21,7 @@ import Tree from "./Nov/Tree";
 
 import Bad from "./Nov/Bad";
 import Conclusion from "./Conclusion";
+import Clickable from "./HideShow";
 
 const NovDiv = styled.div`
   max-width: 1200px;
@@ -103,57 +104,67 @@ const Nov = () => (
         Since we were very close to Zhongguancun, the Silicon valley of Beijing,
         Guangxin and I went there, feeling the atmosphere of startup, auditing
         roadshows, downloading and experiencing tens of newly released apps
-        everyday. We found we need to think more. First, we made a{" "}
+        everyday. We found we needed to think more. First, we made a{" "}
         <High>Competitive Analysis</High> .{" "}
       </Ctext>
       <AdDiv>
         <Ad>
           "There's a concept in Zhongguancun: <br />If you have an idea, there
-          would be million yuan to invest you."
+          would be a million yuan to invest in you."
         </Ad>
       </AdDiv>
       <SmallTitle>Competitive Analysis</SmallTitle>
-      <Pic1 pic1={require("../../images/jinpin.png")} />
-      <SmallsTitle>In skill-sharing field, we found that:</SmallsTitle>
+      <Clickable lable="show more">
+        <Pic1 pic1={require("../../images/jinpin.png")} />
+        <SmallsTitle>In the skill-sharing field, we found that:</SmallsTitle>
+        <Ctext>
+          1. Most skills or views sharing platforms{" "}
+          <High>focus on some certain fields</High>.<br />
+          <Small>
+            Zaihang: a one-on-one consulting platform specific in the Internet
+            industry.<br />
+            Xuejiebang: a platform which helps future college students
+            acknowledge how to choose their dream school and what college-life
+            is like.
+          </Small>
+          <br />
+          2. Basically everyone has a method to <High>
+            motivate users
+          </High>.<br />
+          <Small>
+            Baidu Zhidao and Xuejiebang pay for those people who answer
+            questions.<br />
+            Skillbank encourages users to exchange their professional skills.
+          </Small>
+          <br />
+          3. <High>None of those has the video function.</High>
+          <br />
+          <Small>
+            Except Users in Zaihang will meet and talk in real life.
+          </Small>
+          <br />
+          4. The target users of every platform are{" "}
+          <High>
+            highly related to the main topics they made at the beginning stage
+          </High>.
+        </Ctext>
+        <Pic1 pic1={require("../../images/shipin.png")} />
+        <SmallsTitle>
+          In the short video field, we found that:{" "}
+        </SmallsTitle>{" "}
+        <Ctext>
+          <High>None of them uses videos to spread knowledge.</High>
+        </Ctext>
+      </Clickable>
       <Ctext>
-        1. Most skills or views sharing platforms{" "}
-        <High>focus on some certain fields</High>.<br />
-        <Small>
-          Zaihang: an one-on-one Consulting platform specific in the Internet
-          industry.<br />
-          Xuejiebang: a platform which helps future college students acknowledge
-          how to choose dream school and what college-time like.
-        </Small>
-        <br />
-        2. Basically everyone has a method to <High>motivate users</High>.<br />
-        <Small>
-          Baidu Zhidao and Xuejiebang pay for those people who answer questions.<br />
-          Skillbank encourages users to exchange their mastered skills.
-        </Small>
-        <br />
-        3. <High>None of those has the video fucntion.</High>
-        <br />
-        <Small>Except Users in Zaihang will meet and talk in reallife.</Small>
-        <br />
-        4. The target users of every platform are{" "}
-        <High>
-          highly related to the main toptics they made at the beginning stage
-        </High>.
-      </Ctext>
-      <Pic1 pic1={require("../../images/shipin.png")} />
-      <SmallsTitle>In short video field, we found that: </SmallsTitle>{" "}
-      <Ctext>
-        <High>None of them uses video to spread knowledge.</High>
-      </Ctext>
-      <Ctext>
-        At that time, we thought "Video + knowledge" was a Blue Sea, which
-        encouraged us to make videos quickly.<br />
+        At that time, we thought "video + knowledge" was a Blue Sea, which
+        encouraged us to accelerate the speed of building our product. <br />
         Thus, combined with the suggestions from previous surveys of professors,
         we decided to focus on the "pain points" of students in our school,
         which were some difficult subjects, like Advanced Mathematics.
-        Meanwhile, we known that Economics and some relevant subjects were hot
-        majors in my university. We tried to talk to some top students in every
-        school, hoping they could make videos of those subjects.{" "}
+        Meanwhile, we knew that Economics and some relevant majors were hot in
+        my university. We tried to talk to some top students in those schools,
+        hoping they could make videos in acing those courses.{" "}
         <Big>Next, we made a Topic Tree.</Big>{" "}
       </Ctext>
       <Tree pic1={require("../../images/Tree.png")} />

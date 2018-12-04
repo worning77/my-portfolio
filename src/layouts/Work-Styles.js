@@ -45,10 +45,11 @@ export const SubTitle = styled.h4`
 `;
 
 export const Text = styled.p`
-  margin: 2rem 0;
+  margin: 3rem 0 2rem 0;
   font-size: 2.5rem;
   color: rgba(0, 0, 0, 0.7);
   font-weight: 400;
+  padding: 0 5%;
   @media (max-width: 1300px) {
     font-size: 2rem;
   }

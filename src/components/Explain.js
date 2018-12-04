@@ -33,14 +33,17 @@ const Text = styled.p`
 const Explains = () => (
   <DescDiv>
     <Words>
-      <Titles>Recently doings</Titles>
+      <Titles>What Keeps Me Busy:</Titles>
       <Text>
-        I used gatsby JS v1.9 when I first started to build this site. Till now,
-        I am learning the basic knowledge about front-end development. One day,
-        I fund gatsby upgraded to V2, which is totally different from v1, and
-        the profermence is better, and its img components have laze-load effect,
-        more powerful. Therefore, since Nov.2018, I started to build a new site
-        with gatsby2.0, and improve my programming skills.{" "}
+        <li>
+          I built this site by using Gatsby JS V.1.9. By migrating from V. 1.9
+          to V2, I hope this site can present a better performance.
+        </li>{" "}
+        <br />
+        <li>
+          Plus, I’m having an internship in AI Institute, Sinovation ventures in
+          Beijing and the daily routine is exciting as usual.
+        </li>
       </Text>
     </Words>
   </DescDiv>

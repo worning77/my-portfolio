@@ -54,7 +54,7 @@ const JPic = props => (
       </Div>
     </Jdiv>
     <Text>
-      Xiaojue Tian led the tech team finish the main function in Android.
+      Xiaojue Tian leading the tech team finished the main function in Android.
     </Text>
   </PDiv>
 );

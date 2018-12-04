@@ -44,6 +44,7 @@
     "react-spark-scroll": "^4.0.0",
     "react-spark-scroll-gsap": "^4.0.0",
     "react-spark-scroll-rekapi": "^4.0.0",
+    "react-toggle-display": "^2.2.0",
     "react-waypoint": "^8.0.3",
     "really-smooth-scroll": "^2.1.1",
     "styled-components": "^3.3.3"

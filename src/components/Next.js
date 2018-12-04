@@ -9,14 +9,14 @@ const Background = keyframes`
 `;
 
 const Wrap = styled.div`
-  margin: 2rem auto;
-  height: 3rem;
-  max-width: 80%;
-`;
-const Text = styled.h1`
-  font-size: 2rem;
-  margin: 1rem auto;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
+`;
+const Button = styled.button`
+  margin: 3rem auto 2rem auto;
+  padding: 0;
+  border: none;
   background-image: -webkit-linear-gradient(
     150deg,
     rgba(125, 57, 159, 0.9) 0%,
@@ -31,6 +31,14 @@ const Text = styled.h1`
   background-size: 200% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &:hover {
+    animation: ${Background} 1s infinite ease-in-out;
+  }
+`;
+const Text = styled.h1`
+  font-size: 2rem;
+  margin: 0;
+
   @media (max-width: 640px) {
     font-size: 1.5rem;
   }
@@ -39,10 +47,12 @@ const Text = styled.h1`
   }
 `;
 const Next = () => (
-  <Link to="/home">
-    <Wrap>
-      <Text>Let's know more about me! => </Text>
-    </Wrap>
-  </Link>
+  <Wrap>
+    <Button>
+      <Link to="/home">
+        <Text>Willing to know more about me? </Text>
+      </Link>
+    </Button>
+  </Wrap>
 );
 export default Next;

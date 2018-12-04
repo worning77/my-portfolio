@@ -13,6 +13,7 @@ import Pic1 from "./Oct/Pic";
 import JPic from "./Oct/JPic";
 import Design from "./Oct/Design";
 import Test from "./Oct/Test";
+import Clickable from "./HideShow";
 
 const OctDiv = styled.div`
   max-width: 1200px;
@@ -49,7 +50,7 @@ const Oct = () => (
   <Container>
     <OctDiv>
       <Dates>October</Dates>
-      <BigTitle>Some achievment and research</BigTitle>
+      <BigTitle>A little progress</BigTitle>
       <SmallTitle>Design work</SmallTitle>
       <Ctext>
         I drew the sketch pages of four main functions, and Guangxin made the
@@ -91,50 +92,52 @@ const Oct = () => (
         But during the design progress, we found it was{" "}
         <High>hard to create topics and subtopics easily</High>. Even though we
         could make several examples and user storyboards when we introduced our
-        idea to others, still we can’t make a all-round topic tree. We found
-        that we need a better way to let the future users understand how to use
+        idea to others, still we can’t make an all-round topic tree. We found
+        that we need a better way to help the future users understand how to use
         this platform.
       </Ctext>
-
-      <SmallTitle>Programing</SmallTitle>
-      <JPic
-        pic1={require("../../images/jishu2.png")}
-        pic2={require("../../images/jishu1.png")}
-      />
-      <SmallTitle>Video test</SmallTitle>
-      <Test pic1={require("../../images/videotest.png")} />
-      <SmallTitle>Promotion plan</SmallTitle>
-      <Ctext>
-        In order to attract future users, we known we should create a sense of
-        cool and <High>high-quality content pool.</High> And considering there
-        was no Instafamous in China, what we had in university is the group of
-        people:<br />
-        <High>The most popular professors and chiefs of student clubs.</High>
-        <br /> So, we decided to interview some of those teachers, preparing
-        some relative questions. In this way, future students would be attracted
-        to our platform by watching these videos.{" "}
-      </Ctext>
-      <SmallTitle>Survey from Professors</SmallTitle>
-      <Ctext>
-        Among 15 professors from all kinds of fields, including psychology,
-        finance, computer science, sociology, who we had face-to-face
-        conversations, we got these:<br />
-        <br />
-        <li>12 of them liked our idea</li>
-        <br />
-        <li>5 of them cannot be interviewed because of time-conflict</li>
-        <br />
-        <li>
-          2 of them didn't want to be interviewed because they thought it might
-          be bad for their reputation
-        </li>
-        <br />
-        <li>
-          3 of them suggested that we'd better{" "}
-          <High>start from some college students' related topics</High>
-        </li>{" "}
-      </Ctext>
+      <Clickable lable="more details">
+        <SmallTitle>Programing</SmallTitle>
+        <JPic
+          pic1={require("../../images/jishu2.png")}
+          pic2={require("../../images/jishu1.png")}
+        />
+        <SmallTitle>Video test</SmallTitle>
+        <Test pic1={require("../../images/videotest.png")} />
+        <SmallTitle>Promotion plan</SmallTitle>
+        <Ctext>
+          In order to attract future users, we knew we should create a sense of
+          cool and <High>high-quality content pool.</High> And considering there
+          was no Instafamous in China, what we had in university is the group of
+          people:<br />
+          <High>The most popular professors and leaders of student clubs.</High>
+          <br /> So, we decided to interview some of those teachers, preparing
+          some related questions. In this way, future students would be
+          attracted to our platform by watching these videos.{" "}
+        </Ctext>
+        <SmallTitle>Survey from Professors</SmallTitle>
+        <Ctext>
+          Among 15 professors from all kinds of fields, including psychology,
+          finance, computer science, sociology, who we had face-to-face
+          conversations, we got these:<br />
+          <br />
+          <li>12 of them liked our idea</li>
+          <br />
+          <li>5 of them cannot be interviewed because of time-conflict</li>
+          <br />
+          <li>
+            2 of them didn't want to be interviewed because they thought it
+            might be bad for their reputation
+          </li>
+          <br />
+          <li>
+            3 of them suggested that we'd better{" "}
+            <High>start from some college students' related topics</High>
+          </li>{" "}
+        </Ctext>
+      </Clickable>
     </OctDiv>
   </Container>
 );
+
 export default Oct;

@@ -27,11 +27,12 @@ const High = styled.span`
 `;
 const Desc4 = () => (
   <Content>
-    After graduation, with my maths background, I hoped to help my father’s
-    business—<High>cement distributor for high way sites</High>. By the means of
-    data analyze, I solved the order issues and increased the effectiveness of
-    account checking to the greatest extend; and also I redesigned the dealing
-    process based on the Internet.
+    After graduation, I start to help my father’s business,{" "}
+    <High>a cement distributor for highways</High>. Before, they did everything
+    manually, such as checking orders, which took a lot of time. In order to
+    improve the work efficiency, I designed a scanner. Although it is not 100%
+    accurate, the accuracy can be greatly improved shortly. I am still working
+    on this project.
   </Content>
 );
 export default Desc4;

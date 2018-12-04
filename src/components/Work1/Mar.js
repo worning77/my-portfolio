@@ -14,6 +14,7 @@ import Luoji from "./Mar/Luoji";
 import Fenxi from "./Mar/Fenxi";
 import Sketch from "./Mar/Sketch";
 import Differ from "./Mar/Differ";
+import Clickable from "./HideShow";
 
 const MarDiv = styled.div`
   max-width: 1200px;
@@ -49,12 +50,14 @@ const Mar = () => (
         which gave us power to work.{" "}
       </Ctext>
     </MarDiv>
-    <Caotu1Div>
-      <Fenxi
-        pic1={require("../../images/fenxi1.png")}
-        pic2={require("../../images/fenxi2.png")}
-      />
-    </Caotu1Div>
+    <Clickable lable="details">
+      <Caotu1Div>
+        <Fenxi
+          pic1={require("../../images/fenxi1.png")}
+          pic2={require("../../images/fenxi2.png")}
+        />
+      </Caotu1Div>
+    </Clickable>
     <MarDiv>
       <SmallTitle>Soluitions about the worries above.</SmallTitle>
       <Ctext>

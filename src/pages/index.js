@@ -48,7 +48,7 @@ class IndexPage extends React.Component {
 
           <MyWay
             title="My Journey to HCI"
-            text="When I was a sophomore, my friends and I were trying to put the programming knowledge learned in class into practice and started our business from scratch. The process was tough and we didn’t make it, but I gradually found where my real passion was."
+            text="When I was a sophomore, my friends and I were trying to put the programming knowledge learned in class into practice and started our business from scratch. The process was tough and we didn’t make it, but I've gradually found where my real passion lies."
           />
         </Banner>
         <div id="projects">
@@ -60,13 +60,13 @@ class IndexPage extends React.Component {
             >
               <Link className="Project1" to="/work1">
                 <Cards
-                  name="The First one"
+                  name="My First Attempt"
                   newDate="2015-2016"
                   image={require("../images/wallpaper.png")}
                 />
               </Link>
               <Descs
-                title="The First One"
+                title="My First Attempt"
                 role="Leader"
                 kind="Startup"
                 way="Business Modle"
@@ -145,7 +145,7 @@ class IndexPage extends React.Component {
           <BannerBack2 src={require("../images/3499.jpg")} />
           <MyWayEnd
             title="... I wanna be better"
-            text="After years of experiences, I still wasn’t satisfied with myself. When I did user researches and design work, I always followed my intuition or methods on the Internet. These fragmented knowledge, however, stopped me from seeing the higher scope. For now, I’m ready to get some professional training.  "
+            text="I have put time and effort in what I am interested in, which is definitely interactive design and programming. In the past years of trial-and-error process, I gained valuable experiences but not enough skills, which is exactly why I’m applying to graduate programs to learn from the best to back up my future career aspirations."
           />
         </Banner>
 

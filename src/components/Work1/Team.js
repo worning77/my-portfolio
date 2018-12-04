@@ -37,41 +37,41 @@ const Team = () => (
       <BigTitle>Get Started</BigTitle>
       <Ctext>
         After the summer break, I went back to school and talked this idea to a
-        bounch of my friends. They thought this program had possibility and we
-        could have a try. Thus, my first team built up.
+        bunch of my friends. They thought this idea might have a future and we
+        could give it a try. Thus, my first team built up.
       </Ctext>
       <TeamContain>
         <Member
           title="Design"
           name="Me + Guangxin Wang"
-          text="Product and UI design, publicize our idea, find cooperation chances"
+          text="to design product and UI, to publicize the idea, to find and talk to possible investors"
         />
         <Member
           title="Video"
           name="Bizheng Wu"
-          text="Figure out how to reduce the difficult of making a vedio and standardize the process of videoing"
+          text="To reduce the difficulty of making a video and to standardize the process of videoing"
         />
         <Member
           title="Programming"
           name="Xiaojue Tian+ Haodong Yu"
-          text="Start to learn and realize the video fuction both in Android and IOS"
+          text="To realize the video fuction both in Android and iOS"
         />
         <Member
           title="Promotion"
           name="Hao Dong+ Diya Li"
-          text="Build connections with professors and clubs leaders in school"
+          text="to build connections with student organizations leaders and professors in school"
         />
       </TeamContain>
       <Ctext>
-        We did a brief survey of "how students think about this idea" by talking
-        to about 30 students in my school. Basically all of them expressed the
-        willing that such a friend based knowledge-spread platform was needed,
-        which gave us a lot of confidence.{" "}
+        We did a brief survey of "how would students think about this idea" by
+        talking to about 30 students in my school. Basically all of them
+        expressed the willingness that such a friend-based knowledge-sharing
+        platform was needed, which gave us a lot of confidence.{" "}
       </Ctext>
       <SmallTitle>Plan α</SmallTitle>
       <Ctext>
-        1. We decided to imitate Zhihu's function, and change the way of
-        answering questions from typing to videoing. <br />
+        1. To build a social-network-based platform to share knowledge in the
+        form of videos. <br />
         2. Add a Moment Page which could show what questions that users's
         friends asked or followed.<br />{" "}
       </Ctext>

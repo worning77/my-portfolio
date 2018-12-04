@@ -125,7 +125,8 @@ class HeaderIn extends React.Component {
               left: "3%",
               top: "30%",
               height: "30px",
-              width: "30px"
+              width: "30px",
+              zIndex: "2"
             }}
             to="/"
             replace

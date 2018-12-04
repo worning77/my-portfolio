@@ -26,10 +26,10 @@ const High = styled.span`
 `;
 const Desc3 = () => (
   <Content>
-    During the internship, my girlfriend and I moved out of campus and rent a
-    small apartment. We kept two cats and cooked together, sometimes inviting
-    friends to watch movies by projector together. We felt happy, and friends
-    were green with envy! Suddenly I thought why we didn’t make{" "}
+    During the internship, my girlfriend and I moved off campus and lived in a
+    small but cozy apartment. My girl and I also kept two cats. Occasionally we
+    threw parties in our apartment, watching movies, playing board games and
+    cooking together. We were very happy. Suddenly I thought why didn’t we start{" "}
     <High>a house leasing project just for young couples</High>?
   </Content>
 );

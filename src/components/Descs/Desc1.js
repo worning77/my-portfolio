@@ -29,10 +29,9 @@ const Desc1 = () => (
   <Content>
     Hoping to have a more meaningful social media network, my friends and I took
     a one-year challenge to realize our goal—
-    <High>A skill-sharing platform based on connection</High>. I, a student in
-    mathsmatics, started to lead the team, sharing ideas with more other
-    students and expertise, holding meetings to make plans and implement them on
-    time.
+    <High>a skill-sharing platform based on network</High>. I, a student in
+    mathsmatics, took the role of the leader, brainstorming ideas, holding
+    meetings to make plans and putting every effort to launch the product.
   </Content>
 );
 export default Desc1;

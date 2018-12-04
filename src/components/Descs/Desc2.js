@@ -26,11 +26,11 @@ const High = styled.span`
 `;
 const Desc2 = () => (
   <Content>
-    After one-year "unsuccessful" working, as a leader, I found myself really
-    enjoyed dealing with information from users to design product. Wishing to
-    get improved from some professional companies, I got a chance to work with
-    the team of <High>LesPark App—A social media network for Lesbians</High>. I
-    began to do the 'real' design work.
+    After the failure of my previous product, I found myself in need of exposure
+    to an actual tech company and fortunately I got an internship in{" "}
+    <High>LesPark App — a social media network for lesbians</High>. During the
+    internship, I gathered/analyzed information from users and began to do the
+    'real' design work.
   </Content>
 );
 export default Desc2;

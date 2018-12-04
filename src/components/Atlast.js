@@ -56,18 +56,19 @@ const Links = styled.a`
 const AtLast = () => (
   <DescDiv>
     <Words>
-      <Titles>At Last</Titles>
+      <Titles>One More Thing:</Titles>
       <Text>
-        I appreciate the support and understanding from my family and my
-        girlfriend for my pursuit of HCI. They gave me the power and let me move
-        on.<br />
+        Without the support from my family and my girlfriend, I might not take
+        the step to pursue HCI. I’m a lucky guy having them by my side.
         <br />
-        And for this site, this is my first web project. I learned the knowledge
-        of ReactJS online, such as the videos of{" "}
+        <br />
+        This is my first website. Internet is of the greatest help. I learned
+        the ReactJS online, such as the videos of
         <Links
           href="https://www.youtube.com/channel/UCE7Y95L1btz6qQkfyFfYFQA"
           target="view_window"
         >
+          {" "}
           FroDev's channel
         </Links>{" "}
         and courses from{" "}
@@ -78,11 +79,11 @@ const AtLast = () => (
         <Links href="https://kaiwei.design/#/work" target="view_window">
           kaiwei.design.
         </Links>{" "}
-        Of course, as a newbie developer, I got help from my old partner
-        ChenDou. He gave me some useful tricks about how to build the website
-        more efficiently.<br />
+        Of course, as a newbie developer, I got help from my old partner Chen
+        Dou. He gave me constructive advice about putting this site together.<br />
         <br />
-        Thanks for stopping by. Feel free to connect me!
+        Thanks for stopping by. Feel free to connect me!{" "}
+        <Links href="mailto:cfenggao@outlook.com">cfenggao@outlook.com</Links>
       </Text>
     </Words>
   </DescDiv>

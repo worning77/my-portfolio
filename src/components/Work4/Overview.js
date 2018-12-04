@@ -34,10 +34,7 @@ const OverView = () => (
   <Container>
     <OverviewDiv>
       <Title>Numbers</Title>
-      <SubTitle>
-        My first time to complete a real system to help a company improve
-        efficiency.
-      </SubTitle>
+
       <Text>
         There were two ways ahead of me after graduation: preparing English to
         study abroad or helping my father’s company. I didn’t care about his

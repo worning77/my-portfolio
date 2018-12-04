@@ -16,6 +16,7 @@ import Market from "./Dec/Market";
 import Lables from "./Dec/Lables";
 import Taolun from "./Dec/Taolun";
 import Plan from "./Dec/Plan";
+import Clickable from "./HideShow";
 
 const DecDiv = styled.div`
   max-width: 1200px;
@@ -34,15 +35,17 @@ const Dec = () => (
         Without the video-only threshold, we gave rights to users. Thus, we
         discussed this project from the beginning.
       </Ctext>
-      <SmallTitle>Classified user group</SmallTitle>
-      <Market pic1={require("../../images/fenxi.png")} />
-      <Ctext>
-        Combined with our Relationship basd service(RBS), we can quickly match
-        newbee and experienced. Meanwhile, this platform can satisify users'
-        potential needs:
-      </Ctext>
-      <SmallTitle>Proposed target users</SmallTitle>
-      <User pic1={require("../../images/user.png")} />
+      <Clickable lable="definate users">
+        <SmallTitle>Classified user group</SmallTitle>
+        <Market pic1={require("../../images/fenxi.png")} />
+        <Ctext>
+          Combined with our Relationship basd service(RBS), we can quickly match
+          newbee and experienced. Meanwhile, this platform can satisify users'
+          potential needs:
+        </Ctext>
+        <SmallTitle>Proposed target users</SmallTitle>
+        <User pic1={require("../../images/user.png")} />
+      </Clickable>
       <Ctext>
         We <High>must have a high-quality conent pool</High> in the first stage,
         because it will trigger users interests and let the user begin to ask
