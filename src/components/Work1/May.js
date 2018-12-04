@@ -26,33 +26,37 @@ const May = () => (
   <Container>
     <DecDiv>
       <Dates>May-July</Dates>
-      <BigTitle>Final trail</BigTitle>
+      <BigTitle>Last attempt</BigTitle>
       <Ctext>
-        5月对于中国的大三学生而言已经进入了关键的人生规划时期，考研要从这是准备，找工作的秋招也即将开始。团队在看不到被市场的认可后，王广新我的最佳合作伙伴也离开了。只剩下窦陈，贾博文，我，我们三个。{" "}
+        In May, almost all the junior students in China are busy preparing for
+        job interviews or exams to further their study. Seeing our product
+        failed to get the approval from the market, Wang Guangxin, my partner
+        also left the team. Our team only had three people: Dou Chen, Jia Bowen,
+        and I.{" "}
       </Ctext>
       <SmallTitle> H5 APP </SmallTitle>
-      <Ctext>基本功能已实现，一些地方没有调整UI，目的是测试第一批用户。 </Ctext>
+      <Ctext>Sound function but bad interface just for user testing.</Ctext>
       <App pic1={require("../../images/jishu.png")} />
       <SmallTitle>The first sharing activity</SmallTitle>
       <Ctext>
         We chose the most common topic among college students--<High>
-          How to make a well PPT
+          How to make a good PPT
         </High>{" "}
         as the first topic of our WeChat online sharing activity. We used{" "}
-        <High>WeChat official account</High> to publicize based on its all-round{" "}
-        <High>friends cycle</High>, and finally attracted 123 students. After
-        that, we publicized our APP and invited those students who had interests
-        as the seed users to test the App.<br />
+        <High>WeChat official account</High> for publicity based on its
+        all-round <High>friends circle</High>, and finally attracted 123
+        students. After that, we publicized our APP and invited those students
+        who had interests as the seed users to test the App.<br />
       </Ctext>{" "}
       <Before pic1={require("../../images/xuanchuan.png")} />
       <Ctext>
         <li>
-          First, we introduced today's host. Since students had no reputations,
-          it might attract someone who knew him.
+          First, we introduced today's host, in order to attract someone who
+          knew him.
         </li>
         <br />
         <li>
-          Second, we also put some examples to illistrate his ppt-design
+          Second, we also put some examples to illustrate his ppt-design
           ability. It might attract more potential users.<High>
             ( It was a way to imitate those students who had questions only when
             they saw something and then got inspired. )
@@ -60,18 +64,25 @@ const May = () => (
         </li>
       </Ctext>
       <Ctext>
-        The whole activity last for 1.5h. During that, only not more than 10
+        The whole activity lasted for 1.5h. During that, only not more than 10
         people asked related questions after the host finished his
-        skill-sharing. 远远没有达到我们预期的活跃程度。
+        skill-sharing, which was far from our expectation.
       </Ctext>
       <SmallTitle>Results of the activity and user test</SmallTitle>
       <Test pic1={require("../../images/test2.png")} />
       <Ctext>
-        分析原因：<br />1.产品毕竟是个H5，大家嘴刁<br />2.人不可能随时都有问题要问<br />3.当用户基数不大的时候，尤其没有朋友链时，这个平台没有任何价值<br />4.我们需要培养并发掘真正的种子用户
+        Reflections:
+        <br />1. It was an H5 App, and the interface was not appealing;
+        <br />2. People don’t have that many questions in their mind;
+        <br />3. If there are not enough friends or acquaintances using this
+        platform, it doesn’t have any value.
+        <br />4. We need to discover the real seed users of our platform.
       </Ctext>
       <SmallTitle>Minimum Viable Product (MVP)</SmallTitle>
       <Ctext>
-        暂时先不考虑App，我们决定用现有资源在微信上做一次实验，来验证我们的想法能否可行。用微信群聊作为举办分享会然后观察用户行为。{" "}
+        Putting aside the form of application, we decided to experiment on our
+        idea. We held a sharing activity among our WeChat friends and followers
+        and made an observation.{" "}
       </Ctext>
       <Mvp pic1={require("../../images/fenxiang.png")} />
       <Ctext>
@@ -84,9 +95,9 @@ const May = () => (
       <Mvp pic1={require("../../images/jieguo.png")} />
       <Ctext>
         That proved our original idea was right and needed--<High>
-          "Spread knowledge by vedioing","Ask friends or friends' friends for
+          "Spread knowledge by videoing","Ask friends or friends' friends for
           ideas and suggestions of how to get started a new interest", "A place
-          where we could share our interested skills without any sharing stress"
+          where we could share our skills without any sharing stress"
         </High>
       </Ctext>
     </DecDiv>

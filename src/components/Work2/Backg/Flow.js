@@ -7,7 +7,7 @@ const PicDiv = styled.div`
   &:before {
     content: "";
     display: block;
-    padding-top: 80%;
+    padding-top: 98.75%;
   }
   overflow: hidden;
   margin: 0 0 10rem 0;

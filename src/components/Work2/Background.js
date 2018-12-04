@@ -85,10 +85,8 @@ const Background = () => (
           <Review>(For some reasons, I can't show them clearly)</Review>
         </li>
       </Ctext>
-    </BackgDiv>
-    <FunDiv>
       <Flow pic1={require("../../images/flow1.png")} />
-    </FunDiv>
+    </BackgDiv>
   </Container>
 );
 export default Background;

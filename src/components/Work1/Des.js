@@ -32,34 +32,34 @@ const Dec = () => (
       <Dates>December</Dates>
       <BigTitle>Redefinition</BigTitle>
       <Ctext>
-        Without the video-only threshold, we gave rights to users. Thus, we
+        Without the video-only limitation, we gave rights to users. Thus, we
         discussed this project from the beginning.
       </Ctext>
-      <Clickable lable="definate users">
+      <Clickable lable="define users">
         <SmallTitle>Classified user group</SmallTitle>
         <Market pic1={require("../../images/fenxi.png")} />
         <Ctext>
           Combined with our Relationship basd service(RBS), we can quickly match
-          newbee and experienced. Meanwhile, this platform can satisify users'
-          potential needs:
+          the newbee and the experienced. Meanwhile, this platform can satisify
+          users' potential needs:
         </Ctext>
         <SmallTitle>Proposed target users</SmallTitle>
         <User pic1={require("../../images/user.png")} />
       </Clickable>
       <Ctext>
-        We <High>must have a high-quality conent pool</High> in the first stage,
-        because it will trigger users interests and let the user begin to ask
-        for help. Meanwhile, one's contents are the best proof for indicating
-        he/she has the ability. Thus, we add a new group of people--<High>
-          someone who likes recording
-        </High>. Even though these people's documents and valuable files will
-        not be shown in the public, once some users find them, they can have the
-        chance to check their history.<br /> Considering everyone can be the
-        newbee or the informed person, We hope users can make well-done
-        profiles, only in this way, this platform can run up.<br />
+        We <High>must have a high-quality content pool</High> in the first
+        stage, because it would stimulate users' interests and encourage the
+        user to ask for help. Meanwhile, one's contents are the best proof for
+        indicating he/she has the ability. Thus, we added a new group of
+        people--<High>someone who likes recording</High>. Even though these
+        people's documents and valuable files would not be shown in the public,
+        once some users found them, they could have the chance to check their
+        history.<br /> Considering everyone can be the newbee or the person with
+        the know-how, We hope users can make well-done profiles, and only in
+        this way, this platform can run up.<br />
         <br />
         We also changed our name from <Names>不惑</Names>（which aimed for
-        knowledge needers）to<br />
+        knowledge cravers）to<br />
         <br /> <Names>Skillabel</Names>
         <br />
         <Jieshis>aimed for skill-sharing people</Jieshis>
@@ -77,8 +77,8 @@ const Dec = () => (
         <li>For Newbees: they can find the right person and get help.</li>
         <br />
         <li>
-          For Experienceds: they can classify their skills and share their
-          contents partly by labling.
+          For the Experienced: they can classify their skills and share their
+          contents partly by labeling.
         </li>
       </Ctext>
       <SmallTitle>Proposal</SmallTitle>
@@ -87,15 +87,15 @@ const Dec = () => (
         pic2={require("../../images/taolun2.jpg")}
       />
       <Ctext>
-        Although we cancled video function, we still thought the best way for
-        knowledge spread was by talking. So we create sharing activiety online
-        to attract users. After discussed in detail, we made a plan for
+        Although we canceled the video function, we still thought the best way
+        for knowledge to spread was by talking. So we created sharing activity
+        online to attract users. After discussed in detail, we made a plan for
         <High> pre-product stage</High>.
       </Ctext>
       <Plan pic1={require("../../images/next.png")} />
       <Ctext>
-        Thus, 12 students from different clubs and our school who are good at
-        maths and computer promised us to create something valuable in the
+        Thus, 12 students from different clubs and our school who were good at
+        maths and computer promised us to create something valuable during the
         winter vocation.<br />
         <br /> <Big>We need to accumulate our content pool.</Big>
       </Ctext>

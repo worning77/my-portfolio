@@ -11,7 +11,6 @@ import Mar from "../components/Work1/Mar";
 import Apr from "../components/Work1/Apr";
 import May from "../components/Work1/May";
 import Jun from "../components/Work1/Jun";
-import Last from "../components/Work1/Atlast";
 
 import LoadingScreen from "react-loading-screen";
 
@@ -61,8 +60,8 @@ class Project1Page extends React.Component {
         <Apr />
         <May />
         <Jun />
-        <Last />
-        <div style={{ height: "400px" }} />
+
+        <div style={{ height: "100px" }} />
       </div>
     );
   }

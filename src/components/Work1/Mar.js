@@ -37,17 +37,21 @@ const Mar = () => (
       <Dates>March</Dates>
       <BigTitle>Minus again</BigTitle>
       <Ctext>
-        After Chinese New Year, we had a dilemma:
-        我们不想做垂直领域，因为我们并不是在某个领域特别强悍，最后还有可能做成一个自媒体。如果范围铺的太大，势必前期要准备一些东西，让新来的各个领域的用户能正常玩转起来。既然主动分享的成本很高，那么直接从被动分享（问答）开始呢？以后再去培养主动分享的可能。而且我们忽略了那些因为看到新东西而产生兴趣的一群用户，直接面向已经有需求的用户。直接做基于人脉的一对一问答社区。
+        After the Chinese New Year, we had a new thought. We might not want to
+        build a vertical website because of the limited time and resources.
+        Since it was difficult to get users to share information voluntarily,
+        why don’t we create questions and ask users for answers. In this way, we
+        only focused on those who already had questions in mind. Then we started
+        to focus our platform on Q&A format.
       </Ctext>
       <Luoji pic1={require("../../images/luoji.png")} />
       <SmallTitle>User Scenario</SmallTitle>
       <Comp pic1={require("../../images/10.png")} />
       <SmallTitle>Questionnaire</SmallTitle>
       <Ctext>
-        This time we made a questionnair in time, which aimed to verify our root
-        idea: A Q&A platform based on connection. And the result was perfect,
-        which gave us power to work.{" "}
+        This time we made a questionnaire in time, which aimed to verify our
+        idea: a Q&A platform based on connection. And the result was perfect,
+        which gave us hope to continue with our project.{" "}
       </Ctext>
     </MarDiv>
     <Clickable lable="details">
@@ -59,24 +63,26 @@ const Mar = () => (
       </Caotu1Div>
     </Clickable>
     <MarDiv>
-      <SmallTitle>Soluitions about the worries above.</SmallTitle>
+      <SmallTitle>Solutions about the concerns from users.</SmallTitle>
       <Ctext>
         1. Embarrassed: The App would show the relationship graph to each user.
-        Thus they can get in touch without bothering their middle friends.<br />
+        Thus they can get in touch without bothering their mutual friends.<br />
         <br />
-        2. Reliability: We encourage users can tag and score each other's
-        talents or skills.<br />
+        2. Reliability: We encourage users to tag and grade each other's talents
+        or skills.<br />
         <br />
-        3. Labeled: It seems Chinese do not like "Label" themselves. So, we
+        3. Labeled: It seems Chinese do not like to "Label" themselves. So, we
         changes our name:
       </Ctext>
       <Differ pic1={require("../../images/Differ.png")} />
 
       <Ctext>
         {" "}
-        为了让用户能快速添加好友链，我们将首页设为卡片系统推荐。并在之后会鼓励已经认识的用户添加好友。我快速将原型图做了出来,
-        and our only one developer started to learn H5 App(since we could use it
-        test users rapidly). <br />
+        In order to help users find the one they wanted to make friends with
+        more easily and accurately, we changed our front page to be the
+        recommendation of users’ potential friends by cards. I draw the
+        prototype and the only developer in our team started to learn H5 App.
+        (since we could use it test users rapidly). <br />
         <br />
         <Big>
           Meanwhile, we were preparing the first sharing activiety officially

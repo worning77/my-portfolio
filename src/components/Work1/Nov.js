@@ -170,11 +170,11 @@ const Nov = () => (
       <Tree pic1={require("../../images/Tree.png")} />
       <SmallTitle>New plan</SmallTitle>
       <Ctext>
-        Well, before our product released, where would the users be attracted?
-        We decided to create a <High>WeChat Official Account</High>, by posting
-        the interviews of professors and some studying-tricks videos made top
-        students, we thought we could attract students in my university to keep
-        following us. We also changed our name: <br />
+        Well, before our product released,how could we build our user base? We
+        decided to create a <High>WeChat Official Account</High>, by posting the
+        interviews of professors and some studying-tricks videos made by top
+        students, and we thought we could attract students in my university to
+        keep following us. We also changed our name: <br />
         <br />
         <Names>不惑(Bu Huo)</Names>
         <br />
@@ -184,7 +184,7 @@ const Nov = () => (
       <Bad
         image={require("../../images/shi.png")}
         title="From a professor"
-        text1="A famous Chinese literature professor answered our 5 prepared questions, he couldn't make it clear in 5 min. Since he could extend a lot."
+        text1="A famous Chinese literature professor answered our 5 prepared questions, he couldn't make it clear in 5 min, since he sometimes went off the topic."
         text2="When we let other students watch this 30min-long video. At first they had interests, but they felt tired gradually."
         photo={require("../../images/fankui.png")}
       />
@@ -194,26 +194,25 @@ const Nov = () => (
         most cases!"
       />
       <Ctext>
-        We never foresaw such situiations before. And these difficulies made us
-        clam down. After discussed with several professional product managers in
+        We never foresaw such situations before. And these difficulties calmed
+        us down. After discussions with several professional product managers in
         Tencent, we reconsidered our program and thought about following
         questions.
       </Ctext>
       <Qcard>
         <Question>
-          Why Q&A platforms like zhihu.com didn't have Video fucntion?
+          Why Q&A platforms like zhihu.com didn't have a video function?
         </Question>
         <Thought>
-          Before: We thought Zhihu was a place where people can share thire
-          unique view of points, and those points can be logical if by written
-          down.
+          Before: We had thought Zhihu was a place where people can share their
+          views, and they can be logical if written down.
         </Thought>
         <Answer>
-          Real: Zhihu didn't expect users can make a well video at all. If by
-          videoing, it will lose many portencial users.<br />
+          Reality: Zhihu didn't expect users to be able to make a good video at
+          all. If by videoing, it would lose many potential users.<br />
           <br />
           <Review>
-            Actually, Zhihu started hold video sharing activiting offically
+            Actually, Zhihu started to hold video sharing activiting offically
             after one year, because they already had enough loyal users
           </Review>
         </Answer>
@@ -221,27 +220,27 @@ const Nov = () => (
       <Qcard>
         <Question>Video or Meaningful social network?</Question>
         <Thought>
-          Before: We thought video+knowledge+existing social cycle would be
-          perfect, becasue video was the most effective spreading way.{" "}
+          Before: We had thought video+knowledge+existing social circle would be
+          perfect, because video was the most effective spreading way.{" "}
         </Thought>
         <Answer>
-          Real: Chinese didn't have the habit of making videos at that time yet.
-          Most companies were trying to develop it by using live stream.<br />
+          Reality: Chinese didn't have the habit of making videos at that time
+          yet. Most companies were trying to develop it by using live stream.<br />
           <br />
           <Review>
-            In fact, after more than one-year trail of live steam, all of those
-            still existing products focuses on short video, since many hosts
-            have already had the ability to produce well-made videos, and useres
-            are willing to watch them.
+            In fact, after more than one-year trial of live steam, all of those
+            still existing products focus on short video, since many hosts have
+            already had the ability to produce well-made videos, and useres are
+            willing to watch them.
           </Review>
         </Answer>
       </Qcard>
       <Ctext>
         {" "}
-        It seemed that we overpursued the video function and forgot the original
-        wish of creating a valuable social network.<br />
+        It seemed that we emphasized too much about the video function and
+        forgot the original wish of creating a valuable social network.<br />
         <br />
-        <Big>We had no choice but quit video function.</Big>
+        <Big>We had no choice but removed the video function.</Big>
       </Ctext>
     </NovDiv>
   </Container>

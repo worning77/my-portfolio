@@ -35,39 +35,43 @@ const Jun = () => (
   <Container>
     <DecDiv>
       <Dates>June</Dates>
-      <BigTitle>End</BigTitle>
+      <BigTitle>The End</BigTitle>
       <Ctext>
-        没有精力完全去做内容的发现和主导，势必会让分享停滞不前，同时到了考试月，很少有人会来帮忙，就地解散。{" "}
+        The sharing activities couldn't last if we didn't have much time spent
+        in coming up with topics, inviting hosts and organizing events. With the
+        approach of the final exam, our team could no longer hang in there and I
+        dissembled the team.{" "}
       </Ctext>
       <SmallTitle>Review</SmallTitle>
 
       <Ctext>
         Our idea has been proved right by the MVP, but we found some reasons why
-        we failed to make such a platform we proposed:<br />
+        we failed to make such a platform we envisioned:<br />
         <li>
           {" "}
           We were not a professional team. As for leaders, we put too many
-          functions in a new App in the beignning stage, thus we changed the
-          idea too many timese which led the programmers feel tired. And till
-          the end, our inexperienced programmer didn't make a well APP, but he
-          tried. ( We were not in the beginning of Facebook time )
+          functions in a new App in the beignning stage, and thus we changed the
+          idea too many times which made the programmers feel exhausted. And
+          till the end, our inexperienced programmer didn't make a good APP, but
+          he tried. ( We were not in the beginning of Facebook time )
         </li>
         <li>
           {" "}
-          We knew that we made a real APP was hard, but before we verify our
-          idea, we would not use money to buy a APP, since I saw too many
-          (花重金写好的)APP died because of lack of users.
+          We knew that it was hard for us to design and code an app, but before
+          we verify our idea, we would not use money to buy an APP coded by
+          professionals, since I saw too many heavily-invested APP died because
+          of the lack of users.
         </li>
         <li>
-          We underestimated the difficulty of copy the existing friends
+          We underestimated the difficulty of copying the existing friends
           connection on a brand new platform, since WeChat (Tencent) would never
-          let his social network chain go, even till now, it control Chinese
+          let his social network chain go, and even till now, it control Chinese
           social net firmly.
         </li>
         <li>
           {" "}
-          The delimma: the vertical fields made friends in real life lose its
-          value; the all-round platform relied on friends connection extremely.
+          The delemma: the vertical fields made friends in real life lose its
+          value; the all-round platform heavily relied on friends connection.
         </li>
         <li>
           {" "}
@@ -77,15 +81,15 @@ const Jun = () => (
       </Ctext>
       <Ctext>
         As for my work, I don't think I was a qualified leader or product
-        manager. I made too many mistakes in the whole process. Like before I
-        didn't do a well user research yet, I started to think about how to make
-        a promotional film to spread my idea and attract users. And too much
+        manager. I made too many mistakes in the whole process. For example,
+        before I did a user research, I started to think about how to make a
+        promotional film to spread my idea and attract users. Since I blindly
         believed in Agile Development, I didn't do well in the preparation (
         site map and all sketch pages ) for programmers. As a UI designer, I
         focused on too many details at the beginning. Meanwhile, I failed to
         manage our time. But, in this whole process, I've learned a lot, which
-        pushed me to want more and specificly do well in a certain part of the
-        Internet field.
+        helped me realize my weaknesses and pushed me to perfect myself both as
+        a leader and a product designer.
       </Ctext>
 
       <Team pic1={require("../../images/team.png")} />

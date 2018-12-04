@@ -12,6 +12,7 @@ import {
 } from "../../layouts/Work-Styles";
 import Gift from "./Apr/Gift";
 import Road from "./Apr/road";
+import Clickable from "./HideShow";
 
 const DecDiv = styled.div`
   max-width: 1200px;
@@ -23,37 +24,40 @@ const DecDiv = styled.div`
 const Apr = () => (
   <Container>
     <DecDiv>
-      <Dates>April</Dates>
-      <BigTitle>Business model</BigTitle>
-      <Ctext>
-        {" "}
-        As for how to motivate users to answer others' questions, I came up with
-        a function--Reward, which I thought could quantify the relationship.<br />
-        <Review>
-          ( In the beginning of 2016, Chinese were gradually developed a habit
-          of paying for knowledge or resources on the Internet. So, I thought it
-          was the right time to add the reward function in this one-on-one Q&A
-          platform. )
-        </Review>
-      </Ctext>
-      <Gift pic1={require("../../images/gift.png")} />
-      <SmallTitle>Road Show 2016/27/4</SmallTitle>
-      <Ctext>
-        We got a chance to have a Road Show at InnoWay, Zhongguancun
-      </Ctext>
-      <Road pic1={require("../../images/luyan.png")} />
-      <Ctext>
-        Feedbacks from Investors: they want 需要看到有人在用我们的产品，at least
-        this app has already covered RUC.
-        需要知道未来变现模式，需要知道我们的风控。基本上所有投资人都是这个想法，要看到能立即变现的能力。{" "}
-      </Ctext>
-      <AdDiv>
-        <Ad>
-          "In 2016，even a perfect idea cannot get investment. Investors were
-          not crazy like before anymore, they wanted any product could have the
-          ability to make money instantly"
-        </Ad>
-      </AdDiv>
+      <Clickable lable="check business trial">
+        <Dates>April</Dates>
+        <BigTitle>Business model</BigTitle>
+        <Ctext>
+          {" "}
+          As for how to motivate users to answer others' questions, I came up
+          with a function--Reward, which I thought could strengthen the
+          relationship.<br />
+          <Review>
+            ( In the beginning of 2016, Chinese gradually developed a habit of
+            paying for knowledge or resources on the Internet. So, I thought it
+            was the right time to add the reward function in this one-on-one Q&A
+            platform. )
+          </Review>
+        </Ctext>
+        <Gift pic1={require("../../images/gift.png")} />
+        <SmallTitle>Road Show 2016/27/4</SmallTitle>
+        <Ctext>
+          We got a chance to have a Road Show at InnoWay, Zhongguancun
+        </Ctext>
+        <Road pic1={require("../../images/luyan.png")} />
+        <Ctext>
+          Feedbacks from Investors: They want to see someone actually using our
+          product. They needed to know how to monetize our product and
+          especially how to monetize it in the shortest time.{" "}
+        </Ctext>
+        <AdDiv>
+          <Ad>
+            "In 2016，even a perfect idea cannot get investment. Investors were
+            not crazy like before anymore, and they wanted products to have the
+            ability to make money instantly"
+          </Ad>
+        </AdDiv>
+      </Clickable>
     </DecDiv>
   </Container>
 );
