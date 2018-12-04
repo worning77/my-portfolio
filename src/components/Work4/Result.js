@@ -26,9 +26,8 @@ const Result = () => (
       <Ctext>
         After I completed the python algorithm, I used the tickets in February
         as examples to verify it. The accuracy was only about 70%, which was
-        useless for our business.{" "}
-        <Big4>We urgently need almost 100% accuracy!</Big4> Wait...what's wrong
-        with my code?
+        useless for our business. <Big4>We urgently need 100% accuracy!</Big4>{" "}
+        Wait...what's wrong with my code?
       </Ctext>
       <SmallTitle>Challange</SmallTitle>
       <Ctext>
@@ -43,13 +42,13 @@ const Result = () => (
         they had the ability to make them clear--we discussed with 3 sites, they
         agreed to gave the high quality ones in the future later. And indeed, in
         March, my experiment worked out. All of the data from these 3 sties can
-        be used this method to get a well result. I only need to check whether
-        the numbers of pictures were right. <br />
+        be used by this method to get a good result. I only need to check
+        whether the numbers of pictures were right. <br />
         <br />
         <li>
           After being successful in some sites, I need to make it adapt to more
-          sites, in this way, I can increase the effciency to the greatest
-          extend. After all, there are at least 5 different forms of those
+          sites, and in this way, I can increase the effciency to the greatest
+          extent. After all, there are at least 5 different forms of those
           tickets. Expanding my algorithm would be the first thing to do in the
           future.
         </li>
@@ -59,7 +58,7 @@ const Result = () => (
           time-consuming and laborious, I was thinking one day if all the sites
           could give us high resolution tickets, we could use scanner to do the
           boring task faster. However, I'v never done a project like developing
-          a program on scanner, it might be challanging.{" "}
+          a program on a scanner, it might be challenging.{" "}
         </li>
         <br />
         Now, I am still working on this project in my spare time.

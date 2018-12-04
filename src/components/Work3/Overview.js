@@ -39,15 +39,15 @@ const Overview = props => (
     <PicDiv image={props.image} />
     <Container>
       <OverviewDiv>
-        <Title>Idea from living</Title>
+        <Title>An idea from living</Title>
         <Text3>
           During the last two years of my college time, I rented a small
-          apartment with full living equipments near my university to do my work
-          more conveniently. Later my girlfriend moved in, cooking and living
+          furnished apartment near my university to do my work more
+          conveniently. Later my girlfriend moved in, cooking and living
           together. Since then, I was thinking neither the hotels nor long-term
           leasing apartment can satisfy young college students' needs — they
           were too expensive. This is the story of a living project for young
-          couples in developed cities, like Beijing, Shanghai, Guangzhou.
+          couples in big cities, like Beijing, Shanghai, Guangzhou.
         </Text3>
       </OverviewDiv>
     </Container>

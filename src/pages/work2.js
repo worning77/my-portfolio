@@ -51,7 +51,7 @@ class Project2Page extends React.Component {
         <Design />
         <Process />
         <Reflection />
-        <div style={{ height: "400px" }} />
+        <div style={{ height: "100px" }} />
       </div>
     );
   }

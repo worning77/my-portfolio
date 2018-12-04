@@ -52,27 +52,27 @@ const Problem1 = () => (
       <Checksteps pic1={require("../../images/checkstep.png")} />
       <SmallTitle>Problem</SmallTitle>
       <Ctext>
-        At first, we had very few sites to serve, manually checking and inputing
-        all the data was relatively easy. But now, we have more than 20
-        construction sites, 4 cooperating transport companies, which make the
-        efficiency very low.
+        At first, we had just a few sites to serve, manually checking and
+        inputting all the data were relatively easy. But now, we have more than
+        20 construction sites, 4 cooperating transport companies, which make the
+        checking process a huge workload if we still did it manually.
       </Ctext>
       <Caotu pic1={require("../../images/lizi.png")} />
       <Ctext>
         Besides, <Grey>different sites have different standard,</Grey> which
-        means the receipt tickets have various forms, accordingly increasing the
+        means the receipt tickets have various forms, thereby increasing the
         difficulty of checking.
       </Ctext>
       <Caotu pic1={require("../../images/jieshi.png")} />
       <Ctext>
         Previously I thought I could use some data methods I learned in college
-        to deal with the numbers. Well now, things were totally different, I
-        need to do more.{" "}
+        to deal with the numbers. Well now, things were totally different, and I
+        needed to do more.{" "}
       </Ctext>
       <SmallTitle>Solution</SmallTitle>
       <Ctext>
-        My father let me to manage one project site. During the work, I planned
-        to make an APP to increase efficiency,{" "}
+        My father let me manage one project site. During the work, I planned to
+        make an APP to increase efficiency,{" "}
         <Grey>
           by using Optical Character Recognition ( OCR ) and python to
           automatically export to Excels.
@@ -100,7 +100,7 @@ const Problem1 = () => (
       </VideoWap>
       <Ctext>
         Now, I am still trying to improve the performance of this function to
-        adapt all kinds of tickets and finally make it as an real mobile APP.{" "}
+        scan all kinds of tickets and finally make it as an real mobile APP.{" "}
       </Ctext>
     </ProblemDiv>
   </Container>

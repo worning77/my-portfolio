@@ -121,7 +121,7 @@ const Move = props => (
       <Words>
         <Title>Check the order and book the room</Title>
         <Content>
-          When a user wants to make an order, he/she can check the previous
+          When a user wants to place an order, he/she can check the previous
           reviews and some basic info of this place. Also he/she can check the
           details in paybill, then just editting the personal infomation ( In
           China, it is very convenient to ask the Alipay to help verify ID ),
@@ -143,22 +143,22 @@ const Move = props => (
           before we arrive. And especially for something we've never used
           before, we don't know how to use it, being afraid of breaking it down.
           Therefore, I'd like to put all the photos and instructions of amenity
-          in the room in the App, thus, users can check them, helping them have
-          a day.
+          in the room in the App, and thus, users can check them, helping them
+          have a day.
         </Content>
       </Words2>
     </Section>
     <Section>
       <Words>
-        <Title>Buy somthing and ask the steward to make a surprise!</Title>
+        <Title>Buy something and ask the steward to make a surprise!</Title>
         <Content>
           As the research I did before says, many young couples like a place
           which has a sense of home. They can buy something, like their own
           bathrobe and towel, from the online store, and the delivery address is
-          right the room the booked. Meanwhile, they can learn how to make cake
+          right the room the booked. Meanwhile, they can learn how to bake cakes
           and their favorite dish from it! The most important thing is that if
-          the boy wants to give his girl a surprise, he can make it by the help
-          of our certain steward.{" "}
+          the boy wants to give his girl a surprise, he can make it with the
+          help of our certain steward.{" "}
         </Content>
       </Words>
       <PicDiv2>

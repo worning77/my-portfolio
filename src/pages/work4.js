@@ -60,7 +60,7 @@ class Project4Page extends React.Component {
           <Design />
           <Result />
 
-          <div style={{ height: "400px" }} />
+          <div style={{ height: "100px" }} />
         </LoadingScreen>
       </div>
     );

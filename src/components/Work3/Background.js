@@ -36,21 +36,23 @@ const BackGround = () => (
       <BigTitle>Background</BigTitle>
       <SmallTitle>Problems</SmallTitle>
       <Ctext>
-        It is common to spot that the price of hotels are ususlly high. The
-        price of a single room in a motel near Renmin University (locates in the
-        center of Beijing ) is more than 300 yuan per night. If someone wants to
-        live for a month, it will be nearly ten thousand yuan. However, if
-        someone wants to rent a house in the same location, the price of a
-        two-room office with full living equipments is only 6000 yuan per month.
-        On the other hand, such long-term renting is not for short term. And{" "}
+        It is common to see that the price of hotels is usually high. The price
+        of a single room in a motel near Renmin University (located in the
+        center of Beijing ) was more than 300 yuan per night 2 years ago. If
+        someone wanted to live for a month, it would be nearly ten thousand
+        yuan. However, if someone wanted to rent an apartment in the same
+        location, the price of a two-room office with full living equipments was
+        only 6000 yuan per month. On the other hand, such long-term apartments
+        couldn't be leased out for temporary use. And{" "}
         <High>
-          more and more college students want to live off campus, especially for
-          young couples
+          more and more college students wanted to live off campus, especially
+          for young couples
         </High>. <br />
         <br />
         <li>
-          They hope to have private space{" "}
-          <High>but most of them can't afford the exorbitant price</High>.
+          They hoped to have private space for special occasions such as their
+          birthdays or anniversaries{" "}
+          <High>but most of them couldn't afford the exorbitant price</High>.
         </li>
         <br />
         <li>
@@ -62,46 +64,46 @@ const BackGround = () => (
       <Problems pic1={require("../../images/story.png")} />
       <AdDiv>
         <Ad>
-          As a result, young student living in cities like Beijing with his/her
-          half feels depressed, and the living cost is too high.
+          As a result, young students living in cities like Beijing with his/her
+          half feel depressed, and the living cost is too high.
         </Ad>
       </AdDiv>
       <SmallTitle>Solution</SmallTitle>
       <Ctext>
-        Since I used an App named Ziroom to rent my one-room apartment. And I
-        found that Ziroom equipped everything necessary in the room and users
-        can just take their luggages in without any concerns. Also, the price
-        covers all the furniture, which is only about 5000 yuan per month. It's
-        reasonable. And every month, users can have 4 times cleaning services
-        for free! At the same time, every user can have a certain steward, who
-        can solve some issues in the house. It's very convenient.<br />{" "}
+        I used an App named Ziroom to rent my one-room apartment. I found that
+        Ziroom placed everything necessary in the room and users can just take
+        their luggages in without any concerns. Also, the price covers all the
+        furniture, which was only about 5000 yuan per month. It's reasonable.
+        And every month, users can have 4 times cleaning services for free! At
+        the same time, every user can have a certain steward, who can solve some
+        issues in the house. It's very convenient.<br />{" "}
         <High>
-          Therefore, why can I imitate its model to make a short-term renting
-          platform?
+          Therefore, why couldn't I imitate its model to make a short-term
+          renting platform?
         </High>
         <br />
-        Meanwhile, the price per day would be cheap enough, which is about 180
-        yuan, even though I provide some services, like professional PC and
+        Meanwhile, the price per day would be cheap enough, which was about 180
+        yuan, even though I provided some services, like professional PC and
         household cleaning.
       </Ctext>
       <Concept pic1={require("../../images/concept.png")} />
       <Ctext>
-        So, there are four part of this project:<br />
+        So, there were four part of this project:<br />
         <br />
         <li>
-          Rules: I need to verify my concept of low price, making the price and
-          designing the room rules.
+          Rules: I needed to verify my concept of low price, setting the price
+          and the room rules.
         </li>
         <br />
         <li>
-          Rooms: I need to perpare several well decroated rooms with the
-          following aspects.
+          Rooms: I needed to perpare several well decroated rooms with the
+          aspects above.
         </li>{" "}
         <br />
-        <li>Service: The next is perpare the service above.</li> <br />
+        <li>Service: The next was to prepare the service above.</li> <br />
         <li>
-          <High>Platform</High>: The last one is design the App which is the
-          tool to connect all the ideas.
+          <High>Platform</High>: The last one was to design the App which was
+          the tool to connect all the ideas.
         </li>
       </Ctext>
     </BackDiv>

@@ -35,9 +35,9 @@ const Design = () => (
       <Sitemap pic1={require("../../images/sitemap4.png")} />
       <Ctext>
         After discussing with my coworkers, and according to my previous idea,
-        this tool should be as simple as the flow shows above. So I quickly draw
-        the Sketches and High-Fidelity Design. After all, the hardest and most
-        important part is the algorithm.
+        this tool should be as simple as the flow shows above. Then I quickly
+        finished drawing the Sketches and High-Fidelity Design. After all, the
+        hardest and most important part is the algorithm.
       </Ctext>
       <SmallTitle>Sketches & High-Fidelity Design</SmallTitle>
       <Sketch pic1={require("../../images/sketch4.png")} />

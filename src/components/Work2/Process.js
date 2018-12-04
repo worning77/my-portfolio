@@ -37,11 +37,11 @@ const Process = () => (
         When I was trying to use Axure to draw all the pages, I found in the
         setting part, some logic only needed to be told to the developers, then
         they could fix the issues. And our design team could only have one
-        people to be the UI, he said due to the limited time, we'd better
+        person to be the UI. He said due to the limited time, we'd better
         directly use Sketch to make high-fidelity pictures. We need to be hurry.<br />
         Because the designer and PM had finished some other pages before I came,
-        they know the style. I just watched his drawing process and then
-        practiced to use sketch after work. We can work with sketch together.
+        they knew the style. I just watched his drawing process and then
+        practiced to use sketch after work. Then we worked with sketch together.
       </Ctext>
       <SmallTitle>Me Page</SmallTitle>
     </ProcessDiv>
@@ -61,16 +61,25 @@ const Process = () => (
       <SmallTitle>Some issues during the process</SmallTitle>
       <Ctext>
         <li>
-          因为公司从头到现在换了很多人，基本每一版本都没有留下设计资料，导致我们在做设置内页面重新微调整的时候，没有原来的尺寸及标注。后面还是UI重新做了一套，很浪费时间
+          Since it was a small start-up company, staff came and went. There were
+          not any documentation left when designers quit their jobs. When we
+          were doing the design job, without knowing the original information
+          about the webpage, we had to code and redesign every detail, which was
+          time consuming.
         </li>
         <br />
         <li>
-          有些页面的变动并没有和老板商量，而是UI和PM很早以前想好的，导致其效果复杂，以及上线后使用造成困惑。又开始返工。缺少了关键的设计环节。
+          Some changes made by the UI and the PM didn’t go through the boss.
+          Some changes made the website confusing and complicated. Then the
+          whole staff had to redo it again.
         </li>
         <br />
-        我及时向老板反映这个问题，最后在我和老板的商量下，通过学习腾讯的方法并结合程序方面的方法（团队是技术出身，技术上的流程都是很全面的）制定了一套本公司的设计流程方案之前所述
-        （这个是机密啦）。其效果就是满足任何新设计成员接手产品都能无阻碍的进行下去。并且任何新设计要有讨论，测试流程，最终拍板开工，目的在于减少返工。<br />
-        <br />看看翻译那几页ppt
+        I talked to the boss about the issues and we all thought our company
+        should have a set of rules and standard process. I learnt about the
+        rules and process of Tencent and based on our company’s situation,
+        integrating the rules and came up with a new one. Now discussions held
+        before every new design and testing always came before launching new
+        versions. The company is much more efficient. <br />
       </Ctext>
     </ProcessDiv>
   </Container>

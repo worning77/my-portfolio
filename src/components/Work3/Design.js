@@ -47,9 +47,9 @@ const Design = () => (
       <BigTitle>Design process</BigTitle>
       <Ctext>
         For now, the main function of the App appears. Users can search for
-        their apartment they like; they can use online store to buy something
-        they need; a place users can check their journey, including the key and
-        chating with the strward.
+        apartments they like; they can use online store to buy something they
+        need; a place users can check their journey, including the key and
+        chatting with the steward.
       </Ctext>
       <SmallTitle>Site map</SmallTitle>
       <Site pic1={require("../../images/sitemap.png")} />
@@ -61,9 +61,9 @@ const Design = () => (
       <Sketch pic1={require("../../images/check the journey.png")} />
       <SmallTitle>Wireframes & User testing</SmallTitle>
       <Ctext>
-        Instead of using Axure to make the wirframes, this time I chose to draw
+        Instead of using Axure to make the wireframes, this time I chose to draw
         them by pencil and paper. And indeed it was so fast, only taking me 2
-        days. After that, I let some of my friends to imitate the process.
+        days. After that, I asked some of my friends to imitate the process.
       </Ctext>
     </DesignDiv>
     <FunDiv>

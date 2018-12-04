@@ -49,7 +49,7 @@ class Project3Page extends React.Component {
         <Research />
         <Design />
         <Reflection />
-        <div style={{ height: "400px" }} />
+        <div style={{ height: "100px" }} />
       </div>
     );
   }

@@ -66,11 +66,11 @@ const Show = () => (
         of 6.0 version.
       </Title>
       <Ctext>
-        When I finished my unsuccessful last startup experience, I decided to
-        take some internship in Tech company to develop my all-around skills,
-        since the biggest reason for my failure was unprofessional. Luckily, I
-        found one of my alumni’s company was hiring, and their App was right in
-        the social network field. During the intern, I almost involved in every
+        After my unsuccessful startup experience, I decided to take some
+        internships in a tech company to develop my all-around skills, since the
+        main reason for my failure was unprofessional. Luckily, I found one of
+        my alumni’s company was hiring, and their App was right in the social
+        network field. During the internship, I was almost involved in every
         part of the company, the design process and using data spider…{" "}
       </Ctext>
       <Subtitle>

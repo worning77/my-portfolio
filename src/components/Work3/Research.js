@@ -41,9 +41,9 @@ const Research = () => (
     <ResearchDiv>
       <BigTitle>Research part</BigTitle>
       <Ctext>
-        <Big>In 2016</Big>, because this idea is a brand new Apartment of Hotel
-        for young, I need to investigate the rule of price from two angles:
-        traditional Hotels and convenient long-term apartment leasing platform,
+        <Big>In 2016</Big>, because this idea was a serviced apartment for the
+        young, I needed to investigate the rule of price from two angles:
+        traditional hotels and convenient long-term apartment leasing platform,
         like Ziroom.
       </Ctext>
       <SmallTitle>Rules of price</SmallTitle>
@@ -55,12 +55,12 @@ const Research = () => (
           as the salary of staff. If considering one room of a new hotel, the
           time of recovering all the cost is not more than 2 years, because the
           whole price is not limited in the single room. Therefore, the price of
-          hotle per night is high.{" "}
+          hotel per night is high.{" "}
         </li>
         <br />
         <li>
-          As for Ziroom, I knew from one staff from Ziroom. The company purchase
-          house/apartment from someone who wants to lease it, then redecorating
+          As for Ziroom, I knew from one staff from Ziroom. The company got the
+          house/apartment from someone who wanted to lease it, then redecorating
           it in a new style, equipping all the basic furniture. Thus, the cost
           of such a single house/apartment just equals to the rent of it in
           market plus the cost of decoration and furniture. Meanwhile the goal
@@ -70,25 +70,25 @@ const Research = () => (
         <br />
         Well, now take my home for example. The whole cost of other household
         electrical appliances I brought, like oven and coffee machine, and I set
-        the recovering time is 1 year. The average price of it per day is not
-        more than 250 yuan. In this way, I think this idea might work. ( here I
-        don't consider the vacancy rate in it. But if it works, the vacancy rate
-        would be very low.)
+        the recovering time to be 1 year. The average price of it per day was
+        not more than 250 yuan. In this way, I thought this idea might work. (
+        here I didn't take the vacancy rate into consideration. But if it
+        worked, the vacancy rate would be very low.)
       </Ctext>
       <SmallTitle>Rules of Days</SmallTitle>
       <Ctext>
-        Considering most students complain about the check-out time is too
+        Considering most students complained about the check-out time was too
         early, based on the price I got above, and refering to the famous
-        Edition THREE DAYS TO SEE. I'm going to set the limited time is 3 days 2
-        nights. Let's see what romantic stories will happen in 3 days. ( Most
-        current college young is the single child in their family, seldom doing
-        the housework and cooking. It might be the chance for them to improve
+        edition THREE DAYS TO SEE. I set the limited time to be 3 days 2 nights.
+        Let's see what romantic stories would happen in 3 days. ( Most current
+        college students are the single child in their family, seldom doing the
+        housework and cooking. It might be the chance for them to improve
         themselves as well as their relationship )
       </Ctext>
       <AdDiv>
         <Ad>
-          Idea1.0: <br /> Now there is a brand new apartment of Hotel, which has
-          high cost-effective. Young couples can live for 3 days 2 nights.{" "}
+          Idea1.0: <br /> Now there came a serviced apartment, which was
+          cost-effective. Young couples can live for 3 days 2 nights.{" "}
         </Ad>
       </AdDiv>
       <SmallTitle>User Research</SmallTitle>
@@ -113,11 +113,11 @@ const Research = () => (
         <li>Experiencing keeping pets</li> <br />
         <li>
           Providing online store, which contains several stuff for couples, and
-          the delievery should within one day. (That means I need a storehouse
-          near those apartments )
+          the delievery should be within one day. (That means I need a
+          storehouse near those apartments )
         </li>{" "}
         <br />
-        <li>Steward can help do something to give surprise</li>
+        <li>Steward can help do something to give surprises</li>
       </Ctext>
       <SmallTitle>Scenario</SmallTitle>
     </ResearchDiv>

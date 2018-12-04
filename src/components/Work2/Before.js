@@ -20,12 +20,12 @@ const Before = () => (
       <BigTitle>Before new version</BigTitle>
       <Ctext>
         As a newcomer, our PM asked me to understand this App as well as this
-        market by making an experiencing report. Since I am not the target user(
-        I’m not a gay either a girl ), I only marked some obvious issues:<br />
+        market by doing an experience report. Since I am not the target user(
+        I’m neither a gay or a girl ), I only marked some obvious issues:<br />
         <br />
         <li>
-          Some of the feedback hints are different between Ios and Android, and
-          they are inflexible.<br />Users might feel uncomfortable.
+          Some of the feedback hints were different between iOS and Android, and
+          they were inflexible.<br />Users might feel uncomfortable.
         </li>
         <br />
         <li>
@@ -33,18 +33,18 @@ const Before = () => (
           might be confused.
         </li>
         <br />
-        <li>Search tag exists everywhere, but whithout any logic.</li>
+        <li>Search tag existed everywhere, but whithout any logic.</li>
         <br />
         <li>
           Too many useless tags in the feed page (For some reasons, they opened
           some kinds of tags to attract users long before but stopped running
-          them.)<br />They are unfriendly to new users.
+          them.)<br />They were unfriendly to new users.
         </li>
         <br />
-        <li>The style of whole App are inconsistent.</li>
+        <li>The style of whole app was inconsistent.</li>
       </Ctext>
       <Ctext>
-        Inorder to address those mentioned issues as well as to understand this
+        In order to address those mentioned issues as well as to understand this
         market better, I experienced our competitive product ——{" "}
         <Relas>
           Rela, a lesbian social App made by a professional design group
@@ -53,10 +53,10 @@ const Before = () => (
       <Rela pic1={require("../../images/Rela.png")} />
       <Ctext>
         So, I changed all the toasts and hints on our App and marked default
-        pages we acturally needed by referring to Rela.<br /> Among all those
+        pages we actually needed by referring to Rela.<br /> Among all those
         issues, <High2>the strangest one</High2> was the{" "}
         <High2>style and logic of Me page</High2>. It can't be changed
-        successfully only by designer or marketing people.
+        successfully only by designers or marketing people.
       </Ctext>
       <Home1 pic1={require("../../images/home1.png")} />
     </BeforeDiv>
