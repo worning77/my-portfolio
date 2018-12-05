@@ -57,11 +57,11 @@ const Text = styled.h1`
 `;
 const Next = () => (
   <Wrap>
-    <Link to="/home">
-      <Button>
+    <Button>
+      <Link to="/home">
         <Text>Willing to know more about me? </Text>
-      </Button>
-    </Link>
+      </Link>
+    </Button>
   </Wrap>
 );
 export default Next;

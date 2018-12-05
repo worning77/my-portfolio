@@ -51,18 +51,18 @@ export const DrawContain = styled.div`
   }
   @media (max-width: 1200px) {
     border-radius: 0.2rem;
-    height: 157vw;
+    height: 152vw;
     max-height: none;
   }
   @media (max-width: 1100px) {
-    height: 155vw;
+    height: 159vw;
     max-height: none;
   }
 
   @media (max-width: 700px) {
     grid-template-columns: repeat(1, auto);
     max-height: none;
-    height: 600vw;
+    height: 610vw;
   }
   @media (max-width: 415px) {
     border-radius: 0rem;
@@ -82,15 +82,15 @@ export const DrawBack = styled.img`
     max-height: 650px;
   }
   @media (max-width: 1200px) {
-    width: 53%;
+    width: 55%;
     max-height: none;
   }
   @media (max-width: 1100px) {
-    width: 52%;
+    width: 54%;
     max-height: none;
   }
   @media (max-width: 700px) {
-    width: 100%;
+    width: 102%;
     max-height: none;
   }
 `;
