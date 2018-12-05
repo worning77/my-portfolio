@@ -14,6 +14,9 @@ import Site from "./Design/Site";
 const DesignDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    max-width: 1000px;
+  }
   @media (max-width: 1300px) {
     max-width: 900px;
   }
@@ -31,6 +34,9 @@ const Bord3 = styled(Bord1)`
 const FunDiv = styled.div`
   max-width: 1500px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    max-width: 1200px;
+  }
 `;
 
 const Design = () => (

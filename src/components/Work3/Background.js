@@ -16,6 +16,10 @@ import App4 from "./BackG/App";
 const BackDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    padding-top: 90px;
+    max-width: 1000px;
+  }
   @media (max-width: 1300px) {
     max-width: 900px;
   }

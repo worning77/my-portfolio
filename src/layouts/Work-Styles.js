@@ -12,6 +12,9 @@ export const Container = styled.div`
 export const Caotu1Div = styled.div`
   max-width: 1500px;
   margin: 0 auto 3rem auto;
+  @media (max-width: 1500px) {
+    max-width: 1300px;
+  }
   @media (max-width: 1300px) {
     max-width: 1100px;
   }

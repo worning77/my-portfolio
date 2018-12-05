@@ -3,6 +3,9 @@ import styled from "styled-components";
 const BackDiv = styled.div`
   max-width: 800px;
   margin: 0 auto 15rem auto;
+  @media (max-width: 1500px) {
+    max-width: 700px;
+  }
   @media (max-width: 1300px) {
     max-width: 600px;
     margin: 0 auto 10rem auto;

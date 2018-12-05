@@ -8,8 +8,9 @@ const OverviewDiv = styled.div`
   margin: 0 auto;
   padding-top: 150px;
   text-align: center;
-  @media (max-width: 1600px) {
-    padding-top: 100px;
+  @media (max-width: 1500px) {
+    padding-top: 90px;
+    max-width: 1000px;
   }
   @media (max-width: 1300px) {
     max-width: 900px;

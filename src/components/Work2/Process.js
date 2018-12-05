@@ -15,6 +15,9 @@ import Final from "./Process/Final";
 const ProcessDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    max-width: 1000px;
+  }
   @media (max-width: 1300px) {
     max-width: 900px;
   }
@@ -22,6 +25,9 @@ const ProcessDiv = styled.div`
 const FunDiv = styled.div`
   max-width: 1500px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    max-width: 1200px;
+  }
   @media (max-width: 1300px) {
     max-width: 1100px;
   }

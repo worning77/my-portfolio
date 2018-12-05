@@ -15,6 +15,9 @@ import Member from "./Team/Members";
 const TeamDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    max-width: 1000px;
+  }
   @media (max-width: 1300px) {
     max-width: 900px;
   }

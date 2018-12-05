@@ -9,6 +9,9 @@ const ShowDiv = styled.div`
   grid-template-columns: 2fr 1fr;
   grid-gap: 5rem;
   margin: 0 auto 10rem auto;
+  @media (max-width: 1500px) {
+    max-width: 1000px;
+  }
   @media (max-width: 1300px) {
     max-width: 900px;
   }

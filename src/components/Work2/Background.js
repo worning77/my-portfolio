@@ -14,6 +14,9 @@ import Flow from "./Backg/Flow";
 const BackgDiv = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  @media (max-width: 1500px) {
+    max-width: 1000px;
+  }
   @media (max-width: 1300px) {
     max-width: 900px;
   }
@@ -21,10 +24,7 @@ const BackgDiv = styled.div`
 const Role = styled.span`
   font-weight: 700;
 `;
-const FunDiv = styled.div`
-  max-width: 1500px;
-  margin: 0 auto;
-`;
+
 const Background = () => (
   <Container>
     <BackgDiv>
