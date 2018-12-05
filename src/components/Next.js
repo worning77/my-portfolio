@@ -17,6 +17,17 @@ const Button = styled.button`
   margin: 3rem auto 2rem auto;
   padding: 0;
   border: none;
+  background-color: white;
+  @media (max-width: 800px) {
+    margin: 2rem auto 1.5rem auto;
+  }
+  @media (max-width: 415px) {
+    margin: 1rem auto 1em auto;
+  }
+`;
+const Text = styled.h1`
+  font-size: 2rem;
+  margin: 0;
   background-image: -webkit-linear-gradient(
     150deg,
     rgba(125, 57, 159, 0.9) 0%,
@@ -27,17 +38,15 @@ const Button = styled.button`
     rgba(233, 175, 74, 0.9) 90%,
     rgba(125, 57, 159, 0.9) 100%
   );
+
   animation: ${Background} 8s infinite ease-in-out;
   background-size: 200% 100%;
   -webkit-background-clip: text;
+
   -webkit-text-fill-color: transparent;
   &:hover {
     animation: ${Background} 1s infinite ease-in-out;
   }
-`;
-const Text = styled.h1`
-  font-size: 2rem;
-  margin: 0;
 
   @media (max-width: 640px) {
     font-size: 1.5rem;
@@ -48,11 +57,11 @@ const Text = styled.h1`
 `;
 const Next = () => (
   <Wrap>
-    <Button>
-      <Link to="/home">
+    <Link to="/home">
+      <Button>
         <Text>Willing to know more about me? </Text>
-      </Link>
-    </Button>
+      </Button>
+    </Link>
   </Wrap>
 );
 export default Next;

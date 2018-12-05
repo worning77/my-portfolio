@@ -51,17 +51,18 @@ export const DrawContain = styled.div`
   }
   @media (max-width: 1200px) {
     border-radius: 0.2rem;
-    height: 171vw;
+    height: 157vw;
     max-height: none;
   }
   @media (max-width: 1100px) {
-    height: 175vw;
+    height: 155vw;
     max-height: none;
   }
+
   @media (max-width: 700px) {
     grid-template-columns: repeat(1, auto);
     max-height: none;
-    height: 700vw;
+    height: 600vw;
   }
   @media (max-width: 415px) {
     border-radius: 0rem;
