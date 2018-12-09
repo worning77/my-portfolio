@@ -99,16 +99,47 @@ const Title = styled.h2`
   }
 `;
 
+class ScrollButton extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      intervalId: 0
+    };
+  }
+
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+      clearInterval(this.state.intervalId);
+    }
+    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+  }
+
+  scrollToTop() {
+    let intervalId = setInterval(
+      this.scrollStep.bind(this),
+      this.props.delayInMs
+    );
+    this.setState({ intervalId: intervalId });
+  }
+
+  render() {
+    return (
+      <ButtonTop
+        onClick={() => {
+          this.scrollToTop();
+        }}
+      >
+        {this.props.children}
+      </ButtonTop>
+    );
+  }
+}
+
 class HeaderIn extends React.Component {
   constructor(props) {
     super(props);
   }
-  backToTop() {
-    if (typeof window !== `undefined`) {
-      window.scrollTo(0, 0);
-    }
-  }
-
   render() {
     return (
       <Headroom
@@ -129,15 +160,14 @@ class HeaderIn extends React.Component {
               zIndex: "2"
             }}
             to="/"
-            replace
           >
             <BackIcon />
           </Link>
 
           <HeadGroups>
-            <ButtonTop onClick={e => this.backToTop(e)}>
+            <ScrollButton scrollStepInPx="100" delayInMs="5">
               <Title>{this.props.Name}</Title>
-            </ButtonTop>
+            </ScrollButton>
 
             <Link to="/#projects" style={{ margin: "0 5% 0 auto" }}>
               <Work>Work</Work>
