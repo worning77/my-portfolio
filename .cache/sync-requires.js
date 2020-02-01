@@ -7,7 +7,6 @@ exports.layouts = {
 }
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/Users/worning77/Desktop/my-portfolio/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/worning77/Desktop/my-portfolio/src/pages/404.js")),
   "component---src-pages-home-js": preferDefault(require("/Users/worning77/Desktop/my-portfolio/src/pages/home.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/worning77/Desktop/my-portfolio/src/pages/index.js")),
@@ -19,7 +18,6 @@ exports.components = {
 
 exports.json = {
   "layout-index.json": require("/Users/worning77/Desktop/my-portfolio/.cache/json/layout-index.json"),
-  "dev-404-page.json": require("/Users/worning77/Desktop/my-portfolio/.cache/json/dev-404-page.json"),
   "404.json": require("/Users/worning77/Desktop/my-portfolio/.cache/json/404.json"),
   "home.json": require("/Users/worning77/Desktop/my-portfolio/.cache/json/home.json"),
   "index.json": require("/Users/worning77/Desktop/my-portfolio/.cache/json/index.json"),

@@ -40,14 +40,14 @@ class IndexPage extends React.Component {
       <div>
         <Header />
         <HeroBack>
-          <Intruduction name="Chenfeng Gao" />
+          <Intruduction name="Jesse Gao" />
         </HeroBack>
 
         <Banner>
           <BannerBack src={require("../images/1165.jpg")} />
 
           <MyWay
-            title="My Journey to HCI"
+            title="Journey to UX & Product Designer"
             text="When I was a sophomore, my friends and I were trying to put the programming knowledge learned in class into practice and started our business from scratch. The process was tough and we didn’t make it, but I've gradually found where my real passion lies."
           />
         </Banner>
@@ -144,8 +144,8 @@ class IndexPage extends React.Component {
         >
           <BannerBack2 src={require("../images/3499.jpg")} />
           <MyWayEnd
-            title="... I wanna be better"
-            text="I have put time and effort in what I am interested in, which is definitely interactive design and programming. In the past years of trial-and-error process, I gained valuable experiences but not enough skills, which is exactly why I’m applying to graduate programs to learn from the best to back up my future career aspirations."
+            title="... Time to Speed Up"
+            text="I have put time and effort in what I am interested in, which is definitely interactive design and programming. In the past years of trial-and-error process, I gained valuable experiences but not enough skills. But studying at ID will provide me wings to start my new career."
           />
         </Banner>
 

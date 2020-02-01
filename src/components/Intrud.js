@@ -93,7 +93,7 @@ const Intruduction = props => {
           </Info>
         </Word>
         <Contacts>
-          <a className="Mail" href="mailto:cfenggao@outlook.com">
+          <a className="Mail" href="mailto:cgao21@id.iit.edu">
             <Mail />
           </a>
           <a
@@ -105,7 +105,7 @@ const Intruduction = props => {
           </a>
           <a
             className="resume"
-            href="https://drive.google.com/open?id=1X3DOr7n3XVPxlazPoPQkfaSAQcGnlK58"
+            href="https://drive.google.com/file/d/1ZyMtSKW5-GKqAH04n5K0YP0ft2W019mG/view?usp=sharing"
             target="_blank"
           >
             <Resume />

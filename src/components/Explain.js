@@ -1,12 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Titles } from "../layouts/Page2-Styles";
-const DescDiv = styled.div`
-  margin: 3rem 2rem 0 2rem;
-  @media (max-width: 640px) {
-    margin: 1rem 1rem 0 1rem;
-  }
-`;
+
 const Words = styled.div`
   max-width: 1200px;
   margin: auto;
@@ -29,24 +24,53 @@ const Text = styled.p`
     line-height: 1.5;
   }
 `;
-
+export const High = styled.span`
+  color: rgba(239, 128, 65, 1);
+`;
 const Explains = () => (
-  <DescDiv>
+  <div>
     <Words>
-      <Titles>What Keeps Me Busy:</Titles>
+      <Titles>New Challenges keep me busy:</Titles>
       <Text>
-        <li>
-          I built this site by using Gatsby JS V.1.9. By migrating from V. 1.9
-          to V2, I hope this site can present a better performance.
-        </li>{" "}
+        For the second semester of ID, I will go through 5 big projects which
+        will be very fun and valuable. And finally I can apply what I've learned
+        in the foundation year (the previous semester) into practice, combing
+        various technology will be taught to me this year.
         <br />
         <li>
-          Plus, I’m having an internship in AI Institute, Sinovation ventures in
-          Beijing and the daily routine is exciting as usual.
+          A personal project about <High>digital media</High>. I will create a
+          whole digital system by coding, researching and testing. The topic
+          would be about <High>automatic drive</High>.{" "}
+        </li>
+        <li>
+          A personal project about <High>generative design</High>. By using
+          grasshopper and Rhinoceros, I'm going to build customized{" "}
+          <High>auto parts</High> with the help of data collected by python and{" "}
+          <High>visualize the data</High>.
+        </li>
+        <li>
+          Designing and making a <High>book</High> of a medium company, I will
+          do some graphic design and <High>brand research</High> during the 4
+          months, which is also a personal project.
+        </li>
+        <li>
+          A system method to{" "}
+          <High>
+            encourage students in medical school champions in translational
+            research
+          </High>{" "}
+          is group project which will going to collaborate with Rush medical
+          center.
+        </li>
+        <li>
+          The last one will be redesign and <High>rebuild my wedsite</High>.
+          I've prepared for a long time to improve the speed and readability of
+          this site, as well as rewrite my stories of each project by using the
+          method of <High>storytelling</High> from ID.
         </li>
       </Text>
     </Words>
-  </DescDiv>
+  </div>
 );
 
 export default Explains;

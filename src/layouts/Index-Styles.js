@@ -135,7 +135,7 @@ export const BannerBack = styled.img`
   position: absolute;
   top: -100%;
   right: 0;
-  height: 350%;
+  height: 360%;
   z-index: -1;
   @media (max-width: 780px) {
     height: 300%;
@@ -154,14 +154,14 @@ export const BannerBack2 = styled(BannerBack)`
   position: absolute;
   top: -80%;
   left: 0;
-  height: 300%;
+  height: 360%;
   z-index: -1;
   @media (max-width: 930px) {
-    height: 280%;
+    height: 320%;
     top: -80%;
   }
   @media (max-width: 640px) {
-    height: 230%;
+    height: 280%;
     top: -70%;
   }
   @media (max-width: 550px) {
@@ -169,11 +169,11 @@ export const BannerBack2 = styled(BannerBack)`
     top: -60%;
   }
   @media (max-width: 460px) {
-    height: 170%;
+    height: 190%;
     top: -40%;
   }
   @media (max-width: 415px) {
-    height: 165%;
+    height: 175%;
     top: -33%;
   }
 `;

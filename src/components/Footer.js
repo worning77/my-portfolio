@@ -31,8 +31,9 @@ const Footer = () => (
     <FootContain>
       <Text>
         Design&Code by me! <br />
-        This is my first site built by ReactJs <br />
-        Chenfeng Gao © 2018 All Rights Reserved
+        This is my first site built by ReactJs, a brand new version will be
+        released SOON <br />
+        Jesse Gao © 2018 All Rights Reserved
       </Text>
     </FootContain>
   </FootDiv>

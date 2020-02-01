@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/worning77/Desktop/my-portfolio/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/worning77/Desktop/my-portfolio/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "938d688c8368c364568b1724f99f8954",
-        "description": "Plugin dev-404-page",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -341,11 +331,81 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/worning77/Desktop/my-portfolio/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "1.0.20-12",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": "UA-130561639-1",
+        "head": false
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/worning77/Desktop/my-portfolio/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "1.0.20-12",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "7.0.0-beta.47"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "7.0.0-beta.47"
+          },
+          {
+            "name": "@babel/core",
+            "version": "7.0.0-beta.47"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">1.0.0 || >2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "24400d75e981d52d2eea063f9cfdc9d7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/worning77/Desktop/my-portfolio",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "1d0b06e970b2da721b4db52bef97fb5b",
+      "version": "05c77f203db89945dc4e4671e2403fec",
       "pluginOptions": {
         "plugins": []
       },
@@ -422,6 +482,10 @@
           {
             "name": "gatsby-plugin-favicon",
             "version": "^3.1.4"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^1.0.20-12"
           },
           {
             "name": "gatsby-plugin-nprogress",
@@ -557,7 +621,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d31f1339d069c51c2097aecc322bffa4",
+        "contentDigest": "84bb7e508fb199f4a4b77fd5cc8d9863",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -648,14 +712,14 @@
       "siteMetadata": {
         "title": "Gao's | Design"
       },
-      "port": "8000",
-      "host": "localhost",
-      "buildTime": "2018-12-09T07:51:29.131Z",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2020-02-01T03:51:35.603Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "8116255b798e05fd55bb54d53f58f9c4",
+        "contentDigest": "b9d28b73ce652d23f2fd19f9953e887d",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -676,7 +740,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "37f1db101c82279ba0d814b72faf038e",
+        "contentDigest": "5422843cbc3b8b0e114bd931ff66e58e",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -697,7 +761,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bf7946a438b3c9f225783000ad4f1589",
+        "contentDigest": "95f482eb9d3db9485b7e351af50762b1",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -718,7 +782,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3e5a21558b2ca0f538d8df490ae7f383",
+        "contentDigest": "f6df8fa10bea9dd17c61143d0393c597",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -739,7 +803,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1e8b97ad9426578a4e84d860ed197d86",
+        "contentDigest": "03e69cd6f8466091dd935137b2aa0961",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -760,7 +824,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d012847a624adeead0247d8cb4a8344e",
+        "contentDigest": "c5986061af2217ac4d79a762ce944e97",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -781,7 +845,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1550784f02ebd0c395056e55a4cb0b4b",
+        "contentDigest": "2f1212398362e57b198b3a2a12ea695d",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -802,7 +866,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "92b3cce9a2c8196da92826ebd528b7f6",
+        "contentDigest": "5f3ce9701d8d978310770c7f462c4229",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -823,7 +887,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f76f26955f3987d5834b41c7a3a0c8cd",
+        "contentDigest": "812221198aae17c94a9853729cd37c77",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -831,7 +895,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "75c89663823eec240be79e5b89d76e86"
+    "PLUGINS_HASH": "49537d6bfc5e6a58877d189095a1e066"
   },
   "componentDataDependencies": {
     "nodes": {
